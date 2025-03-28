@@ -1,0 +1,20 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of different ECC approaches with aimed KER 1 E-4 \% showing required PUF bits and redundancy for a key length of 128 bits and a presumed BER of 15\%. }}{35}{table.2.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Mean value of BER for the five chips}}{56}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Average BER of the 50 strongest and 50 weakest cells of chip \#1 after accelerated aging}}{58}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Average BER of the 50 strongest and 50 weakest cells of chip \#2 tested under temperature variations}}{60}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Average BER of the 50 strongest and 50 weakest cells of chip \#2 tested under supply voltage variations}}{61}{table.4.4}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Performance of all cells under nominal conditions.}}{66}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Performance of different selections of 128 bits when performing 2000 power-ups under nominal conditions.}}{68}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Mean BER value for the different selections when performing 200 power-ups under supply voltage variations}}{69}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Mean BER value for the different selections when performing 200 power-ups under temperature variations}}{69}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Mean BER value for the different selections when performing 200 power-ups at different points in time after accelerated aging.}}{70}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces BER and AR value for the different selections when performing 2000 power-ups under nominal conditions using two different repetition codes.}}{72}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces BER and AR value for the different selections when performing 200 power-ups at $\SI {-20}{\degree C}$ using two different repetition codes.}}{73}{table.5.7}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces BER and AR value for the different selections when performing 200 power-ups 8 days after accelerated aging using two different repetition codes.}}{73}{table.5.8}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Required repetition code to meet the KER target for each selection.}}{74}{table.5.9}%
+\addvspace {10\p@ }

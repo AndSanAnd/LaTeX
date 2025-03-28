@@ -1,0 +1,77 @@
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Images
+
+\usepackage{caratula}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=0mm]{geometry}
+\graphicspath{ {./images/} }
+\usepackage{fancyhdr} % Headers and footers
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\fancyhead[LE,RO]{\rightmark}
+\fancyfoot[CE,CO]{\thepage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1.2pt}
+\renewcommand{\footrulewidth}{1.2pt}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{TFG.bib}
+\usepackage{siunitx}% physikalische Einheiten nicht kursiv
+\sisetup{
+output-decimal-marker = {.},
+separate-uncertainty = true,
+group-digits=false
+}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[official]{eurosym}
+% \usepackage{titlesec}%new page each section
+% \newcommand{\sectionbreak}{\clearpage}
+%\newcommand{\subsectionbreak}{\clearpage}
+%Tables
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{caption} 
+\captionsetup[table]{skip=7pt}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{placeins}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\l@chapter}{3.5em}{2.5em}{}{}
+\makeatother
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+    pdfauthor={Andrés Santana Andreo},
+    pdftitle={Design of aging-resilient SRAM-basedPhysical Unclonable Functions (PUFs)},
+    pdfkeywords={SRAM, PUF, HDA, ECC, MTSV, Sevilla, Seville, IMSE, TFM, Santana}
+}
+
+\makeatletter
+% \patchcmd{<cmd>}{<search>}{<replace>}{<success>}{<failure>}
+\patchcmd{\l@chapter}{1.0em}{0.8em}{}{}
+\makeatother
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fancyvrb}
+\usepackage{calc}
+%\usepackage[T1]{fontenc}
+\usepackage{seqsplit} %For long strings
+
+\usepackage{subfig}

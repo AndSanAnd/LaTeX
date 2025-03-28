@@ -1,0 +1,3881 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{McGrath2019}{article}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{issn}{19319401}
+      \field{journaltitle}{Applied Physics Reviews}
+      \field{number}{1}
+      \field{title}{{A PUF taxonomy}}
+      \field{volume}{6}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1063/1.5079407
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/1.5079407.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Bohm2013}{book}{}
+      \name{author}{2}{}{%
+        {{hash=769034bfef49037ec8331e37e31bf7a0}{%
+           family={Böhm},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0f172c46148db92b5ef2e7569f0e3ec2}{%
+           family={Hofer},
+           familyi={H\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{9c765b9165904361d02e641727ad9a41}
+      \strng{fullhash}{9c765b9165904361d02e641727ad9a41}
+      \strng{bibnamehash}{9c765b9165904361d02e641727ad9a41}
+      \strng{authorbibnamehash}{9c765b9165904361d02e641727ad9a41}
+      \strng{authornamehash}{9c765b9165904361d02e641727ad9a41}
+      \strng{authorfullhash}{9c765b9165904361d02e641727ad9a41}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4614-5039-9}
+      \field{title}{{Physical Unclonable Functions in Theory and Practice}}
+      \field{year}{2013}
+      \field{pages}{300}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-5040-5
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/B{\"{o}}hm, Hofer - 2013 - Physical Unclonable Functions in Theory and Practice.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-1-4614-5040-5
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-1-4614-5040-5
+      \endverb
+    \endentry
+    \entry{NXP}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{Search | NXP}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nxp.com/search?keyword=AN12292{\&}start=0
+      \endverb
+      \verb{url}
+      \verb https://www.nxp.com/search?keyword=AN12292%7B%5C&%7Dstart=0
+      \endverb
+    \endentry
+    \entry{Intrinsic}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{{QuiddiKey - Intrinsic ID | Home of PUF Technology}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.intrinsic-id.com/products/quiddikey/
+      \endverb
+      \verb{url}
+      \verb https://www.intrinsic-id.com/products/quiddikey/
+      \endverb
+    \endentry
+    \entry{Microsemi}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{{Libero SoC v11.6 Resources Archive | Microsemi}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.microsemi.com/product-directory/design-resources-archive/5086-libero-soc-v11-6-resources-archive
+      \endverb
+      \verb{url}
+      \verb https://www.microsemi.com/product-directory/design-resources-archive/5086-libero-soc-v11-6-resources-archive
+      \endverb
+    \endentry
+    \entry{Delvaux2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=947b499d768ced0937b4d0cb15176963}{%
+           family={Delvaux},
+           familyi={D\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c4f7eb3a78e33fb582c82f6d2dd9e8c2}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Dawu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=60555b637819ca0cfd8b4d3c87799db9}{%
+           family={Schellekens},
+           familyi={S\bibinitperiod},
+           given={Dries},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
+      \strng{fullhash}{ceb06cc3176537ff4552a9cce94fb09d}
+      \strng{bibnamehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
+      \strng{authorbibnamehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
+      \strng{authornamehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
+      \strng{authorfullhash}{ceb06cc3176537ff4552a9cce94fb09d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{02780070}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{number}{6}
+      \field{title}{{Helper data algorithms for puf-based key generation: Overview and analysis}}
+      \field{volume}{34}
+      \field{year}{2015}
+      \field{pages}{889\bibrangedash 902}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCAD.2014.2370531
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/article-2494.pdf:pdf
+      \endverb
+      \keyw{helper data algorithm,key generation,physically unclonable function}
+    \endentry
+    \entry{Hiller2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=048897926083f82c0a0242a747db3f60}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52ff54aeb792c96bdcd0b0f11c659470}{%
+           family={Kürzinger},
+           familyi={K\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \strng{fullhash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \strng{bibnamehash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \strng{authorbibnamehash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \strng{authornamehash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \strng{authorfullhash}{71d6a8c998ea746101aaa7d4e09a14d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{21908516}
+      \field{journaltitle}{Journal of Cryptographic Engineering}
+      \field{number}{3}
+      \field{title}{{Review of error correction for PUFs and evaluation on state-of-the-art FPGAs}}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{229\bibrangedash 247}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s13389-020-00223-w
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/Hiller2020{\_}Article{\_}ReviewOfErrorCorrectionForPUFs.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s13389-020-00223-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s13389-020-00223-w
+      \endverb
+      \keyw{FPGA,Fuzzy extractor,Hardware implementation,Key generation,Physical unclonable functions}
+    \endentry
+    \entry{Alioto2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8cb76a54b4f6e4be260556c94a0d3ff4}{%
+           family={Alioto},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \strng{fullhash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \strng{bibnamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \strng{authorbibnamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \strng{authornamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \strng{authorfullhash}{8cb76a54b4f6e4be260556c94a0d3ff4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Solid-State Circuits Magazine}
+      \field{title}{Trends in Hardware Security: From basics to ASICs}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{56\bibrangedash 74}
+      \range{pages}{19}
+    \endentry
+    \entry{Shifman2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2b2898cd62402bb51f81bac22c1f6f4f}{%
+           family={Shifman},
+           familyi={S\bibinitperiod},
+           given={Yizhak},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cf956ed3ac2ab54b8c8e73bd6b75a526}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Avi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6b5d48b1f03c05b0f1f10f0229f8d9c9}{%
+           family={Keren},
+           familyi={K\bibinitperiod},
+           given={Osnat},
+           giveni={O\bibinitperiod}}}%
+        {{hash=ddd52fc28ab52568b7c791ba808aeae1}{%
+           family={Weizmann},
+           familyi={W\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3344975bd53f2cd4f3a2f4e9ff0a966a}{%
+           family={Shor},
+           familyi={S\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{be11f6e2ad9604da8601077056136ae8}
+      \strng{fullhash}{e8a2e319ace6e5ca934f730c3be48971}
+      \strng{bibnamehash}{be11f6e2ad9604da8601077056136ae8}
+      \strng{authorbibnamehash}{be11f6e2ad9604da8601077056136ae8}
+      \strng{authornamehash}{be11f6e2ad9604da8601077056136ae8}
+      \strng{authorfullhash}{e8a2e319ace6e5ca934f730c3be48971}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2573-9603}
+      \field{journaltitle}{IEEE Solid-State Circuits Letters}
+      \field{number}{6}
+      \field{title}{{A Method to Improve Reliability in a 65-nm SRAM PUF Array}}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{138\bibrangedash 141}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/LSSC.2018.2879216
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/08519616.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8519616/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8519616/
+      \endverb
+      \keyw{Physical unclonable function (PUF),SRAM,preselection}
+    \endentry
+    \entry{Tuyls2007}{book}{}
+      \name{author}{3}{}{%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+        {{hash=29fc281bcf269f19dfa64ecf22bfc16b}{%
+           family={Škorić},
+           familyi={Š\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2509b89fb579a574864e3da7dcedd740}{%
+           family={Kevenaar},
+           familyi={K\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{7234c2775c57327d1de8f157e651c69e}
+      \strng{fullhash}{7234c2775c57327d1de8f157e651c69e}
+      \strng{bibnamehash}{7234c2775c57327d1de8f157e651c69e}
+      \strng{authorbibnamehash}{7234c2775c57327d1de8f157e651c69e}
+      \strng{authornamehash}{7234c2775c57327d1de8f157e651c69e}
+      \strng{authorfullhash}{7234c2775c57327d1de8f157e651c69e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Security with Noisy Data: On Private Biometrics, Secure Key Storage and Anti-Counterfeiting}
+      \field{isbn}{9781846289835}
+      \field{title}{{Security with noisy data: On private biometrics, secure key storage and anti-counterfeiting}}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 339}
+      \range{pages}{339}
+      \verb{doi}
+      \verb 10.1007/978-1-84628-984-2
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Tuyls, {\v{S}}kori{\'{c}}, Kevenaar - 2007 - Security with noisy data On private biometrics, secure key storage and anti-counterfeiting.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pappu2002}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b86eafe86d64766b03c2e31ddddffbce}{%
+           family={Pappu},
+           familyi={P\bibinitperiod},
+           given={Ravikanth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ffa081e7e59a2c82fd714ab7ea81fe97}{%
+           family={Recht},
+           familyi={R\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=58e1923652b1d4faaebafa27ab8dff2f}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=113a59d98dd032dc5604a9b82a5700b9}{%
+           family={Gershenfeld},
+           familyi={G\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{4de30c0baa8d117b5c75bd6a12f99652}
+      \strng{fullhash}{cd7c61cf1be3095c2057ec402c00c2d7}
+      \strng{bibnamehash}{4de30c0baa8d117b5c75bd6a12f99652}
+      \strng{authorbibnamehash}{4de30c0baa8d117b5c75bd6a12f99652}
+      \strng{authornamehash}{4de30c0baa8d117b5c75bd6a12f99652}
+      \strng{authorfullhash}{cd7c61cf1be3095c2057ec402c00c2d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00368075}
+      \field{journaltitle}{Science}
+      \field{number}{5589}
+      \field{title}{{Physical one-way functions}}
+      \field{volume}{297}
+      \field{year}{2002}
+      \field{pages}{2026\bibrangedash 2030}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1126/science.1074376
+      \endverb
+    \endentry
+    \entry{Xu2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c7dee722d149af6f7addccc7e0efd927}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Teng},
+           giveni={T\bibinitperiod}}}%
+        {{hash=db1561dc09eb9d60411bc982d0e1614f}{%
+           family={Potkonjak},
+           familyi={P\bibinitperiod},
+           given={Miodrag},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a88d48271ed5faa7ebde165ed02f428f}
+      \strng{fullhash}{a88d48271ed5faa7ebde165ed02f428f}
+      \strng{bibnamehash}{a88d48271ed5faa7ebde165ed02f428f}
+      \strng{authorbibnamehash}{a88d48271ed5faa7ebde165ed02f428f}
+      \strng{authornamehash}{a88d48271ed5faa7ebde165ed02f428f}
+      \strng{authorfullhash}{a88d48271ed5faa7ebde165ed02f428f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Secure System Design and Trustable Computing}
+      \field{isbn}{9783319149714}
+      \field{title}{{Secure System Design and Trustable Computing}}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1007/978-3-319-14971-4_3
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xu, Potkonjak - 2015 - Secure System Design and Trustable Computing.pdf:pdf;:C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xu, Potkonjak - 2015 - Secure System Design and Trustable Computing(2).pdf:pdf
+      \endverb
+    \endentry
+    \entry{Herder2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9b9583b35e0807fe8666e831e6b41e77}{%
+           family={Herder},
+           familyi={H\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=650a56d1582f2ef83c18e55e75acff5b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Meng\bibnamedelima Day},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d1642679ae78814302ce585a8ca745a8}{%
+           family={Koushanfar},
+           familyi={K\bibinitperiod},
+           given={Farinaz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4be4060700fa73556250f6feefb96f46}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{085830a30f3092af654eca86ee55c1b0}
+      \strng{fullhash}{f1b77ee7dc5ef58d93c1a4fa6d0614d1}
+      \strng{bibnamehash}{085830a30f3092af654eca86ee55c1b0}
+      \strng{authorbibnamehash}{085830a30f3092af654eca86ee55c1b0}
+      \strng{authornamehash}{085830a30f3092af654eca86ee55c1b0}
+      \strng{authorfullhash}{f1b77ee7dc5ef58d93c1a4fa6d0614d1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189219}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{8}
+      \field{title}{{Physical unclonable functions and applications: A tutorial}}
+      \field{volume}{102}
+      \field{year}{2014}
+      \field{pages}{1126\bibrangedash 1141}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/JPROC.2014.2320516
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Herder et al. - 2014 - Physical unclonable functions and applications A tutorial.pdf:pdf
+      \endverb
+      \keyw{Arbiter,SRAM,index-based coding,pattern matching,physical unclonable function (PUF),public model PUFs,ring oscillator,unclonable}
+    \endentry
+    \entry{Maes2010}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \strng{fullhash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \strng{bibnamehash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \strng{authorbibnamehash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \strng{authornamehash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \strng{authorfullhash}{5fd072e1e0d4035b67868e9fba9b7ea4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Information Security and Cryptography}
+      \field{issn}{2197845X}
+      \field{number}{9783642143120}
+      \field{title}{{Physically unclonable functions: A study on the state of the art and future research directions}}
+      \field{year}{2010}
+      \field{pages}{3\bibrangedash 37}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1007/978-3-642-14452-3_1
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/TFM/Physically{\_}Unclonable{\_}Functions{\_}A{\_}Study{\_}on{\_}the{\_}Sta.pdf:pdf
+      \endverb
+    \endentry
+    \entry{TPM}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Trusted Platform Module (TPM) Summary | Trusted Computing Group}}
+      \field{urlday}{6}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://trustedcomputinggroup.org/resource/trusted-platform-module-tpm-summary/
+      \endverb
+      \verb{url}
+      \verb https://trustedcomputinggroup.org/resource/trusted-platform-module-tpm-summary/
+      \endverb
+    \endentry
+    \entry{Okumura2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=edadf728b1805a059d004ce412613505}{%
+           family={Okumura},
+           familyi={O\bibinitperiod},
+           given={Shunsuke},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5d988e78de0aaa1fc4780f3b8c294622}{%
+           family={Yoshimoto},
+           familyi={Y\bibinitperiod},
+           given={Shusuke},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4aabb7edbaaa12b6b862cfe867bb2a51}{%
+           family={Kawaguchi},
+           familyi={K\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ab30205a8ca52ad8a21745ebf0ac8ee8}{%
+           family={Yoshimoto},
+           familyi={Y\bibinitperiod},
+           given={Masahiko},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ea8efa8d13d3f0faff684da0316db0b3}
+      \strng{fullhash}{5a7fe964aa12b4c7ba35de3ff3beb241}
+      \strng{bibnamehash}{ea8efa8d13d3f0faff684da0316db0b3}
+      \strng{authorbibnamehash}{ea8efa8d13d3f0faff684da0316db0b3}
+      \strng{authornamehash}{ea8efa8d13d3f0faff684da0316db0b3}
+      \strng{authorfullhash}{5a7fe964aa12b4c7ba35de3ff3beb241}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781457707018}
+      \field{issn}{19308833}
+      \field{journaltitle}{European Solid-State Circuits Conference}
+      \field{title}{{A 128-bit chip identification generating scheme exploiting SRAM bitcells with failure rate of 4.45 × 10-19}}
+      \field{year}{2011}
+      \field{pages}{527\bibrangedash 530}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ESSCIRC.2011.6044938
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/06044938.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Suh2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e3bf30077ff591f9d7fe4997ac0ecc6c}{%
+           family={Suh},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi Edward},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4be4060700fa73556250f6feefb96f46}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \strng{fullhash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \strng{bibnamehash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \strng{authorbibnamehash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \strng{authornamehash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \strng{authorfullhash}{9f10c12ce5af26b72b14b3a9c1a34c66}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Physical Unclonable Functions (PUFs) are innovative circuit primitives that extract secrets from physical characteristics of integrated circuits (ICs). We present PUF designs that exploit inherent delay characteristics of wires and transistors that differ from chip to chip, and describe how PUFs can enable low-cost authentication of individual ICs and generate volatile secret keys for cryptographic operations. Copyright 2007 ACM.}
+      \field{isbn}{1595936270}
+      \field{issn}{0738100X}
+      \field{journaltitle}{Proceedings - Design Automation Conference}
+      \field{title}{{Physical unclonable functions for device authentication and secret key generation}}
+      \field{year}{2007}
+      \field{pages}{9\bibrangedash 14}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/DAC.2007.375043
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/TFM/04261134.pdf:pdf
+      \endverb
+      \keyw{IC authentication,Secret keys}
+    \endentry
+    \entry{Rahman2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3db324e72eb668e1dab97ccc480dafc5}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Md\bibnamedelima Tauhidur},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=12c2ce8c02af7a0221c8d1778032a913}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Fahim},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f12438dc0c97e9f04e2bf3a14df8093b}{%
+           family={Forte},
+           familyi={F\bibinitperiod},
+           given={Domenic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dc49dee9f5772dec95f451384fb4b634}{%
+           family={Tehranipoor},
+           familyi={T\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{40de6e5d5455406998a68082833cb8d0}
+      \strng{fullhash}{b1a3dea92c96f5b4b57ef1a8d223446e}
+      \strng{bibnamehash}{40de6e5d5455406998a68082833cb8d0}
+      \strng{authorbibnamehash}{40de6e5d5455406998a68082833cb8d0}
+      \strng{authornamehash}{40de6e5d5455406998a68082833cb8d0}
+      \strng{authorfullhash}{b1a3dea92c96f5b4b57ef1a8d223446e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{21686750}
+      \field{journaltitle}{IEEE Transactions on Emerging Topics in Computing}
+      \field{number}{3}
+      \field{title}{{An Aging-Resistant RO-PUF for Reliable Key Generation}}
+      \field{volume}{4}
+      \field{year}{2016}
+      \field{pages}{335\bibrangedash 348}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TETC.2015.2474741
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rahman et al. - 2016 - An Aging-Resistant RO-PUF for Reliable Key Generation.pdf:pdf
+      \endverb
+      \keyw{PUF reliability,Physically unclonable function (PUF),aging-resistant PUF (ARO-PUF),ring oscillator (RO) PUF,robust PUF}
+    \endentry
+    \entry{Gao2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ffa1fc29499a96e8fe0682b2b6d97f3b}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yansong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f30ab3d8f0980c3b1d3269861d749dfa}{%
+           family={Al-Sarawi},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Said\bibnamedelima F},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a503fa20dea32ccb5f416575041bbf6e}{%
+           family={Abbott},
+           familyi={A\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \strng{fullhash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \strng{bibnamehash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \strng{authorbibnamehash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \strng{authornamehash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \strng{authorfullhash}{9d1212c26286eb7e5b96ed284a6504c9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2520-1131}
+      \field{journaltitle}{Nature Electronics}
+      \field{number}{2}
+      \field{title}{{Physical unclonable functions}}
+      \field{volume}{3}
+      \field{year}{2020}
+      \field{pages}{81\bibrangedash 91}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1038/s41928-020-0372-5
+      \endverb
+    \endentry
+    \entry{AES}{report}{}
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \list{location}{1}{%
+        {Gaithersburg, MD}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Advanced encryption standard (AES)}}
+      \field{type}{techreport}
+      \field{year}{2001}
+      \verb{doi}
+      \verb 10.6028/NIST.FIPS.197
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2001 - Advanced encryption standard (AES).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+      \endverb
+      \verb{url}
+      \verb https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+      \endverb
+    \endentry
+    \entry{RSA}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6a630bbc1f4da3f000de53a8c3fcda9a}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=7b33764dee51f9ccad6bf7f94f4a5328}{%
+           family={Shamir},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4a8266f26fefcaad4dc64bfd4220a4ae}{%
+           family={Adleman},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \strng{fullhash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \strng{bibnamehash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \strng{authorbibnamehash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \strng{authornamehash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \strng{authorfullhash}{e6041f1e6bea0c7f11abe539180c7aa5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Commun. ACM}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{A Method for Obtaining Digital Signatures and Public-Key Cryptosystems}
+      \field{volume}{21}
+      \field{year}{1978}
+      \field{pages}{120\bibrangedash 126}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/359340.359342
+      \endverb
+    \endentry
+    \entry{Martinez-Rodriguez2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9bb3f627790016b42b6cb4762375c7f9}{%
+           family={Martínez-Rodríguez},
+           familyi={M\bibinithyphendelim R\bibinitperiod},
+           given={Macarena\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=962a04a9d4e070859211ef8ddfea6c94}{%
+           family={Prada-Delgado},
+           familyi={P\bibinithyphendelim D\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=32878a0d2523bf33e08460bc1d21f135}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Piedad},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4be316d8bdb6bb266c4597dff5d665f9}{%
+           family={Baturone},
+           familyi={B\bibinitperiod},
+           given={Iluminada},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{35b05ad5c4464d6e728746152e385f66}
+      \strng{fullhash}{9ab0b220618aa87ec93ca86214a7ea1d}
+      \strng{bibnamehash}{35b05ad5c4464d6e728746152e385f66}
+      \strng{authorbibnamehash}{35b05ad5c4464d6e728746152e385f66}
+      \strng{authornamehash}{35b05ad5c4464d6e728746152e385f66}
+      \strng{authorfullhash}{9ab0b220618aa87ec93ca86214a7ea1d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{14248220}
+      \field{journaltitle}{Sensors (Switzerland)}
+      \field{number}{2}
+      \field{title}{{VLSI design of trusted virtual sensors}}
+      \field{volume}{18}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.3390/s18020347
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Mart{\'{i}}nez-Rodr{\'{i}}guez et al. - 2018 - VLSI design of trusted virtual sensors.pdf:pdf
+      \endverb
+      \keyw{CMOS integrated circuits,Data security,Hardware security,Physical unclonable function (PUF),Piecewise linear approximation,Virtual sensors}
+    \endentry
+    \entry{Holcomb2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a651702b4229ed30260ee7d30340a39c}{%
+           family={{Holcomb}},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=eeeac6ff13a901b56637bd1d8257e7aa}{%
+           family={{Burleson}},
+           familyi={B\bibinitperiod},
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6401bb5ee75765582e665ceb07f18fde}{%
+           family={{Fu}},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f847400acba99fabd195e4dbf9547221}
+      \strng{fullhash}{f847400acba99fabd195e4dbf9547221}
+      \strng{bibnamehash}{f847400acba99fabd195e4dbf9547221}
+      \strng{authorbibnamehash}{f847400acba99fabd195e4dbf9547221}
+      \strng{authornamehash}{f847400acba99fabd195e4dbf9547221}
+      \strng{authorfullhash}{f847400acba99fabd195e4dbf9547221}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computers}
+      \field{number}{9}
+      \field{title}{Power-Up SRAM State as an Identifying Fingerprint and Source of True Random Numbers}
+      \field{volume}{58}
+      \field{year}{2009}
+      \field{pages}{1198\bibrangedash 1210}
+      \range{pages}{13}
+    \endentry
+    \entry{Baturone2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4be316d8bdb6bb266c4597dff5d665f9}{%
+           family={Baturone},
+           familyi={B\bibinitperiod},
+           given={Iluminada},
+           giveni={I\bibinitperiod}}}%
+        {{hash=962a04a9d4e070859211ef8ddfea6c94}{%
+           family={Prada-Delgado},
+           familyi={P\bibinithyphendelim D\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=eb20a3cf6658b88ca79abf9fd2f398f5}{%
+           family={Eiroa},
+           familyi={E\bibinitperiod},
+           given={Susana},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{dbc39d4c680f035700f07c11d06452ae}
+      \strng{fullhash}{dbc39d4c680f035700f07c11d06452ae}
+      \strng{bibnamehash}{dbc39d4c680f035700f07c11d06452ae}
+      \strng{authorbibnamehash}{dbc39d4c680f035700f07c11d06452ae}
+      \strng{authornamehash}{dbc39d4c680f035700f07c11d06452ae}
+      \strng{authorfullhash}{dbc39d4c680f035700f07c11d06452ae}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{15566013}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{number}{12}
+      \field{title}{{Improved Generation of Identifiers, Secret Keys, and Random Numbers From SRAMs}}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{2653\bibrangedash 2668}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TIFS.2015.2471279
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Baturone, Prada-Delgado, Eiroa - 2015 - Improved Generation of Identifiers, Secret Keys, and Random Numbers From SRAMs.pdf:pdf
+      \endverb
+      \keyw{PUFs,SRAMs,hardware security,random numbers}
+    \endentry
+    \entry{Rukhin2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=74273ef79fa2c26ef0bbc7503c60d498}{%
+           family={Rukhin},
+           familyi={R\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=90028662b3ed507a8c93ed6762876b17}{%
+           family={Soto},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f485193e10b291d407792aa78c059e06}{%
+           family={Nechvatal},
+           familyi={N\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \strng{fullhash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \strng{bibnamehash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \strng{authorbibnamehash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \strng{authornamehash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \strng{authorfullhash}{467d4434bd9c3f0e0ee8e9472538cc3e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nist Special Publication}
+      \field{number}{April}
+      \field{title}{{A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications}}
+      \field{volume}{22}
+      \field{year}{2010}
+      \field{pages}{1/1\bibrangedash G/1}
+      \range{pages}{-1}
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/906762.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://csrc.nist.gov/groups/ST/toolkit/rng/documents/SP800-22rev1a.pdf
+      \endverb
+      \verb{url}
+      \verb http://csrc.nist.gov/groups/ST/toolkit/rng/documents/SP800-22rev1a.pdf
+      \endverb
+      \keyw{Bibliografía anotada,Lista Filtrada}
+    \endentry
+    \entry{Tuylsoptic}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0cc78c68f1366a51227ea19cc67076d9}{%
+           family={Skoric},
+           familyi={S\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebdff1a979212ae5b986e695004423af}
+      \strng{fullhash}{ebdff1a979212ae5b986e695004423af}
+      \strng{bibnamehash}{ebdff1a979212ae5b986e695004423af}
+      \strng{authorbibnamehash}{ebdff1a979212ae5b986e695004423af}
+      \strng{authornamehash}{ebdff1a979212ae5b986e695004423af}
+      \strng{authorfullhash}{ebdff1a979212ae5b986e695004423af}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Physical Unclonable Functions for enhanced security of tokens and tags}
+      \field{year}{2006}
+      \field{pages}{30\bibrangedash 37}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-8348-9195-2_4
+      \endverb
+    \endentry
+    \entry{Rhrmair2013OpticalPR}{article}{}
+      \name{author}{7}{}{%
+        {{hash=830bbffca7d4949c63ffb9a75c305b81}{%
+           family={Rührmair},
+           familyi={R\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+        {{hash=3a4d4cda84cba688950e2d0e2d79b314}{%
+           family={Hilgers},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=172f07c4f8cdbfd0276944f9d6c0d80a}{%
+           family={Urban},
+           familyi={U\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=be9d91120209786a9349b2e7314294a4}{%
+           family={Weiershäuser},
+           familyi={W\bibinitperiod},
+           given={Agnes},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1975bc374c2d46448b39b53131d5a258}{%
+           family={Dinter},
+           familyi={D\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod}}}%
+        {{hash=81cb5af6c63c141eb040bc13522e9ad5}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={Brigitte},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e6b25ac43ee7f2b1448f8f8e0494f8dc}{%
+           family={Jirauschek},
+           familyi={J\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{655342a2dee1b784bf64b02d4ec387b9}
+      \strng{fullhash}{c731efb414f26622eddb3b297ad3139d}
+      \strng{bibnamehash}{655342a2dee1b784bf64b02d4ec387b9}
+      \strng{authorbibnamehash}{655342a2dee1b784bf64b02d4ec387b9}
+      \strng{authornamehash}{655342a2dee1b784bf64b02d4ec387b9}
+      \strng{authorfullhash}{c731efb414f26622eddb3b297ad3139d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eprint. Iacr. Org}
+      \field{title}{Optical pufs reloaded}
+      \field{year}{2013}
+    \endentry
+    \entry{paperpuf}{article}{}
+      \name{author}{10}{}{%
+        {{hash=2ab88849575b79796fbdf1af0b54951b}{%
+           family={Buchanan},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a7fa557ae9c5cd2450678e94e824c871}{%
+           family={Cowburn},
+           familyi={C\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+        {{hash=943735aad9c005cd97ba9b351364779e}{%
+           family={Jausovec},
+           familyi={J\bibinitperiod},
+           given={Ana-Vanessa},
+           giveni={A\bibinithyphendelim V\bibinitperiod}}}%
+        {{hash=ecc6e56eb5f995048c0996d9de7812e8}{%
+           family={Petit},
+           familyi={P\bibinitperiod},
+           given={Dorothee},
+           giveni={D\bibinitperiod}}}%
+        {{hash=65b17c336ed4d2e0c0518c8f88e44b68}{%
+           family={Seem},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a9911a26db1d9920ffe275904c37177f}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1e147c7941f2d984d3faf9019f9a26f3}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={Del},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ca40177836e04d7ee395462e794b7108}{%
+           family={Fenton},
+           familyi={F\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9e531f7af78a54d37b9e494704505807}{%
+           family={Allwood},
+           familyi={A\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1502c7678db95e617bee7fd40ffed73e}{%
+           family={Bryan},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8969be208bd021cc0ad37a2dfd798c6}
+      \strng{fullhash}{e8bdbdabdf2166281d073b78ad7ac066}
+      \strng{bibnamehash}{e8969be208bd021cc0ad37a2dfd798c6}
+      \strng{authorbibnamehash}{e8969be208bd021cc0ad37a2dfd798c6}
+      \strng{authornamehash}{e8969be208bd021cc0ad37a2dfd798c6}
+      \strng{authorfullhash}{e8bdbdabdf2166281d073b78ad7ac066}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{08}
+      \field{title}{Forgery: ‘Fingerprinting’ documents and packaging}
+      \field{volume}{436}
+      \field{year}{2005}
+      \field{pages}{475}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/436475a
+      \endverb
+    \endentry
+    \entry{Hammouri2009CDsHF}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=fe5147bddd2af15a24e05ab12438a300}{%
+           family={Hammouri},
+           familyi={H\bibinitperiod},
+           given={Ghaith},
+           giveni={G\bibinitperiod}}}%
+        {{hash=055df339a905325a0effdd96aa5012eb}{%
+           family={Dana},
+           familyi={D\bibinitperiod},
+           given={Aykutlu},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ac64174c29f8c8e1f649573ddad4665c}{%
+           family={Sunar},
+           familyi={S\bibinitperiod},
+           given={Berk},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8671f843f279a3c4457cf15ad7031363}
+      \strng{fullhash}{8671f843f279a3c4457cf15ad7031363}
+      \strng{bibnamehash}{8671f843f279a3c4457cf15ad7031363}
+      \strng{authorbibnamehash}{8671f843f279a3c4457cf15ad7031363}
+      \strng{authornamehash}{8671f843f279a3c4457cf15ad7031363}
+      \strng{authorfullhash}{8671f843f279a3c4457cf15ad7031363}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Workshop on Cryptographic Hardware and Embedded Systems}
+      \field{title}{CDs have fingerprints too}
+      \field{year}{2009}
+      \field{pages}{348\bibrangedash 362}
+      \range{pages}{15}
+    \endentry
+    \entry{mastersthesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ac742efa7fda3c312dc3d65f6c0381aa}{%
+           family={Vrijaldenhoven},
+           familyi={V\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Technische Universiteit Eindhoven}%
+      }
+      \list{location}{1}{%
+        {the Netherlands}%
+      }
+      \strng{namehash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \strng{fullhash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \strng{bibnamehash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \strng{authorbibnamehash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \strng{authornamehash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \strng{authorfullhash}{ac742efa7fda3c312dc3d65f6c0381aa}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Acoustical Physical Uncloneable Functions}
+      \field{type}{mathesis}
+      \field{year}{2005}
+    \endentry
+    \entry{Arbiter}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=0fb1d7af45713b42302b3e5375ce80cf}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2dadbb02cd7eea2b568e24b34896d97c}{%
+           family={{Daihyun Lim}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=301fd92a4509f00cf8ef7304925ab65a}{%
+           family={{Gassend}},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=37c6f56f6245870d57eb5828e620dc8d}{%
+           family={{Suh}},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7644f1afb5d893581506d8d0f850898e}{%
+           family={{van Dijk}},
+           familyi={v\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=35eed62148949912586d6a71487caaaa}{%
+           family={{Devadas}},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2072fd6f73cfef6bfc0852abad530ba}
+      \strng{fullhash}{dd0dbf8bc1d752dbd821bd3cb2d7e33f}
+      \strng{bibnamehash}{e2072fd6f73cfef6bfc0852abad530ba}
+      \strng{authorbibnamehash}{e2072fd6f73cfef6bfc0852abad530ba}
+      \strng{authornamehash}{e2072fd6f73cfef6bfc0852abad530ba}
+      \strng{authorfullhash}{dd0dbf8bc1d752dbd821bd3cb2d7e33f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2004 Symposium on VLSI Circuits. Digest of Technical Papers (IEEE Cat. No.04CH37525)}
+      \field{title}{A technique to build a secret key in integrated circuits for identification and authentication applications}
+      \field{year}{2004}
+      \field{pages}{176\bibrangedash 179}
+      \range{pages}{4}
+    \endentry
+    \entry{Arbitermaster}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=1a3c70ab044e38d04833a717e1e1f515}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MIT}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \strng{namehash}{1a3c70ab044e38d04833a717e1e1f515}
+      \strng{fullhash}{1a3c70ab044e38d04833a717e1e1f515}
+      \strng{bibnamehash}{1a3c70ab044e38d04833a717e1e1f515}
+      \strng{authorbibnamehash}{1a3c70ab044e38d04833a717e1e1f515}
+      \strng{authornamehash}{1a3c70ab044e38d04833a717e1e1f515}
+      \strng{authorfullhash}{1a3c70ab044e38d04833a717e1e1f515}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Extracting Secret Keys from Integrated Circuits}
+      \field{type}{mathesis}
+      \field{year}{2004}
+    \endentry
+    \entry{oscillatorog}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=951163f52cca4ef8d27621904655eec6}{%
+           family={Gassend},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod}}}%
+        {{hash=cd82d13b77fe1f9eacf18f646caded46}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Dwaine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ce992bf13808cb6c4f1dea3668b1ad1c}{%
+           family={Dijk},
+           familyi={D\bibinitperiod},
+           given={Marten},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=4be4060700fa73556250f6feefb96f46}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{fullhash}{a3b6c3292736b77bed05d8323a8d962b}
+      \strng{bibnamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authorbibnamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authornamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authorfullhash}{a3b6c3292736b77bed05d8323a8d962b}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 9th ACM Conference on Computer and Communications Security}
+      \field{isbn}{1581136129}
+      \field{series}{CCS ’02}
+      \field{title}{Silicon Physical Random Functions}
+      \field{year}{2002}
+      \field{pages}{148\bibrangedash 160}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/586110.586132
+      \endverb
+      \keyw{identification,physical security,physical random function,tamper resistance,smartcard,unclonability}
+    \endentry
+    \entry{Guajarado_og}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=93733e6d0ebe0d8c5d9102758d63197b}{%
+           family={Guajardo},
+           familyi={G\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3baf8bc12c9b7f6a55e970f52f84def1}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sandeep\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e6bd5563ae48244624012f1eae780b96}{%
+           family={Schrijen},
+           familyi={S\bibinitperiod},
+           given={Geert-Jan},
+           giveni={G\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{806b76cb6026cf052ffa11646760ee20}
+      \strng{fullhash}{fd853f935b0d124900e556b0a8ace81f}
+      \strng{bibnamehash}{806b76cb6026cf052ffa11646760ee20}
+      \strng{authorbibnamehash}{806b76cb6026cf052ffa11646760ee20}
+      \strng{authornamehash}{806b76cb6026cf052ffa11646760ee20}
+      \strng{authorfullhash}{fd853f935b0d124900e556b0a8ace81f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International workshop on cryptographic hardware and embedded systems}
+      \field{title}{FPGA intrinsic PUFs and their use for IP protection}
+      \field{year}{2007}
+      \field{pages}{63\bibrangedash 80}
+      \range{pages}{18}
+    \endentry
+    \entry{Holcomb2007InitialSS}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=6da89644fcd1f6cf150e450e10324e5d}{%
+           family={Holcomb},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima E},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ecaa078eaa8de55cb3e816b59999f479}{%
+           family={Burleson},
+           familyi={B\bibinitperiod},
+           given={Wayne\bibnamedelima P},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=4a4babe9e422a0226539da4d3a45686e}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \strng{fullhash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \strng{bibnamehash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \strng{authorbibnamehash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \strng{authornamehash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \strng{authorfullhash}{3a7bf5a1535cf44eee37fce9de9f3acb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Conference on RFID Security}
+      \field{number}{2}
+      \field{title}{Initial SRAM state as a fingerprint and source of true random numbers for RFID tags}
+      \field{volume}{7}
+      \field{year}{2007}
+      \field{pages}{01}
+      \range{pages}{1}
+    \endentry
+    \entry{Xiao2014}{article}{}
+      \name{author}{6}{}{%
+        {{hash=89d574716fba9a6d4340cdd90467b8bb}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Kan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3db324e72eb668e1dab97ccc480dafc5}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Md\bibnamedelima Tauhidur},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f12438dc0c97e9f04e2bf3a14df8093b}{%
+           family={Forte},
+           familyi={F\bibinitperiod},
+           given={Domenic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dc6b5e453107942fba466f6dd9f9bf05}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=58f77381a2186737052417dd00e9ee0a}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Mei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=35495c5dfd9b7575158a7fe1d1e8e817}{%
+           family={Tehranipoor},
+           familyi={T\bibinitperiod},
+           given={Mohammad\bibnamedelima Mark},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4c378e5ab8dd48b944b2b57268e71ee5}
+      \strng{fullhash}{32ded8373a4f23b8db8615b2e8b8326c}
+      \strng{bibnamehash}{4c378e5ab8dd48b944b2b57268e71ee5}
+      \strng{authorbibnamehash}{4c378e5ab8dd48b944b2b57268e71ee5}
+      \strng{authornamehash}{4c378e5ab8dd48b944b2b57268e71ee5}
+      \strng{authorfullhash}{32ded8373a4f23b8db8615b2e8b8326c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Spatial bias selection algorithm. If the neighbour is stable, the cell is stable.}
+      \field{isbn}{9781479941148}
+      \field{journaltitle}{Proceedings of the 2014 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2014}
+      \field{title}{{Bit selection algorithm suitable for high-volume production of SRAM-PUF}}
+      \field{year}{2014}
+      \field{pages}{101\bibrangedash 106}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/HST.2014.6855578
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Xiao et al. - 2014 - Bit selection algorithm suitable for high-volume production of SRAM-PUF.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Zhang2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=1e623f79370754172ef56c2cf87e1cf5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e99a7b4542980d59259d88d19109181e}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Chunsheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a64df0db3d659a7cb92ab2266cdd6339}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f10b4c26648beb61682426b92465f24f}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Le},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3ded51c2dcd99a355961714a8b8f13e1}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d9eeebe09e965eba1ef360a7b8bec2dc}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b7ff0a2c4e8e29a70106475e2eeb2c2}
+      \strng{fullhash}{7820298715eba50b61c70ca03b40f80b}
+      \strng{bibnamehash}{6b7ff0a2c4e8e29a70106475e2eeb2c2}
+      \strng{authorbibnamehash}{6b7ff0a2c4e8e29a70106475e2eeb2c2}
+      \strng{authornamehash}{6b7ff0a2c4e8e29a70106475e2eeb2c2}
+      \strng{authorfullhash}{7820298715eba50b61c70ca03b40f80b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{20799292}
+      \field{journaltitle}{Electronics (Switzerland)}
+      \field{number}{9}
+      \field{title}{{A novel SRAM PUF stability improvement method using ionization irradiation}}
+      \field{volume}{9}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.3390/electronics9091498
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/electronics-09-01498-v2.pdf:pdf
+      \endverb
+      \keyw{Chip fingerprint,Intra-chip hamming distance (HD{\_}intra),Power-on values,SRAM PUF,Stability,Total ionization dose}
+    \endentry
+    \entry{Akhundov2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=52a669d0583dc4eea1a63e6fe62534b7}{%
+           family={Akhundov},
+           familyi={A\bibinitperiod},
+           given={Haji},
+           giveni={H\bibinitperiod}}}%
+        {{hash=03de6620f0961dcb1ac977ec9f2b75d6}{%
+           family={Sluis},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=e75dc3de803113eaa685795beefafb0f}{%
+           family={Hamdioui},
+           familyi={H\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0a1eac8711e36f63b2072d27464ab066}{%
+           family={Taouil},
+           familyi={T\bibinitperiod},
+           given={Mottaqiallah},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Aircc Publishing Corporation}%
+      }
+      \strng{namehash}{e11b90cee2c9bdccd3b53fb1f0c7d08c}
+      \strng{fullhash}{2665608b0c8622c1017e16c8b333b4ce}
+      \strng{bibnamehash}{e11b90cee2c9bdccd3b53fb1f0c7d08c}
+      \strng{authorbibnamehash}{e11b90cee2c9bdccd3b53fb1f0c7d08c}
+      \strng{authornamehash}{e11b90cee2c9bdccd3b53fb1f0c7d08c}
+      \strng{authorfullhash}{2665608b0c8622c1017e16c8b333b4ce}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{6th International Conference on Computer Science, Engineering and Information Technology (CSEIT-2019)}
+      \field{title}{Public-Key Based Authentication Architecture for IoT Devices Using PUF}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.5121/csit.2019.91328
+      \endverb
+    \endentry
+    \entry{Hofer2010}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3642150306}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{An alternative to error correction for SRAM-like PUFs}}
+      \field{volume}{6225 LNCS}
+      \field{year}{2010}
+      \field{pages}{335\bibrangedash 350}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-642-15031-9_23
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hofer, Boehm - 2010 - An alternative to error correction for SRAM-like PUFs.pdf:pdf
+      \endverb
+      \keyw{Physical Unclonable Functions,Pre-Selection,SRAM}
+    \endentry
+    \entry{Maiti2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=27427e6ac8aff1faabc4b4b8d88a8abd}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Abhranil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=53bc07b994845d99b95fa047374fb52e}{%
+           family={Gunreddy},
+           familyi={G\bibinitperiod},
+           given={Vikash},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2f66c4523408992f7e78ed07e0f89c12}{%
+           family={Schaumont},
+           familyi={S\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{98b2496843a11b2cec31212320013785}
+      \strng{fullhash}{98b2496843a11b2cec31212320013785}
+      \strng{bibnamehash}{98b2496843a11b2cec31212320013785}
+      \strng{authorbibnamehash}{98b2496843a11b2cec31212320013785}
+      \strng{authornamehash}{98b2496843a11b2cec31212320013785}
+      \strng{authorfullhash}{98b2496843a11b2cec31212320013785}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781461413622}
+      \field{journaltitle}{Embedded Systems Design with FPGAs}
+      \field{title}{{A systematic method to evaluate and compare the performance of physical unclonable functions}}
+      \field{volume}{9781461413}
+      \field{year}{2013}
+      \field{pages}{245\bibrangedash 267}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-1362-2_11
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/TFM/2011-657.pdf:pdf
+      \endverb
+      \keyw{arbiter,challenge,oscillator,parameter,performance,physical unclonable function,response,ring}
+    \endentry
+    \entry{Bhargava2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=10d82e27acfc00990115d3927aad5b34}{%
+           family={Bhargava},
+           familyi={B\bibinitperiod},
+           given={Mudit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=63248d793c644f8869255f24148c4989}{%
+           family={Cakir},
+           familyi={C\bibinitperiod},
+           given={Cagla},
+           giveni={C\bibinitperiod}}}%
+        {{hash=77cde460c9e135e43ae415a7832a24c3}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{70d5149c6af004b93dee085c596ec11d}
+      \strng{fullhash}{70d5149c6af004b93dee085c596ec11d}
+      \strng{bibnamehash}{70d5149c6af004b93dee085c596ec11d}
+      \strng{authorbibnamehash}{70d5149c6af004b93dee085c596ec11d}
+      \strng{authornamehash}{70d5149c6af004b93dee085c596ec11d}
+      \strng{authorfullhash}{70d5149c6af004b93dee085c596ec11d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781467323390}
+      \field{journaltitle}{Proceedings of the 2012 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2012}
+      \field{title}{{Reliability enhancement of bi-stable PUFs in 65nm bulk CMOS}}
+      \field{year}{2012}
+      \field{pages}{25\bibrangedash 30}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/HST.2012.6224314
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/06224314.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Eiroa2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=94fb79ae6f0b68b06969cbefcac13ee4}{%
+           family={Eiroa},
+           familyi={E\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4a738ef01b68f3e47cd9ff1e920d3e2a}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a379a4d1248a76094d926db70f8b40e9}{%
+           family={Martinez-Rodriguez},
+           familyi={M\bibinithyphendelim R\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1ac31725ad6457d7ccc397d20d3069c0}{%
+           family={Tena},
+           familyi={T\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4d2f9f677bf755544cb52a8abc249e44}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b03974533ec12878574d8935c2842432}{%
+           family={Baturone},
+           familyi={B\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{459ad66679ab371aa017a224cde83be0}
+      \strng{fullhash}{0b10027a370a8a77e9736a185754daad}
+      \strng{bibnamehash}{459ad66679ab371aa017a224cde83be0}
+      \strng{authorbibnamehash}{459ad66679ab371aa017a224cde83be0}
+      \strng{authornamehash}{459ad66679ab371aa017a224cde83be0}
+      \strng{authorfullhash}{0b10027a370a8a77e9736a185754daad}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781467312615}
+      \field{journaltitle}{2012 19th IEEE International Conference on Electronics, Circuits, and Systems, ICECS 2012}
+      \field{title}{{Reducing bit flipping problems in SRAM physical unclonable functions for chip identification}}
+      \field{year}{2012}
+      \field{pages}{392\bibrangedash 395}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICECS.2012.6463720
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Eiroa et al. - 2012 - Reducing bit flipping problems in SRAM physical unclonable functions for chip identification.pdf:pdf
+      \endverb
+      \keyw{IC identification,SRAM PUFs,hardware security}
+    \endentry
+    \entry{Bosch2008}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d2361c0c1b20947a41a38ae607bf69c5}{%
+           family={Bösch},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=93733e6d0ebe0d8c5d9102758d63197b}{%
+           family={Guajardo},
+           familyi={G\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e80e7d7ab0b5f6fa6fc315922c59747c}{%
+           family={Sadeghi},
+           familyi={S\bibinitperiod},
+           given={Ahmad\bibnamedelima Reza},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=247c9425ca251295ce06c66eb1c0f3de}{%
+           family={Shokrollahi},
+           familyi={S\bibinitperiod},
+           given={Jamshid},
+           giveni={J\bibinitperiod}}}%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3c60358ea5f7cc4fb57a904e2f2c9eb}
+      \strng{fullhash}{f1fba8c3c7f2e8a2ab73bad40535c072}
+      \strng{bibnamehash}{d3c60358ea5f7cc4fb57a904e2f2c9eb}
+      \strng{authorbibnamehash}{d3c60358ea5f7cc4fb57a904e2f2c9eb}
+      \strng{authornamehash}{d3c60358ea5f7cc4fb57a904e2f2c9eb}
+      \strng{authorfullhash}{f1fba8c3c7f2e8a2ab73bad40535c072}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{354085052X}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{Efficient helper data key extractor on FPGAs}}
+      \field{volume}{5154 LNCS}
+      \field{year}{2008}
+      \field{pages}{181\bibrangedash 197}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-540-85053-3_12
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/B{\"{o}}sch et al. - 2008 - Efficient helper data key extractor on FPGAs.pdf:pdf
+      \endverb
+      \keyw{FPGAs,Fuzzy Extractor,Helper Data Algorithm,Implementation,Intrinsic PUF,Physical Unclonable Functions}
+    \endentry
+    \entry{Liu2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c1c0ca81d253c08dd2daac7e2c9ed586}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Muqing},
+           giveni={M\bibinitperiod}}}%
+        {{hash=aaf38c8850d39acae20968b773171982}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d9ef9b43d1de5a20a87cc1d4178bd15a}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Qianying},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ba11345c6ff55f9edde7bf138c3e479d}{%
+           family={Parhi},
+           familyi={P\bibinitperiod},
+           given={Keshab\bibnamedelima K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6513def249b98110d92400650b89c42d}
+      \strng{fullhash}{95ef2347d09b1d1831d7ac4a3764732c}
+      \strng{bibnamehash}{6513def249b98110d92400650b89c42d}
+      \strng{authorbibnamehash}{6513def249b98110d92400650b89c42d}
+      \strng{authornamehash}{6513def249b98110d92400650b89c42d}
+      \strng{authorfullhash}{95ef2347d09b1d1831d7ac4a3764732c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781509060238}
+      \field{issn}{15334678}
+      \field{journaltitle}{Proceedings of the International Symposium on Low Power Electronics and Design}
+      \field{title}{{A data remanence based approach to generate 100{\%} stable keys from an SRAM physical unclonable function}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1109/ISLPED.2017.8009192
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08009192.pdf:pdf
+      \endverb
+      \keyw{Physical unclonable function,SRAM,data remanence,stable key generation}
+    \endentry
+    \entry{Dodis2004}{article}{}
+      \name{author}{4}{}{%
+        {{hash=21ac2ee1e3dbf5809549b834bf94ba2e}{%
+           family={Dodis},
+           familyi={D\bibinitperiod},
+           given={Yevgeniy},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a9721cf40a3150cd65a1b3d65d86fe94}{%
+           family={Ostrovsky},
+           familyi={O\bibinitperiod},
+           given={Rafail},
+           giveni={R\bibinitperiod}}}%
+        {{hash=33bfd322f3ef71fd734a29a0a051ac87}{%
+           family={Reyzin},
+           familyi={R\bibinitperiod},
+           given={Leonid},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5ccecf114bbd51a1a2979a23dd69c78c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d8fc1b641c4bfd3530aea94266079b4}
+      \strng{fullhash}{3516fed7f743858d844a574a4267c60a}
+      \strng{bibnamehash}{9d8fc1b641c4bfd3530aea94266079b4}
+      \strng{authorbibnamehash}{9d8fc1b641c4bfd3530aea94266079b4}
+      \strng{authornamehash}{9d8fc1b641c4bfd3530aea94266079b4}
+      \strng{authorfullhash}{3516fed7f743858d844a574a4267c60a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Fuzzy extractors: How to generate strong keys from biometrics and other noisy data. Technical Report 2003/235, Cryptology ePrint archive, http://eprint.iacr.org, 2006. Previous version appeared at EUROCRYPT 2004}}
+      \field{year}{2004}
+      \field{pages}{79\bibrangedash 100}
+      \range{pages}{22}
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/89.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.148.5971{\&}rank=10
+      \endverb
+      \verb{url}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.148.5971%7B%5C&%7Drank=10
+      \endverb
+      \keyw{68p25,68p30,68q99,94a17,94a60,94b35,94b99,a preliminary version of,ams subject classifications,biomet-,drs04,error-correcting codes,error-tolerance,eurocrypt 2004,fuzzy extractors,fuzzy fingerprints,metric embeddings,nonuniformity,password-based systems,randomness extractors,ric authentication,siam journal on computing,this version appears in,this work appeared in}
+    \endentry
+    \entry{Maes2009}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \strng{fullhash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \strng{bibnamehash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \strng{authorbibnamehash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \strng{authornamehash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \strng{authorfullhash}{48e843176c7c643f3d9fc36f03ab8e52}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lecture Notes in Computer Science}
+      \field{isbn}{364204137X}
+      \field{issn}{03029743}
+      \field{title}{{Low-overhead implementation of a soft decision helper data algorithm for SRAM PUFs}}
+      \field{volume}{5747 LNCS}
+      \field{year}{2009}
+      \field{pages}{332\bibrangedash 347}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04138-9_24
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/Maes2009{\_}Chapter{\_}Low-OverheadImplementationOfAS.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-642-04138-9{\_}24
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-642-04138-9%7B%5C_%7D24
+      \endverb
+      \keyw{FPGA implementation,Helper data algorithm,Physically unclonable functions,Soft-decision decoder,Toeplitz hash}
+    \endentry
+    \entry{Juels1999}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c865ec9228baea73d3d6c2c3faa7bcc7}{%
+           family={Juels},
+           familyi={J\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c66133f96104e3c0dcd2f73e11469ab0}{%
+           family={Wattenberg},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, New York, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{1c7b910b7d29009641e1f191bd257fe3}
+      \strng{fullhash}{1c7b910b7d29009641e1f191bd257fe3}
+      \strng{bibnamehash}{1c7b910b7d29009641e1f191bd257fe3}
+      \strng{authorbibnamehash}{1c7b910b7d29009641e1f191bd257fe3}
+      \strng{authornamehash}{1c7b910b7d29009641e1f191bd257fe3}
+      \strng{authorfullhash}{1c7b910b7d29009641e1f191bd257fe3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 6th ACM conference on Computer and communications security - CCS '99}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{1581131488}
+      \field{title}{{A fuzzy commitment scheme}}
+      \field{year}{1999}
+      \field{pages}{28\bibrangedash 36}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/319709.319714
+      \endverb
+      \verb{eprint}
+      \verb 0809.1318
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/fuzzy{\_}vault{\_}commitment (1).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/0809.1318 http://portal.acm.org/citation.cfm?doid=319709.319714
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/0809.1318%20http://portal.acm.org/citation.cfm?doid=319709.319714
+      \endverb
+    \endentry
+    \entry{VanDerLeest2012soft}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=0b9d4896fca22178c881b5236f351e05}{%
+           family={Preneel},
+           familyi={P\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f1ec068526854061a8ade0817c342c2d}{%
+           family={{Van Der Sluis}},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ea1e4d24172c06169687efd345ccb4d}
+      \strng{fullhash}{5ea1e4d24172c06169687efd345ccb4d}
+      \strng{bibnamehash}{5ea1e4d24172c06169687efd345ccb4d}
+      \strng{authorbibnamehash}{5ea1e4d24172c06169687efd345ccb4d}
+      \strng{authornamehash}{5ea1e4d24172c06169687efd345ccb4d}
+      \strng{authorfullhash}{5ea1e4d24172c06169687efd345ccb4d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783642330261}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{Soft decision error correction for compact memory-based PUFs using a single enrollment}}
+      \field{volume}{7428 LNCS}
+      \field{year}{2012}
+      \field{pages}{268\bibrangedash 282}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/978-3-642-33027-8_16
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/Leest2012{\_}Chapter{\_}SoftDecisionErrorCorrectionFor.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Kusters2017}{article}{}
+      \name{author}{6}{}{%
+        {{hash=80d22b44f06a2c423014c7076c353a23}{%
+           family={Kusters},
+           familyi={K\bibinitperiod},
+           given={Lieneke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9e81c992f3565d9a003709dbcea78c98}{%
+           family={Ignatenko},
+           familyi={I\bibinitperiod},
+           given={Tanya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=72eb731d0d305a07c229283d6442f3c3}{%
+           family={Willems},
+           familyi={W\bibinitperiod},
+           given={Frans\bibnamedelima M.J.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f1ec068526854061a8ade0817c342c2d}{%
+           family={{Van Der Sluis}},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ba36649593f0916717647ecdff40b54b}{%
+           family={Selimis},
+           familyi={S\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c42a79c19552daee2d2c9416407b893}
+      \strng{fullhash}{e749d22ced3f736aaf5dee65f48bc08d}
+      \strng{bibnamehash}{3c42a79c19552daee2d2c9416407b893}
+      \strng{authorbibnamehash}{3c42a79c19552daee2d2c9416407b893}
+      \strng{authornamehash}{3c42a79c19552daee2d2c9416407b893}
+      \strng{authorfullhash}{e749d22ced3f736aaf5dee65f48bc08d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781509040964}
+      \field{issn}{21578095}
+      \field{journaltitle}{IEEE International Symposium on Information Theory - Proceedings}
+      \field{title}{{Security of helper data schemes for SRAM-PUF in multiple enrollment scenarios}}
+      \field{year}{2017}
+      \field{pages}{1803\bibrangedash 1807}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ISIT.2017.8006840
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08006840.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Yu2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=21d1791a2489aa00afe04a317c714ae6}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6b0d020a55f155643af818b587b049e2}{%
+           family={M'Raihi},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=35eed62148949912586d6a71487caaaa}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4f66876bf370fe4a8b20c1e2cd7a9c8f}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0b75d832cfd0076de7ac95e0a420372}
+      \strng{fullhash}{5388be9ad453854c367f11db24943ca0}
+      \strng{bibnamehash}{c0b75d832cfd0076de7ac95e0a420372}
+      \strng{authorbibnamehash}{c0b75d832cfd0076de7ac95e0a420372}
+      \strng{authornamehash}{c0b75d832cfd0076de7ac95e0a420372}
+      \strng{authorfullhash}{5388be9ad453854c367f11db24943ca0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GOMACTech}
+      \field{title}{{Security and Reliability Properties of Syndrome Coding Techniques Used in PUF Key Generation}}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Yu, Devadas - 2013 - Security and Reliability Properties of Syndrome Coding Techniques Used in PUF Key Generation.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.cosic.esat.kuleuven.be/publications/article-2323.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.cosic.esat.kuleuven.be/publications/article-2323.pdf
+      \endverb
+      \keyw{generation,key,physical unclonable function,puf,security properties,syndrome coding}
+    \endentry
+    \entry{CastineiraMoreira2006}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e3adf0ee8f49d8e890dbcb7d4143b54e}{%
+           family={{Castiñeira Moreira}},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1639cdaf1f7221c995b5a7dca08ca527}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Patrick\bibnamedelima Guy},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester, UK}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley {\&} Sons, Ltd}%
+      }
+      \strng{namehash}{1047f7689ac44da453d357a0d6079afd}
+      \strng{fullhash}{1047f7689ac44da453d357a0d6079afd}
+      \strng{bibnamehash}{1047f7689ac44da453d357a0d6079afd}
+      \strng{authorbibnamehash}{1047f7689ac44da453d357a0d6079afd}
+      \strng{authornamehash}{1047f7689ac44da453d357a0d6079afd}
+      \strng{authorfullhash}{1047f7689ac44da453d357a0d6079afd}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Essentials of Error-Control Coding}
+      \field{isbn}{9780470035726}
+      \field{title}{{Essentials of Error-Control Coding}}
+      \field{year}{2006}
+      \field{pages}{1\bibrangedash 361}
+      \range{pages}{361}
+      \verb{doi}
+      \verb 10.1002/9780470035726
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Casti{\~{n}}eira Moreira, Farrell - 2006 - Essentials of Error-Control Coding(2).pdf:pdf
+      \endverb
+    \endentry
+    \entry{Taneja2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a0341fb047946dbfef1600ad32557c8a}{%
+           family={Taneja},
+           familyi={T\bibinitperiod},
+           given={Sachin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8bde25fdaa4aa3e955d9b0fab56400fa}{%
+           family={Alioto},
+           familyi={A\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{03a0bab3442d53cc17d383089116afe5}
+      \strng{fullhash}{03a0bab3442d53cc17d383089116afe5}
+      \strng{bibnamehash}{03a0bab3442d53cc17d383089116afe5}
+      \strng{authorbibnamehash}{03a0bab3442d53cc17d383089116afe5}
+      \strng{authornamehash}{03a0bab3442d53cc17d383089116afe5}
+      \strng{authorfullhash}{03a0bab3442d53cc17d383089116afe5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781728115504}
+      \field{journaltitle}{ESSCIRC 2019 - IEEE 45th European Solid State Circuits Conference}
+      \field{title}{{PUF-based Key Generation with Design Margin Reduction via In-Situ and PVT Sensor Fusion}}
+      \field{year}{2019}
+      \field{pages}{61\bibrangedash 64}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ESSCIRC.2019.8902733
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08902733.pdf:pdf
+      \endverb
+      \keyw{Hardware security,PUFs,design margin,instability reduction,low energy,sensor fusion}
+    \endentry
+    \entry{Johannesson2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1c310f248993699da60f44b3897e6936}{%
+           family={Johannesson},
+           familyi={J\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6e18ba23f7fd7214129177b22b8685c4}{%
+           family={Zigangirov},
+           familyi={Z\bibinitperiod},
+           given={Kamil\bibnamedelima Sh},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=1c310f248993699da60f44b3897e6936}{%
+           family={Johannesson},
+           familyi={J\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=efb52d2b2be0a26707e9f417d1aade1e}{%
+           family={{Sh. Zigangirov}},
+           familyi={S\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ, USA}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley {\&} Sons, Inc.}%
+      }
+      \strng{namehash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{fullhash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{bibnamehash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{authorbibnamehash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{authornamehash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{authorfullhash}{fec7f9cb1865a3d56ee3ee532bb8b836}
+      \strng{editorbibnamehash}{4330550f3d0278793ae08f1bee3bd33d}
+      \strng{editornamehash}{4330550f3d0278793ae08f1bee3bd33d}
+      \strng{editorfullhash}{4330550f3d0278793ae08f1bee3bd33d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Fundamentals of Convolutional Coding: Second Edition}
+      \field{isbn}{9781119098799}
+      \field{title}{{Fundamentals of Convolutional Coding}}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1002/9781119098799
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/9781119098799.ch1.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Rachinger2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=18c653e7601909d4619dd548027e88d1}{%
+           family={{Rachinger}},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0e3896debacbf66e3ff6a84fc1282b33}{%
+           family={{Huber}},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=e8504db7963261491470bf59f244d084}{%
+           family={{Müller}},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \strng{fullhash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \strng{bibnamehash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \strng{authorbibnamehash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \strng{authornamehash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \strng{authorfullhash}{fbb56e2749b50d1668d8f36e2e9f2c32}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Communications}
+      \field{number}{12}
+      \field{title}{Comparison of Convolutional and Block Codes for Low Structural Delay}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{4629\bibrangedash 4638}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TCOMM.2015.2488661
+      \endverb
+    \endentry
+    \entry{Bohm2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=769034bfef49037ec8331e37e31bf7a0}{%
+           family={Böhm},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0f172c46148db92b5ef2e7569f0e3ec2}{%
+           family={Hofer},
+           familyi={H\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=721f3c97c51f6d0491fe3935ac6c90ac}{%
+           family={Pribyl},
+           familyi={P\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a18692a3cb3581e3f14f22090278e11}
+      \strng{fullhash}{3a18692a3cb3581e3f14f22090278e11}
+      \strng{bibnamehash}{3a18692a3cb3581e3f14f22090278e11}
+      \strng{authorbibnamehash}{3a18692a3cb3581e3f14f22090278e11}
+      \strng{authornamehash}{3a18692a3cb3581e3f14f22090278e11}
+      \strng{authorfullhash}{3a18692a3cb3581e3f14f22090278e11}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781457704598}
+      \field{journaltitle}{Proceedings - 2011 5th International Conference on Network and System Security, NSS 2011}
+      \field{title}{{A microcontroller SRAM-PUF}}
+      \field{year}{2011}
+      \field{pages}{269\bibrangedash 273}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICNSS.2011.6060013
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/06060013.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Koeberl2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=530bb29129765a2b128fcc31aedf783c}{%
+           family={Koeberl},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f85e13b55075ecfcb977908c87e4bd0a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiangtao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=74e335bba306cc6d859e3f54e599b563}{%
+           family={Rajan},
+           familyi={R\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7bb2d83991df51fab82e334ba89d1132}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{585c5c156683be398048b70199fd41fb}
+      \strng{fullhash}{2935a9b817b56354ac801002d6272c82}
+      \strng{bibnamehash}{585c5c156683be398048b70199fd41fb}
+      \strng{authorbibnamehash}{585c5c156683be398048b70199fd41fb}
+      \strng{authornamehash}{585c5c156683be398048b70199fd41fb}
+      \strng{authorfullhash}{2935a9b817b56354ac801002d6272c82}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781479941148}
+      \field{journaltitle}{Proceedings of the 2014 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2014}
+      \field{title}{{Entropy loss in PUF-based key generation schemes: The repetition code pitfall}}
+      \field{year}{2014}
+      \field{pages}{44\bibrangedash 49}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/HST.2014.6855566
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/06855566.pdf:pdf
+      \endverb
+      \keyw{entropy loss analysis,fuzzy extractor,physically unclonable functions,secure key generation,system design}
+    \endentry
+    \entry{Hamming50}{article}{}
+      \name{author}{1}{}{%
+        {{hash=968cf20f5f546315b3e73b135d9fdc38}{%
+           family={{Hamming}},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{968cf20f5f546315b3e73b135d9fdc38}
+      \strng{fullhash}{968cf20f5f546315b3e73b135d9fdc38}
+      \strng{bibnamehash}{968cf20f5f546315b3e73b135d9fdc38}
+      \strng{authorbibnamehash}{968cf20f5f546315b3e73b135d9fdc38}
+      \strng{authornamehash}{968cf20f5f546315b3e73b135d9fdc38}
+      \strng{authorfullhash}{968cf20f5f546315b3e73b135d9fdc38}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell System Technical Journal}
+      \field{number}{2}
+      \field{title}{Error detecting and error correcting codes}
+      \field{volume}{29}
+      \field{year}{1950}
+      \field{pages}{147\bibrangedash 160}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/j.1538-7305.1950.tb00463.x
+      \endverb
+    \endentry
+    \entry{Hammingwiki}{misc}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{{File:Hamming(7,4).svg - Wikimedia Commons}}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Hamming(7,4).svg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Hamming(7,4).svg
+      \endverb
+    \endentry
+    \entry{Huffman2003}{book}{}
+      \name{author}{2}{}{%
+        {{hash=994a52d9077a993902101828febdb443}{%
+           family={Huffman},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi Cary},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1173b29d0c002d390bf593d0637427a9}{%
+           family={Pless},
+           familyi={P\bibinitperiod},
+           given={Vera},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \strng{fullhash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \strng{bibnamehash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \strng{authorbibnamehash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \strng{authornamehash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \strng{authorfullhash}{8ba26bb3f8f1504ba746c6ac7785d20c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Fundamentals of Error-Correcting Codes}
+      \field{isbn}{9780521782807}
+      \field{title}{{Fundamentals of Error-Correcting Codes}}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1017/cbo9780511807077
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Huffman, Pless - 2003 - Fundamentals of Error-Correcting Codes.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Abbe2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=70422ae8f330d29fea6dbf65652fd79c}{%
+           family={Abbe},
+           familyi={A\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6926c3d236eb16c0bda5cc1284784fac}{%
+           family={Shpilka},
+           familyi={S\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cde98454252ce53a9838df6015a87166}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \strng{fullhash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \strng{bibnamehash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \strng{authorbibnamehash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \strng{authornamehash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \strng{authorfullhash}{eb4df61c8feb05ceae1fecfe1c65d9cb}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv}
+      \field{title}{{Reed-Muller Codes: Theory and Algorithms}}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2002.03317
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Abbe, Shpilka, Ye - 2020 - Reed-Muller Codes Theory and Algorithms.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2002.03317
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2002.03317
+      \endverb
+    \endentry
+    \entry{Hiller2015}{article}{}
+      \name{author}{6}{}{%
+        {{hash=048897926083f82c0a0242a747db3f60}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52ff54aeb792c96bdcd0b0f11c659470}{%
+           family={Kürzinger},
+           familyi={K\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=341e80df2b2355ab85a47a67d5cb64d8}{%
+           family={Müelich},
+           familyi={M\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a0ca5a9607443d96ee2ef07b58edbde5}{%
+           family={Puchinger},
+           familyi={P\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7cf8d88656f5113ebef413c443dc070}{%
+           family={Bossert},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{fullhash}{6bc3b13c43c103829aac00fff2993625}
+      \strng{bibnamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authorbibnamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authornamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authorfullhash}{6bc3b13c43c103829aac00fff2993625}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781479987184}
+      \field{issn}{21593477}
+      \field{journaltitle}{Proceedings of IEEE Computer Society Annual Symposium on VLSI, ISVLSI}
+      \field{title}{{Low-area reed decoding in a generalized concatenated code construction for PUFs}}
+      \field{volume}{07-10-July-2015}
+      \field{year}{2015}
+      \field{pages}{143\bibrangedash 148}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ISVLSI.2015.31
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/07309553.pdf:pdf
+      \endverb
+      \keyw{Error Correction,FPGA,Generalized Concatenated Codes,Physical Unclonable Functions (PUFs),Reed Decoding,Reed-Muller Code,VLSI}
+    \endentry
+    \entry{Guruswami2010}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fb6e0e6ff36a30395ada0c82fe11cc98}{%
+           family={Guruswami},
+           familyi={G\bibinitperiod},
+           given={Venkatesan},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \strng{fullhash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \strng{bibnamehash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \strng{authorbibnamehash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \strng{authornamehash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \strng{authorfullhash}{fb6e0e6ff36a30395ada0c82fe11cc98}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{February}
+      \field{title}{{Course Notes, Introduction to Coding theory: Reed-Solomon, BCH, Reed-Muller, and concatenated codes Reed-Solomon codes}}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/PUF analysis/PUF analysis/Graphs/notes6.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cs.cmu.edu/~venkatg/teaching/codingtheory/notes/notes6.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cs.cmu.edu/~venkatg/teaching/codingtheory/notes/notes6.pdf
+      \endverb
+    \endentry
+    \entry{Maes2012pufky}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3f21c9ab73ab8a69a5b435c45e9ca4e2}{%
+           family={{Van Herrewege}},
+           familyi={V\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c30fdba61e2c328d16420a943200f93e}
+      \strng{fullhash}{c30fdba61e2c328d16420a943200f93e}
+      \strng{bibnamehash}{c30fdba61e2c328d16420a943200f93e}
+      \strng{authorbibnamehash}{c30fdba61e2c328d16420a943200f93e}
+      \strng{authornamehash}{c30fdba61e2c328d16420a943200f93e}
+      \strng{authorfullhash}{c30fdba61e2c328d16420a943200f93e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783642330261}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{PUFKY: A fully functional PUF-based cryptographic key generator}}
+      \field{volume}{7428 LNCS}
+      \field{year}{2012}
+      \field{pages}{302\bibrangedash 319}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-642-33027-8_18
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/article-2228.pdf:pdf
+      \endverb
+      \keyw{Cryptographic Key Generation,Fuzzy Extractors,Physically Unclonable Functions (PUFs)}
+    \endentry
+    \entry{Hiller2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=048897926083f82c0a0242a747db3f60}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=35218cf629fb1cc0eadefaee24184b0b}{%
+           family={Weiner},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=082bd841bb94b47f9b3cac2d3a755ad7}{%
+           family={{Rodrigues Lima}},
+           familyi={R\bibinitperiod},
+           given={Leandro},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dce42f8a97031671395ccab8e350cd10}{%
+           family={Birkner},
+           familyi={B\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{fullhash}{229df9a7920ef2267824a7d7b2cd739c}
+      \strng{bibnamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authorbibnamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authornamehash}{a4380d0d88e0ce5552387917d0a7e512}
+      \strng{authorfullhash}{229df9a7920ef2267824a7d7b2cd739c}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450324861}
+      \field{issn}{15437221}
+      \field{journaltitle}{Proceedings of the ACM Conference on Computer and Communications Security}
+      \field{title}{{Breaking through fixed PUF block limitations with differential sequence coding and convolutional codes}}
+      \field{year}{2013}
+      \field{pages}{43\bibrangedash 54}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/2517300.2517304
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/PUF analysis/PUF analysis/Graphs/2517300.2517304.pdf:pdf
+      \endverb
+      \keyw{convolutional code,differential sequence coding (dsc),error correction,fuzzy extractor,physical unclonable functions (pufs),syndrome coding,viterbi decoder}
+    \endentry
+    \entry{Hiller2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=048897926083f82c0a0242a747db3f60}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c8add6f289148804d2b89d3c31df1c4b}{%
+           family={Sigi},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDAA}%
+      }
+      \strng{namehash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \strng{fullhash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \strng{bibnamehash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \strng{authorbibnamehash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \strng{authornamehash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \strng{authorfullhash}{a9f1279f2cd06b19b413a5c6159250c5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783981537024}
+      \field{issn}{15301591}
+      \field{journaltitle}{Proceedings -Design, Automation and Test in Europe, DATE}
+      \field{title}{{Increasing the efficiency of syndrome coding for PUFs with helper data compression}}
+      \field{year}{2014}
+      \field{pages}{4\bibrangedash 9}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.7873/DATE2014.084
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/06800285.pdf:pdf
+      \endverb
+      \keyw{Data Compression,Differential Sequence Coding (DSC),FPGA,Fuzzy Extractor,Physical Unclonable Functions (PUFs),Run-Length Encoding (RLE),Syndrome Coding}
+    \endentry
+    \entry{Hiller2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=048897926083f82c0a0242a747db3f60}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8570a54571846f2bb9bcb34a426eacc0}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Meng\bibnamedelimb Day\bibnamedelima Mandel},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \strng{fullhash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \strng{bibnamehash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \strng{authorbibnamehash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \strng{authornamehash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \strng{authorfullhash}{5c0af5a1ab7cf4317f5b9936e2b8ad8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{15566013}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{number}{9}
+      \field{title}{{Cherry-Picking Reliable PUF Bits with Differential Sequence Coding}}
+      \field{volume}{11}
+      \field{year}{2016}
+      \field{pages}{2065\bibrangedash 2076}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TIFS.2016.2573766
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/07480444.pdf:pdf
+      \endverb
+      \keyw{FPGA,Physical unclonable function (Puf),convolutional code,differential sequence coding (Dsc),error correction,syndrome coding,typicality}
+    \endentry
+    \entry{Gassend2002}{article}{}
+      \name{author}{4}{}{%
+        {{hash=951163f52cca4ef8d27621904655eec6}{%
+           family={Gassend},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod}}}%
+        {{hash=cd82d13b77fe1f9eacf18f646caded46}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Dwaine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0962ea061ce9dda1145a03bfa34b30f6}{%
+           family={{Van Dijk}},
+           familyi={V\bibinitperiod},
+           given={Marten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4be4060700fa73556250f6feefb96f46}{%
+           family={Devadas},
+           familyi={D\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{fullhash}{f649fc0685cdd62f35d75e2c8a58bb04}
+      \strng{bibnamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authorbibnamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authornamehash}{752e7afdee902683698cee2d87a14d93}
+      \strng{authorfullhash}{f649fc0685cdd62f35d75e2c8a58bb04}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1581136129}
+      \field{issn}{15437221}
+      \field{journaltitle}{Proceedings of the ACM Conference on Computer and Communications Security}
+      \field{title}{{Silicon physical random functions}}
+      \field{year}{2002}
+      \field{pages}{148\bibrangedash 160}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/586131.586132
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/10.1.1.297.5196.pdf:pdf
+      \endverb
+      \keyw{Identification,Physical random function,Physical security,Smartcard,Tamper resistance,Unclonability}
+    \endentry
+    \entry{Bhargava2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=10d82e27acfc00990115d3927aad5b34}{%
+           family={Bhargava},
+           familyi={B\bibinitperiod},
+           given={Mudit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=77cde460c9e135e43ae415a7832a24c3}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDAA}%
+      }
+      \strng{namehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{fullhash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{bibnamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authorbibnamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authornamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authorfullhash}{cc6a7eede40df5300f385643c06ead7e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783981537024}
+      \field{issn}{15301591}
+      \field{journaltitle}{Proceedings -Design, Automation and Test in Europe, DATE}
+      \field{title}{{An efficient reliable PUF-based cryptographic key generator in 65nm CMOS}}
+      \field{volume}{1}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.7873/DATE2014.083
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/06800284.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Maes2012}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c46fafd91bd0f6ef87000684ea12c301}{%
+           family={Rožić},
+           familyi={R\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
+           family={Verbauwhede},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+        {{hash=530bb29129765a2b128fcc31aedf783c}{%
+           family={Koeberl},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f1ec068526854061a8ade0817c342c2d}{%
+           family={{Van Der Sluis}},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b6f2e4cd0a43ed26791917a6286fc62}
+      \strng{fullhash}{d7ed59f3e158ad1d0bc3c9a649c2c42d}
+      \strng{bibnamehash}{3b6f2e4cd0a43ed26791917a6286fc62}
+      \strng{authorbibnamehash}{3b6f2e4cd0a43ed26791917a6286fc62}
+      \strng{authornamehash}{3b6f2e4cd0a43ed26791917a6286fc62}
+      \strng{authorfullhash}{d7ed59f3e158ad1d0bc3c9a649c2c42d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European Solid-State Circuits Conference}
+      \field{isbn}{9781467322126}
+      \field{issn}{19308833}
+      \field{title}{{Experimental evaluation of Physically Unclonable Functions in 65 nm CMOS}}
+      \field{year}{2012}
+      \field{pages}{486\bibrangedash 489}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ESSCIRC.2012.6341361
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/06341361.pdf:pdf
+      \endverb
+    \endentry
+    \entry{VanDerLeest2012}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f1ec068526854061a8ade0817c342c2d}{%
+           family={{Van Der Sluis}},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
+           family={Schrijen},
+           familyi={S\bibinitperiod},
+           given={Geert\bibnamedelima Jan},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
+           family={Tuyls},
+           familyi={T\bibinitperiod},
+           given={Pim},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7da25e384d92b0fa0f537b06c34754fb}{%
+           family={Handschuh},
+           familyi={H\bibinitperiod},
+           given={Helena},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
+      \strng{fullhash}{f05c24537daf14719072f5505ba9428c}
+      \strng{bibnamehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
+      \strng{authorbibnamehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
+      \strng{authornamehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
+      \strng{authorfullhash}{f05c24537daf14719072f5505ba9428c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783642283673}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{Efficient implementation of true random number generator based on SRAM PUFs}}
+      \field{volume}{6805 LNCS}
+      \field{year}{2012}
+      \field{pages}{300\bibrangedash 318}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/978-3-642-28368-0_20
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/True-Random-Number.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Singh2013}{book}{}
+      \name{author}{3}{}{%
+        {{hash=b37478de90d1e91def4117897ffae462}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Jawar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89b1e64be4711f7e7816f953e2c5d1b1}{%
+           family={Mohanty},
+           familyi={M\bibinitperiod},
+           given={Saraju},
+           giveni={S\bibinitperiod}}}%
+        {{hash=10ceaff1e26c15b2203f9eb07a4dd426}{%
+           family={Pradhan},
+           familyi={P\bibinitperiod},
+           given={Dhiraj},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \strng{fullhash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \strng{bibnamehash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \strng{authorbibnamehash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \strng{authornamehash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \strng{authorfullhash}{cac90f29e74c5ca1e2c3c7c60521d658}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4614-0817-8}
+      \field{month}{01}
+      \field{title}{Robust SRAM Designs and Analysis}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-0818-5
+      \endverb
+    \endentry
+    \entry{Wang2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=44e07e71c62b95cf0b090e1478ca6f2d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wendong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=821cc295a6f3b99206e362b7ebe94f6a}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Adit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=becb1e678d62c7630e80cd4945175051}{%
+           family={Guin},
+           familyi={G\bibinitperiod},
+           given={Ujjwal},
+           giveni={U\bibinitperiod}}}%
+        {{hash=838b2624682488b0cabe8e1de9313699}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Abhijit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{abf8e3865295feada5025f4036d78e76}
+      \strng{fullhash}{0a3a5a0a1f5499637003d772f2abb99e}
+      \strng{bibnamehash}{abf8e3865295feada5025f4036d78e76}
+      \strng{authorbibnamehash}{abf8e3865295feada5025f4036d78e76}
+      \strng{authornamehash}{abf8e3865295feada5025f4036d78e76}
+      \strng{authorfullhash}{0a3a5a0a1f5499637003d772f2abb99e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781538614723}
+      \field{journaltitle}{2018 IEEE 19th Latin-American Test Symposium, LATS 2018}
+      \field{title}{{Exploiting power supply ramp rate for calibrating cell strength in SRAM PUFs}}
+      \field{volume}{2018-January}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/LATW.2018.8349685
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/LATS-2018.pdf:pdf
+      \endverb
+      \keyw{Ramp rate,SRAM PUF,Stability}
+    \endentry
+    \entry{Schrijen2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
+           family={Schrijen},
+           familyi={S\bibinitperiod},
+           given={Geert\bibnamedelima Jan},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a391bc627a56f7a44e9176402e3ba55}
+      \strng{fullhash}{8a391bc627a56f7a44e9176402e3ba55}
+      \strng{bibnamehash}{8a391bc627a56f7a44e9176402e3ba55}
+      \strng{authorbibnamehash}{8a391bc627a56f7a44e9176402e3ba55}
+      \strng{authornamehash}{8a391bc627a56f7a44e9176402e3ba55}
+      \strng{authorfullhash}{8a391bc627a56f7a44e9176402e3ba55}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Multiple SRAM's performances compared. IntraHD and HW. Measured uniqueness by doing a gaussian fit to the InterHD values.}
+      \field{isbn}{9783981080186}
+      \field{issn}{15301591}
+      \field{journaltitle}{Proceedings -Design, Automation and Test in Europe, DATE}
+      \field{title}{{Comparative analysis of SRAM memories used as PUF primitives}}
+      \field{year}{2012}
+      \field{pages}{1319\bibrangedash 1324}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/date.2012.6176696
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Schrijen, Van Der Leest - 2012 - Comparative analysis of SRAM memories used as PUF primitives.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Claes2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=91816c788a42456a4178d594a91af1a8}{%
+           family={Claes},
+           familyi={C\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=de4527db656b9700965f97c2c0aebe3a}{%
+           family={Braeken},
+           familyi={B\bibinitperiod},
+           given={An},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \strng{fullhash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \strng{bibnamehash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \strng{authorbibnamehash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \strng{authornamehash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \strng{authorfullhash}{6ae873d09e1c9103c805ae81ef707ce8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Standard Vdd and T variations in different chips with standard metrics}
+      \field{isbn}{9783642296147}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{Comparison of SRAM and FF PUF in 65nm technology}}
+      \field{volume}{7161 LNCS}
+      \field{year}{2012}
+      \field{pages}{47\bibrangedash 64}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-642-29615-4_5
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Claes, Van Der Leest, Braeken - 2012 - Comparison of SRAM and FF PUF in 65nm technology.pdf:pdf
+      \endverb
+      \keyw{D flip-flop,Hardware Security,Physical Unclonable Function,SRAM}
+    \endentry
+    \entry{Cortez2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=350fafc1bd235313cc92d351a3f347e1}{%
+           family={Cortez},
+           familyi={C\bibinitperiod},
+           given={Mafalda},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e75dc3de803113eaa685795beefafb0f}{%
+           family={Hamdioui},
+           familyi={H\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
+           family={{Van Der Leest}},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e5155d0251d24b8107b8bf3664368038}{%
+           family={Maes},
+           familyi={M\bibinitperiod},
+           given={Roel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
+           family={Schrijen},
+           familyi={S\bibinitperiod},
+           given={Geert\bibnamedelima Jan},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{28508b5a1bc8779a16b711785e0e3aaa}
+      \strng{fullhash}{bf1bac8823ad3fddf209cadabff72c19}
+      \strng{bibnamehash}{28508b5a1bc8779a16b711785e0e3aaa}
+      \strng{authorbibnamehash}{28508b5a1bc8779a16b711785e0e3aaa}
+      \strng{authornamehash}{28508b5a1bc8779a16b711785e0e3aaa}
+      \strng{authorfullhash}{bf1bac8823ad3fddf209cadabff72c19}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781479906000}
+      \field{journaltitle}{Proceedings of the 2013 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2013}
+      \field{title}{{Adapting voltage ramp-up time for temperature noise reduction on memory-based PUFs}}
+      \field{year}{2013}
+      \field{pages}{35\bibrangedash 40}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/HST.2013.6581562
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Documents/1345{\_}adapting{\_}voltage{\_}rampup{\_}time{\_}for{\_}temperature{\_}noise{\_}reducti.pdf:pdf
+      \endverb
+    \endentry
+    \entry{operating_temperature}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Operating temperature - Wikipedia}}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Operating_temperature
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Operating_temperature
+      \endverb
+    \endentry
+    \entry{Kraak2018}{article}{}
+      \name{author}{9}{}{%
+        {{hash=f009d8e43bdac28f135f925596cc3e68}{%
+           family={Kraak},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0a1eac8711e36f63b2072d27464ab066}{%
+           family={Taouil},
+           familyi={T\bibinitperiod},
+           given={Mottaqiallah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e75dc3de803113eaa685795beefafb0f}{%
+           family={Hamdioui},
+           familyi={H\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=236a852b8954155c91eb051c1abe0e25}{%
+           family={Weckx},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+        {{hash=838b2624682488b0cabe8e1de9313699}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Abhijit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=821cc295a6f3b99206e362b7ebe94f6a}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Adit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0610ce6a46c9da692ee65304961f4437}{%
+           family={Wunderlich},
+           familyi={W\bibinitperiod},
+           given={Hans\bibnamedelima Joachim},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3909302a82757990f035116197febfc2}{%
+           family={Karimi},
+           familyi={K\bibinitperiod},
+           given={Naghmeh},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{78a4813cc86a8db1ad8186a58671604d}
+      \strng{fullhash}{29060542dc1e615cc9efc33a41f5c3b6}
+      \strng{bibnamehash}{78a4813cc86a8db1ad8186a58671604d}
+      \strng{authorbibnamehash}{78a4813cc86a8db1ad8186a58671604d}
+      \strng{authornamehash}{78a4813cc86a8db1ad8186a58671604d}
+      \strng{authorfullhash}{29060542dc1e615cc9efc33a41f5c3b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781538637289}
+      \field{issn}{15581780}
+      \field{journaltitle}{Proceedings of the European Test Workshop}
+      \field{title}{{Device aging: A reliability and security concern}}
+      \field{volume}{2018-May}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ETS.2018.8400702
+      \endverb
+    \endentry
+    \entry{Schlunder2012}{article}{}
+      \name{author}{7}{}{%
+        {{hash=2e7236ad69a63abc4817897c7d4fc4db}{%
+           family={Schlünder},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=84dbf7b58bce7c919beccae406ba44ba}{%
+           family={Aresu},
+           familyi={A\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b98263317da9d17aacefebc48045362c}{%
+           family={Georgakos},
+           familyi={G\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a34643488e4a30a76f73221eee1e4596}{%
+           family={Kanert},
+           familyi={K\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1c112e6042c58496e52375dfca12a94c}{%
+           family={Reisinger},
+           familyi={R\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2e95eedb7bb79d38ea14919ea9ffa063}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=597e6b9af7ea1c6adc4e704738d52ae1}{%
+           family={Gustin},
+           familyi={G\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
+      \strng{fullhash}{bb76c329da3d5420e97b95419f5fb18d}
+      \strng{bibnamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
+      \strng{authorbibnamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
+      \strng{authornamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
+      \strng{authorfullhash}{bb76c329da3d5420e97b95419f5fb18d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781457716799}
+      \field{issn}{15417026}
+      \field{journaltitle}{IEEE International Reliability Physics Symposium Proceedings}
+      \field{title}{{HCI vs. BTI? - Neither one's out}}
+      \field{year}{2012}
+      \field{pages}{2\bibrangedash 7}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IRPS.2012.6241797
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Schl{\"{u}}nder et al. - 2012 - HCI vs. BTI - Neither one's out.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Stathis2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d7c8970ce3f9cd691aa7d777dfda6653}{%
+           family={Stathis},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e621fedcb3772c885564183c3ec3dbbc}{%
+           family={Mahapatra},
+           familyi={M\bibinitperiod},
+           given={Souvik},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0853f6a1e046077355103ffb9123653f}{%
+           family={Grasser},
+           familyi={G\bibinitperiod},
+           given={Tibor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \strng{fullhash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \strng{bibnamehash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \strng{authorbibnamehash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \strng{authornamehash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \strng{authorfullhash}{f4616aa117fafcbae53c9c9bde26b9d3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00262714}
+      \field{journaltitle}{Microelectronics Reliability}
+      \field{number}{November 2017}
+      \field{title}{{Controversial issues in negative bias temperature instability}}
+      \field{volume}{81}
+      \field{year}{2018}
+      \field{pages}{244\bibrangedash 251}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.microrel.2017.12.035
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/JB2018{\_}Grasser{\_}1.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Schroder2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=145427f88e52d43d151fdef04df46114}{%
+           family={Schroder},
+           familyi={S\bibinitperiod},
+           given={Dieter\bibnamedelima K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8a9ec9761f2ea945911305d2ff601259}{%
+           family={Babcock},
+           familyi={B\bibinitperiod},
+           given={Jeff\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{180332aa167e9a79e4134739abb9d197}
+      \strng{fullhash}{180332aa167e9a79e4134739abb9d197}
+      \strng{bibnamehash}{180332aa167e9a79e4134739abb9d197}
+      \strng{authorbibnamehash}{180332aa167e9a79e4134739abb9d197}
+      \strng{authornamehash}{180332aa167e9a79e4134739abb9d197}
+      \strng{authorfullhash}{180332aa167e9a79e4134739abb9d197}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00218979}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{number}{1}
+      \field{title}{{Negative bias temperature instability: Road to cross in deep submicron silicon semiconductor manufacturing}}
+      \field{volume}{94}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1063/1.1567461
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Downloads/99b255aaa3226becb2180a41aef83c8d477d.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Kaczer2010}{article}{}
+      \name{author}{9}{}{%
+        {{hash=0762e97f6e11586e304dc9b225713e5a}{%
+           family={Kaczer},
+           familyi={K\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=02999c0b7ab86114411e3efbd40a780f}{%
+           family={Grasser},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ca441262f217527ec6989bfd3c31e670}{%
+           family={Roussel},
+           familyi={R\bibinitperiod},
+           given={Ph\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=68716fc3e443924d4a292487684aa1bf}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=034fd2b642adc2bfc096fb5c2490be55}{%
+           family={Degraeve},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=17373e3b38153732c8e8ea05f609ba61}{%
+           family={Ragnarsson},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=66db269d10ada487fe505ba1da634d67}{%
+           family={Simoen},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=52fcc6d5395e334098e42bf5b86720da}{%
+           family={Groeseneken},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8cc3487058af5a755135f224274a5717}{%
+           family={Reisinger},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3036ab3836a693186dcaaa24d619cf9b}
+      \strng{fullhash}{93a8e7c991a29a0c6507eb03d277b618}
+      \strng{bibnamehash}{3036ab3836a693186dcaaa24d619cf9b}
+      \strng{authorbibnamehash}{3036ab3836a693186dcaaa24d619cf9b}
+      \strng{authornamehash}{3036ab3836a693186dcaaa24d619cf9b}
+      \strng{authorfullhash}{93a8e7c991a29a0c6507eb03d277b618}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781424454310}
+      \field{issn}{15417026}
+      \field{journaltitle}{IEEE International Reliability Physics Symposium Proceedings}
+      \field{number}{June}
+      \field{title}{{Origin of NBTI variability in deeply scaled pFETs}}
+      \field{year}{2010}
+      \field{pages}{26\bibrangedash 32}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IRPS.2010.5488856
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Downloads/CP2010{\_}Kaczer{\_}1 (1).pdf:pdf
+      \endverb
+      \keyw{Negative Bias Temperature Instability,PFET,Random Telegraph Noise,Random dopant fluctuations,Variability}
+    \endentry
+    \entry{Roelke2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3417c49355e9175ec1f86bb12195c797}{%
+           family={Roelke},
+           familyi={R\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c5fdf69b861460eaa3901b95c08ce9e3}{%
+           family={Stan},
+           familyi={S\bibinitperiod},
+           given={Mircea\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \strng{fullhash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \strng{bibnamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \strng{authorbibnamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \strng{authornamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \strng{authorfullhash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10638210}
+      \field{journaltitle}{IEEE Transactions on Very Large Scale Integration (VLSI) Systems}
+      \field{number}{10}
+      \field{title}{{Controlling the reliability of SRAM PUFs with directed NBTI aging and recovery}}
+      \field{volume}{26}
+      \field{year}{2018}
+      \field{pages}{2016\bibrangedash 2026}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TVLSI.2018.2836154
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Roelke, Stan - 2018 - Controlling the reliability of SRAM PUFs with directed NBTI aging and recovery.pdf:pdf
+      \endverb
+      \keyw{Aging,SRAM cells,authentication,negative-bias temperature instability (NBTI),physical unclonable function (PUF)}
+    \endentry
+    \entry{Garg2014}{inproceedings}{}
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings - IEEE International Symposium on Circuits and Systems}
+      \field{isbn}{9781479934324}
+      \field{issn}{02714310}
+      \field{title}{{Design of SRAM PUF with improved uniformity and reliability utilizing device aging effect}}
+      \field{year}{2014}
+      \field{pages}{1941\bibrangedash 1944}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ISCAS.2014.6865541
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/TFM/06865541.pdf:pdf
+      \endverb
+      \keyw{Physical Unclonable Function (PUF),Static Random Access Memory (SRAM),device aging}
+    \endentry
+    \entry{Sengupta2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a14793c9f841a9af1347c52d16e75571}{%
+           family={Sengupta},
+           familyi={S\bibinitperiod},
+           given={Deepashree},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1c641925000f0d902b05be08bfd54e15}{%
+           family={Sapatnekar},
+           familyi={S\bibinitperiod},
+           given={Sachin\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \strng{fullhash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \strng{bibnamehash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \strng{authorbibnamehash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \strng{authornamehash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \strng{authorfullhash}{59d7c5a109b16145d95c093b15d2e2f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{02780070}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{number}{10}
+      \field{title}{{Estimating Circuit Aging Due to BTI and HCI Using Ring-Oscillator-Based Sensors}}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{pages}{1688\bibrangedash 1701}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCAD.2017.2648840
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/tcad17.pdf:pdf
+      \endverb
+      \keyw{Aging,bias temperature instability (BTI),hot carrier injection (HCI),ring oscillators (ROSCs),static timing analysis (STA)}
+    \endentry
+    \entry{Bhargava2013}{article}{}
+      \name{author}{2}{}{%
+        {{hash=10d82e27acfc00990115d3927aad5b34}{%
+           family={Bhargava},
+           familyi={B\bibinitperiod},
+           given={Mudit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=77cde460c9e135e43ae415a7832a24c3}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{fullhash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{bibnamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authorbibnamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authornamehash}{cc6a7eede40df5300f385643c06ead7e}
+      \strng{authorfullhash}{cc6a7eede40df5300f385643c06ead7e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{good introduction}
+      \field{isbn}{9783642403484}
+      \field{issn}{03029743}
+      \field{journaltitle}{Lecture Notes in Computer Science}
+      \field{title}{{A high reliability PUF using hot carrier injection based response reinforcement}}
+      \field{volume}{8086 LNCS}
+      \field{year}{2013}
+      \field{pages}{90\bibrangedash 106}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-642-40349-1-6
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/asasantana/Desktop/2015-427.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Anagnostopoulos2018}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4fe4d60d2186140384350307d8fa9ea0}{%
+           family={Anagnostopoulos},
+           familyi={A\bibinitperiod},
+           given={Nikolaos\bibnamedelima Athanasios},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1897756819dd62b118a7a37357613791}{%
+           family={Arul},
+           familyi={A\bibinitperiod},
+           given={Tolga},
+           giveni={T\bibinitperiod}}}%
+        {{hash=30c592fb03114082e23fc16775e7e3c9}{%
+           family={Rosenstihl},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ccb5a5f57de02a6cb2105a307577da1e}{%
+           family={Schaller},
+           familyi={S\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=51a27d6929eb2e6ea392d4aa8719bcca}{%
+           family={Gabmeyer},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b9e502f041dbf3b5d3c907a9d726cf59}{%
+           family={Katzenbeisser},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f30eef853b8c226d64159d5a580861b7}
+      \strng{fullhash}{008555b66f2525fbfce5c49e2b4b0666}
+      \strng{bibnamehash}{f30eef853b8c226d64159d5a580861b7}
+      \strng{authorbibnamehash}{f30eef853b8c226d64159d5a580861b7}
+      \strng{authornamehash}{f30eef853b8c226d64159d5a580861b7}
+      \strng{authorfullhash}{008555b66f2525fbfce5c49e2b4b0666}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781538673768}
+      \field{journaltitle}{Proceedings - 21st Euromicro Conference on Digital System Design, DSD 2018}
+      \field{title}{{Low-temperature data remanence attacks against intrinsic SRAM PUFs}}
+      \field{year}{2018}
+      \field{pages}{581\bibrangedash 585}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/DSD.2018.00102
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08491873.pdf:pdf
+      \endverb
+      \keyw{Attack,Data remanence,Data retention,Low temperature,PUF,Physical Unclonable Function,SRAM,Static Random Access Memory}
+    \endentry
+    \entry{Saraza-Canflanca2018}{inproceedings}{}
+      \name{author}{12}{}{%
+        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
+           family={Saraza-Canflanca},
+           familyi={S\bibinithyphendelim C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=33b64394d88d15b9ef82fde359d44815}{%
+           family={Malagon},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5e1fbf95a1892158412d5a64592021b4}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=467faf266d1206e4566fe6d0465b33f0}{%
+           family={Toro},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3c5d146e0d0d4f819b0fa766a13fc817}{%
+           family={Nunez},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c470527a9637be6552327c1adea56319}{%
+           family={Diaz-Fortuny},
+           familyi={D\bibinithyphendelim F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={Castro-Lopez},
+           familyi={C\bibinithyphendelim L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
+           family={Martin-Martinez},
+           familyi={M\bibinithyphendelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a93d6d3033ab8945404a32d1a6db653e}{%
+           family={Rodrizucz},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
+           family={Nafria},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.\bibnamedelimi V.},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{fullhash}{0bd22640ee5609bd0fd2af1e7ae54022}
+      \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorfullhash}{0bd22640ee5609bd0fd2af1e7ae54022}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SMACD 2018 - 15th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design}
+      \field{isbn}{9781538651520}
+      \field{title}{{Design Considerations of an SRAM Array for the Statistical Validation of Time-Dependent Variability Models}}
+      \field{year}{2018}
+      \field{pages}{73\bibrangedash 76}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/SMACD.2018.8434900
+      \endverb
+    \endentry
+    \entry{Rangan2003}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1f3bfa506f078e4e90b54a06dab1bb5f}{%
+           family={Rangan},
+           familyi={R\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b1dc7524c56e46a25b1bb646eba4e7c5}{%
+           family={Mielke},
+           familyi={M\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=67ee21103a04e99a74048aeade22465c}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Everett\bibnamedelima C.C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{95a3201ea0abc48dce9de733aad3b170}
+      \strng{fullhash}{95a3201ea0abc48dce9de733aad3b170}
+      \strng{bibnamehash}{95a3201ea0abc48dce9de733aad3b170}
+      \strng{authorbibnamehash}{95a3201ea0abc48dce9de733aad3b170}
+      \strng{authornamehash}{95a3201ea0abc48dce9de733aad3b170}
+      \strng{authorfullhash}{95a3201ea0abc48dce9de733aad3b170}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0780378725}
+      \field{issn}{01631918}
+      \field{journaltitle}{Technical Digest - International Electron Devices Meeting}
+      \field{title}{{Universal Recovery Behavior of Negative Bias Temperature Instability}}
+      \field{year}{2003}
+      \field{pages}{341\bibrangedash 344}
+      \range{pages}{4}
+      \verb{file}
+      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/01269294.pdf:pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

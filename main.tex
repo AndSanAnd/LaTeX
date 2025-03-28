@@ -1,0 +1,55 @@
+% !TEX root = relative/or/absolute/path/to/root/file.tex
+\documentclass[
+    12pt,
+    twoside, 
+    ]{report}
+\input{Packages}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+\setcounter{secnumdepth}{3} %Subsubsection with numbers and without toc
+\raggedbottom %To avoid weird spaces
+
+
+\author{Andrés Santana Andreo}
+\date{15. July 2019}
+\begin{document}
+\newcommand{\longstring}[1]{{\ttfamily\seqsplit{#1}}}
+\thispagestyle{empty}
+\maketitle
+\chapter*{Acknowledgements}
+\input{chapters/acknowledgement}
+\tableofcontents{\small}
+\listoffigures
+\listoftables
+
+
+\chapter{Introduction}
+\input{chapters/chapter01}
+\chapter{Physical Unclonable Functions}
+\input{chapters/chapter02}
+\chapter{SRAM PUFs}
+\input{chapters/chapter03}
+\chapter{A new method for bit selection in SRAM-PUFs}
+\input{chapters/chapter04}
+\chapter{PUF experimental implementation}
+\input{chapters/chapter05}
+% \chapter{Aging in the proposed error correction circuit}
+% \input{chapters/chapter06}
+\chapter{Conclusions}
+\input{chapters/conclusion}
+
+ 
+
+% \appendix
+% \chapter*{Tables}
+% \input{chapters/appendix}
+\printbibliography
+
+
+\clearpage
+
+
+
+\clearpage
+
+\end{document}

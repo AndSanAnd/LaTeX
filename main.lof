@@ -1,0 +1,42 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Desired characteristics in a PUF's response: (a) represents uniqueness, (b) unpredictability and (c) reliability. }}{14}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Simple implementation using a PUF as an unique identifier. (a) Enrollment: occurs only once. (b) Identification: occurs any time the system has to be identified.}}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Use of a PUF as a key generator in a symmetric cryptographic algorithm.}}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Use of a PUF as a key generator in a public key algorithm.}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Use of a PUF as a source of entropy.}}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Schematic illustration of an optical PUF implementation.}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of an arbiter PUF implementation.}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a conventional RO PUF implementation.}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of an SRAM PUF implementation.}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Bit-wise representation of BER for a given dataset}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Illustration of the bit-flipping problem. The same PUF gives a different response to the same challenge at different points in time. }}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Helper data algorithm based on the code-offset construction. This algorithm has two phases: Enrollment (a) and Reconstruction (b).}}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Helper data algorithm based on the fuzzy commitment construction. This algorithm has two phases: Enrollment (a) and Reconstruction (b).}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Repetition code $R[3,1,3]$ example for four bits. (a) shows the error correction encoding, (b) a successful decoding and (c) a failed decoding. }}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Graphical depiction of the 4 data bits $d_1$ to $d_4$ and 3 parity bits $p_1$ to $p_3$ and which parity bits apply to which data bits \blx@tocontentsinit {0}\cite {Hammingwiki}.}}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Hamming code $Hamming[7,4,3]$ example for four bits. (a) shows the error correction encoding, (b) a successful decoding and (c) a failed decoding. }}{33}{figure.caption.21}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A simple 4x6 SRAM array structure}}{38}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of a 6T SRAM cell}}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Voltage at the internal nodes and $WL$ signal during a successful and unsuccessful writing (a) and reading (b) operation. The starting state is $Q$ at low voltage and $\overline {Q}$ at high voltage, but the diagram would be similar for the other starting state. }}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Number of cells $N$ corresponding to a certain value of $\Delta V_{th}$. Cells with $\Delta V_{th} \approx 0 $ are unstable, while those to the left are biased to zero and those to the right to one.}}{42}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Number of unstable SRAM cells with respect to the number of power-ups for one of the chips. }}{48}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Photograph of the chip used in this work, with the part corresponding to the array of SRAM cells highlighted.}}{51}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces SRAM cell with transmission gates for appropriate terminal access and control.}}{52}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Representation of the experimental setup used in this work.}}{54}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Flow diagram of the procedure used to classify each cell according to its power-up strength. }}{55}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Histogram of the $V_{DD}$ values at which cells (in one of the chips) start flipping from their non-favorite to their favorite value. }}{56}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Average BER of the five chips taking into account all cells, only unstable cells, the 50 weakest cells and the 50 strongest cells. }}{57}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces DRV value for the 50 strongest and 50 weakest cells measured before the stress (top), and 10 days after stress removal (bottom). }}{59}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces BER evolution for the 50 weakest cells of a chip with respect to the number of days since the application of the stress. }}{59}{figure.caption.36}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Number of unstable SRAM cells with respect to the number of power-ups.}}{64}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Cell-wise representation of the bit selection performed through ME. Cells in red are those considered unstable and cells in green are those selected randomly among the rest.}}{64}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cell-wise representation of the cells classified as unstable by ME or MTSV.}}{65}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Cell-wise representation of the bit selection performed through MTSV.}}{66}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Cell-wise representation of BER for the 2000 measurements under nominal conditions. }}{67}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Probability of each cell to power up as ``1'' based on 2000 measurements under nominal conditions. }}{67}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Cell-wise representation of BER for 200 measurements right after stress (a) and 8 days later (b). }}{70}{figure.caption.43}%
+\addvspace {10\p@ }

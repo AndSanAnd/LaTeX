@@ -1,0 +1,55 @@
+% **************************************************************************
+%
+%  Package 'caratula', version 1.0 (para componer carátula de Master de Microelectrónica).
+%
+%  Autora: Rafaella Fiorelli Martegani
+%  fiorelli@imse-cnm.csic.es
+%
+% **************************************************************************
+
+
+
+% ----- Informacion sobre el package para el sistema -----------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{caratula}[2009/11/10 v1.0 Para componer caratulas de Trabajo de Fin de Master. Autora: Rafaella Fiorelli Martegani]
+\usepackage{graphicx}
+
+
+% ----- Comandos para que el usuario defina las variables ------------------
+
+\def\titulo#1{\def\Titulo{#1}}
+\def\fecha#1{\def\Fecha{#1}}
+\def\autor#1{\def\Autor{#1}}
+
+% ----- Reemplazamos el comando \maketitle de LaTeX con el nuestro ---------
+
+\def\maketitle{%
+    
+    \begin{figure}
+		\centering 			
+		\includegraphics[width=1\columnwidth]{logoUS_IMSE.png}
+  	\label{}
+		\end{figure}
+    
+    \begin{center}
+    \vspace*{\stretch{2}}
+    \par\vspace{\stretch{1}}
+    {\huge Trabajo de Fin de M\'aster}\\[0.5em]
+    {\huge ``M\'aster Universitario en Microelect\'onica:}\\[0.5em]
+    {\huge Dise\~no y Aplicaciones de Sistemas}\\[0.5em]
+    {\huge Micro/Nanom\'etricos''}
+    \par\vspace{\stretch{5}}
+    {\LARGE \textbf{ Design of aging-resilient SRAM-based Physical Unclonable Functions (PUFs)}}\\[2 em]
+    \par\vspace{\stretch{10}}
+    \end{center}
+    \begin{flushleft}
+    {\Large {Author: \hfill Andrés Santana Andreo}}\\[0.8em]
+    {\Large {Advisors: \hfill  P. Brox, E. Roca and F. V. Fernández }}\\[0.8em]
+    {\Large {Date: \hfill \today}}\\
+    \end{flushleft}
+    \vspace*{\stretch{3}}
+    \medskip    
+    \vspace*{\stretch{3}}
+    \newpage
+    }

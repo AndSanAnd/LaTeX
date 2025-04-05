@@ -1,0 +1,21 @@
+# Fdb version 4
+["bibtex chapter02"] 0 "chapter02.aux" "chapter02.bbl" "chapter02" 0 -1
+  "chapter02.aux" 1743519044 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  (generated)
+  "chapter02.bbl"
+  "chapter02.blg"
+  (rewritten before read)
+["pdflatex"] 1743519044.41648 "c:/Users/usuario/OneDrive - UNIVERSIDAD DE SEVILLA/Escritorio/Doctorado/Tesis/LaTeX/chapters/chapter02.tex" "chapter02.pdf" "chapter02" 1743519061.45656 2
+  "C:/Users/usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743518812 81107 70b8516c68c2e617189c5e44bfd16b96 ""
+  "C:/Users/usuario/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1739986290 24226031 e32f09af22e1aba40763124e897f7e0b ""
+  "C:/Users/usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "C:/Users/usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "c:/Users/usuario/OneDrive - UNIVERSIDAD DE SEVILLA/Escritorio/Doctorado/Tesis/LaTeX/chapters/chapter02.tex" 1743519017 85277 5d297ad5ab35c107a30fc486c5a9fcbf ""
+  "chapter02.aux" 1743519044 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "chapter02.bbl" 0 -1 0 "bibtex chapter02"
+  "chapter02.tex" 1743519017 85277 5d297ad5ab35c107a30fc486c5a9fcbf ""
+  (generated)
+  "chapter02.aux"
+  "chapter02.log"
+  "chapter02.pdf"
+  (rewritten before read)

@@ -1,520 +1,383 @@
-\label{chap:2}
-% Basics about PUFs in cryptography. How a key generator and a TRNG are used, encryption and decryption processes described 4-5 Páginas
-
-This chapter presents an introduction to the concept of Physical Unclonable Functions (PUFs). After a brief description of their main characteristics and applications, the most common implementations are reviewed. The metrics selected to evaluate PUFs are then defined and the HDAs used to enhance their performances are introduced. 
-
-\section{What is a PUF?}
-The term Physical Unclonable Function (PUF) was coined by Tuyls et al. in \cite{Tuyls2007} and has become the prevalent term, but the notion of ``Physical one way function'' was first introduced by Pappu in \cite{Pappu2002}. There are multiple definitions given for PUFs \cite{Xu2015,Bohm2013}, but, in general, it is an entity that takes advantage of process variations on a measurable physical property to generate an unpredictable and unique response to a device. Process variations are the naturally occurring disparities between components with identical design during manufacture. This disparity is small and can not be modelled or replicated even by the designer or the manufacturer of the device. 
+\label{ch:chapter02}
+Bias Temperature Instability (BTI) poses a significant challenge in ensuring the reliability of digital systems, affecting the delay of digital logic gates, which ultimately can lead into timing failures. Sophisticated defect-centric models have been developed and successfully calibrated against empirical data to forecast the impacts of BTI at the device level. However, their application to large-scale digital circuits operating under realistic workloads over typical system lifetimes is limited because of the computational complexity of defect-centric models. To make the application of aging models in that context feasible, a useful technique is to compress the transistor workloads into simplified and hence manageable representative workloads. While fast in terms of execution speed, previous techniques struggle with accuracy when predicting aging degradation, and can reach a very high average error in threshold voltage increase prediction. In this work, we review the compression techniques described in the literature and propose two novel approaches that surpass existing ones in terms of accuracy, which is demonstrated for a complex digital design used as benchmark. Specifically, our best compression technique matches the predictions obtained through the reference uncompressed workloads, introducing negligible error, and maintains low execution times to efficiently and accurately scale defect-centric models to the circuit level.
 
 
-PUFs can be thought of as a black-box challenge-response system \cite{Herder2014}. If a challenge $c$ is issued, it returns a response $r=f(c)$. This forms a challenge-response pair (CRP). The fundamental aspect of PUFs is that $f$ (Input/output relations in the PUF) is hidden from the user or the potential attacker.
+\section{Introduction}
+Among the aging phenomena affecting electronic devices, Bias Temperature Instability (BTI) is of special significance due to its dominant impact on timing variability \cite{duchAnalysisFunctionalErrors2020, santana-andreoImpactBTIHCI2022, moritaEfficientAnalysisMitigation2022, klemmeEfficientLearningStrategies2022}. BTI is driven by the gate biasing of the transistor, directly increasing its threshold voltage $(V_\text{th})$. This generally results in a longer propagation delay for logic gates, ultimately leading to potential timing violations. BTI is widely attributed to the trapping and release of charge carriers from defects, which cause discrete stochastic shifts of the threshold voltage. To predict BTI degradation, defect-centric models such as the Probabilistic Defect Occupancy (PDO) model \cite{martin-martinezProbabilisticDefectOccupancy2011} are employed. In these defect-centric models \cite{grasserParadigmShiftUnderstanding2011, reisingerUnderstandingModelingAC2011, kaczerDefectcentricPerspectiveDevice2015}, each defect has a certain mean carrier Capture and Emission Time (CET) and an induced threshold voltage shift $\eta$, whose values follow certain probability distributions. The number of defects in a transistor also follows a probability distribution. This inherent variability of BTI results in a unique shift in threshold voltage for each transistor due to its unique set of defects. Defects with short CETs require just micro- to milliseconds of applied voltage (ON-time) to add their degradation to the transistor. However, defects with long CETs might require months of applied voltage to add their degradation. Similarly, when the applied voltage is removed (OFF-time), defects with short CETs will take less time to release their carrier and remove their degradation than defects with long CETs. Due to this wide spread of CET values, the actual activity/workload (ON/OFF phases during a transistor's lifetime) governs the induced threshold voltage due to BTI. 
 
-The essential characteristics that must be present in a PUF's response are \textbf{uniqueness} (how unique is the response of a particular instance among a group of instances of the same type),  \textbf{unpredictability} (how unpredictable the response is even with knowledge of part of the response or of another PUF's response) and \textbf{reliability}  (how reproducible the PUF response is when the same challenge is applied at different points in time). Considering three PUFs named A, B and C and their corresponding CRPs, these PUFs characteristics are schematically depicted in fig. \ref{fig:req}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm]{images/PUF requirements.pdf}
-    \caption{Desired characteristics in a PUF's response: (a) represents uniqueness, (b) unpredictability and (c) reliability. }
-    \label{fig:req}
-\end{figure}
-
-PUFs can be distinguished between weak or strong according to the amount of CRPs available \cite{Herder2014}. A weak PUF will support a small amount of challenges. Therefore, the CRPs must be kept secret, otherwise the PUF can be emulated. In some cases there may be only one challenge and accordingly only one CRP. Strong PUFs on the other hand have such a large amount of CRPs that they cannot be mapped in a reasonable time frame. Due to this, its output does not need to be private. It should not, however, reveal information about the functionality of the PUF since, otherwise, responses to different challenges could be predicted. 
-
-
-
-
-% Regarding actual implementations, many different approaches have been published since the concept of PUFs can be applied to plenty of physical phenomena. A  comprehensive list is found in \cite{Maes2010}. Some non-electric PUFs include the pioneer optical PUF \cite{Pappu2002} or paper PUFs \cite{paperpuf}. However, most PUFs are electrical since they are easier and less costly to implement in an electronic medium. They are based on manufacturing variations that cannot be controlled or predicted. Some of the better known ones are arbiter PUFs, ring oscillators and SRAM PUFs. 
-
-% Arbiter PUFs \cite{Arbiter} introduce a digital race condition on two paths on a chip. An arbiter circuit decides which path is faster, resulting in two possible states.  A ring oscillator is a device composed of an odd number of inverters. In ring oscillator PUFs \cite{oscillatorog,Suh2007}, the differences in frequency of symmetric ring-oscillators are measured. Finally, SRAM PUFs use the difference in strength of the two inverter's of an SRAM cell which result in a certain power-up state (``1'' or ``0''). A more detailed look into SRAMs and their use as a PUF is done in chapter \ref{chap:3} since they are the focus of study in this work. 
-
-\section{PUF applications}
-\label{sec:applications}
-PUFs have a variety of applications but almost all of them are geared towards security, particularly for digital devices \cite{Maes2010,Bohm2013,Xu2015}. They are used as one of the main components to build RoT or hardware anchors to reinforce security in the device in which the RoT is incorporated. The PUF response acts as the foundation to derive trust for the rest of components of the device. 
-
-Several ways to design and develop a RoT are presented in literature. A rough classification can be provided according to the implementation nature. A RoT can be implemented in hardware, software or a hybrid hardware/software version. The main advantage of hardware RoT compared to software RoT is being invulnerable to malware attacks. One of the most popular technologies to implement hardware RoT is the Trusted Platform Module (TPM) \cite{TPM}. It is a standard for a secure cryptoprocessor, which is a dedicated microcontroller with the required security primitives to ensure the integrity of the device. This includes the generation and storage of cryptographic keys and true random number generation, and requires physical security mechanisms to provide anti-tamper protection. However, they involve a large cost in terms of area and power which is suitable for in small, resource constrained applications such as those of Internet of Things (IoT) or embedded devices.
-
-PUFs offer two advantages in this field compared to the conventional hardware RoT solutions: cost reduction and an increased level of security. Regarding cost, secret information to derive cryptographic keys are stored in a secure NVM for traditional systems. Meanwhile, a PUF's response is used for generation of keys on-the-fly without being necessary their storage in NVMs. Furthermore, the PUF existing implementations are not expensive in terms of energy and area. Some PUF implementations even use already existing circuitry of the device, which further reduces these costs. Regarding security, PUFs are practically impossible to attack through reverse engineering methods due to their unclonability. As mentioned before, the response is generated on-chip. This is an advantage in terms of security as well, since the traditional method of transferring secure information to the chip is an additional vulnerability against eventual attacks. Furthermore, since PUFs rely on small process variations, they have an innate protection against physical tampering as any meddling may modify the response and turn the PUF unusable. 
-
-In the next subsections different security applications of PUFs are presented.
-
-\subsection{PUF as a unique identifier}
-
-Since PUFs generate a unpredictable and unique response, they can be used directly for identification \cite{McGrath2019,Maes2010,,Okumura2011}. Each unique PUF is assigned to one physical system. In this way, PUF identification is similar to biometrical identification. The PUF output constitutes the ``digital fingerprint'' of the system.
-
-A simple example of the use of a PUF as an unique identifier is shown in fig. \ref{fig:id}. Two phases can be distinguished when using a PUF as an unique identifier: enrollment and identification. During enrollment, shown in fig. \ref{fig:id} (a), a number of CRPs from every PUF are stored in a database coupled with the physical system associated with the PUF. This step is done only once. Later, during identification, shown in fig. \ref{fig:id} (b), the verifier selects one challenge from the database and challenges the PUF with it. If the resulting response matches the stored one, the identification is positive, and, otherwise, it fails.
-
-In strong PUFs, where multiple CRPs are stored, there can be a degree of tolerance with the discrepancies between the responses \cite{Maes2010}. This is due to the fact that each CRP is used only once to prevent replay attacks. In weak PUFs, there is only a small number of possible challenges so the verification response should match perfectly the enrollment response. The PUF must be examined in an environment where an authenticating party is present to ensure that the PUF itself is being evaluated and there are no replay attacks. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm]{images/Weak ID.pdf}
-    \caption{Simple implementation using a PUF as an unique identifier.  (a) Enrollment: occurs only once. (b) Identification: occurs any time the system has to be identified.}
-    \label{fig:id}
-\end{figure}
-
-% System identification is important in multiple fields. They can be used for example to authenticate products in supply chains. Production of many goods involves shipping across multiple countries and controlling every step related to the product is becoming increasingly difficult. Accordingly, counterfeit or malicious components are a rising problem in today's supply chains. Malfunction or the malicious use of sensitive data can be disastrous in these cases. 
-
-\subsection{PUF as a secret key generator}
-\label{sec:enc/dec}
-PUFs can be used as well for key generation in cryptographic encryption and decryption algorithms \cite{Suh2007,Rahman2016,Herder2014}. Traditionally, the key is permanently stored in a NVM, which opens up multiple points of attack. However, PUFs generate the key whenever required instead of storing it, providing better security. This application has strict requirements for the response as it must be perfectly reliable and unpredictable to ensure the security of the cryptographic scheme. Weak PUFs that provide only one response are optimal for secret key generation \cite{Maes2010}, as only one key is required in cryptographic algorithms.
-
-An important distinction can be made between symmetric and asymmetric cryptographic algorithms. In symmetric key algorithms, shown in fig. \ref{fig:symm_crypt}, the same key is used for both encryption and decryption. This means that the key must stay secret during the whole process. The key has to be provided to the receiver in advance for authentication through a secure channel, which in some applications is complicated and opens up more points of attack \cite{Gao2020}.
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=14cm]{images/Symmetric key generation.pdf}
-    \caption{Use of a PUF as a key generator in a symmetric cryptographic algorithm.}
-    \label{fig:symm_crypt}
-\end{figure}
-
-
-On the other hand, asymmetric or public key algorithms use different keys for encryption and decryption. One of the keys can be public, knowing it will not compromise the security of the system. Having a public key algorithm instead of a symmetric one is useful when secure channels are not available, the number of participants in the encryption is high, or when keys are frequently changed but the security requirements are higher. 
-
-In a public key algorithm, first the PUF device generates a key used to create a private and public key pair (fig. \ref{fig:asymm_crypt} (a)). The public key is broadcast on a public key server that any party can access. From here, there are different applications. The PUF device can be authenticated by sending certain data to be encrypted by the private key. If the original data is recovered through the public key, the PUF device is correctly verified. Similarly, any transaction signed by this private key can be verified through the public key. Device-to-device secure communication is another possibility, where a certain message encrypted by the sender through the public key can only be decrypted and read by the intended receiver through the private key (fig. \ref{fig:asymm_crypt} (b)).
-
-
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=14cm]{images/Asymmetric key generation.pdf}
-    \caption{Use of a PUF as a key generator in a public key algorithm.}
-    \label{fig:asymm_crypt}
-\end{figure}
-
-
-The requirements in terms of minimum key length for these algorithms can vary greatly, from 128 bits for the symmetric algorithm AES \cite{AES} to 2048 for the asymmetric RSA algorithm \cite{RSA}. The chosen algorithm and entailed level of security will require different lengths, but the bare minimum is 128 bits \cite{Alioto2019}.
-
-% These algorithms are the foundation of digital security, used to establish secure communications channels, validate digital signatures or verify elements of an IoT network to name a few examples.  
-%Generating the key consists in simply measuring the output of the PUF. This key will be used along with an encryption algorithm to encrypt a plain text and to decrypt the cipher. The strength of symmetric key algorithms are based on their resistance to brute force attacks, where all possible combinations are tried. The Data Encryption Standard (DES) developed in the early 1970s by IBM was the standard for encryption algorithms, but its short length (56 bits) made it susceptible to attacks as computing power kept growing \cite{Stallings}. The advanced encryption standard (AES) \cite{Daemen} was instead adopted in the early 2000s and has since become the new standard, since it allows for keys of 128, 192 and 256 bits. These lengths are invulnerable to a brute force attack in a practical sense, since $2^{128}$ or $2^{256}$ combinations are both very large numbers. 
-
-% The security provided by keys of either length is effectively identical with conventional technology, but not with quantum computing in mind. A quantum computer can complete a brute-force attack on a key of length $n$ in the time it would take the traditional computer to find a key of length $2n$ \cite{bennett1997strengths}. Accordingly, a key of length 128 is reduced to the security of a key of 64, which is breakable in a reasonable time frame. Even though quantum computers are far from reaching the capabilities of today's traditional computers, there are cases where security is more important than the cost of generating a key of 256 bits or the cost itself is very low. 256 bit keys are adopted so that the system is future-proof and safe against the possibility of great advances in quantum computing in a short time.
-
-
-% On the other hand, asymmetric or public key algorithms use different keys for encryption and decryption. One of the keys can be public, knowing it will not compromise the security of the system. Having a public key algorithm instead of a symmetric one is useful when secure channels are not available, the number of participants in the encryption is high, or when keys are frequently changed. Accordingly asymmetric encryption is mostly used in day-to-day communication channels, especially over the Internet. They are used as well in IoT networks and for digital signatures, to name a few examples. These technologies are already ubiquitous and keep growing, so public key algorithms are of great importance.
-
-% They come however at a higher computational cost \cite{salomaa2013public}. Public keys can also suffer from man-in-the-middle attacks. In these, the transmission of public keys is intercepted and then modified to provide different public keys to the receiver. This allows the attacker to read the private data while avoiding suspicion. The main systems where this attack is dangerous is where the communications hardware is controlled by the adversary, such as in the Internet or public networks. They are vulnerable to related key and brute-force attacks as symmetric key algorithms. However, brute-force attacks are more effective against asymmetric key algorithms. These algorithms, such as RSA (based on prime factorization) or elliptic curve cryptography (based on the algebraic structure of elliptic curves over finite fields) are based on the difficulty to solve certain mathematical problems. While these are very difficult to solve in terms of processing, they are not as difficult as trying all possible combinations. This results in an effective security lower than the key length. For example, 2048-bit RSA keys are the minimum recommended and they are equivalent to 112-bit symmetric keys. On top of that, these algorithms are turn completely obsolete by quantum computer due to the use of Shor's algorithm \cite{chen2016report}
-
-% Hybrid systems exist as well, where an asymmetric key algorithm is used to verify a secure channel. Once the channel is verified symmetric key algorithms are employed due to their reduced computational cost. 
-
-\subsection{PUF as a source of entropy}
-\label{ss:entropy}
-True random number generators (TRNG) generate random numbers from unpredictable physical processes. Although their main field of application is in cryptography, they are used in gambling as well as in situations were randomness is useful, such as juror selection or military draft lotteries. One example of their use in cryptography is to generate nonces \cite{Alioto2019}, an arbitrary number employed just once in a cryptographic communication to avoid replay attacks \cite{Martinez-Rodriguez2018}. These nonces can be used as initialization vectors (IVs) to prevent a sequence of text that is identical to a previous sequence from producing the same exact encrypted message. PUFs that can perform both as a key generator and as a source of entropy are specially useful in cryptographic algorithms \cite{Holcomb2009,Baturone2015}. 
-
-PUFs used as a source of entropy take advantage of the unpredictability of PUF implementations (fig. \ref{fig:dice}). In terms of reliability they ideally require the exact opposite of the applications presented so far: a completely random response. To quantify the entropy or randomness of a PUF response, NIST tests \cite{Rukhin2010}, developed by the National Institute of Standards and Technology, can be used. 
-
-\vspace{0.5cm}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm]{images/RNG.pdf}
-    \caption{Use of a PUF as a source of entropy.}
-    \label{fig:dice}
-\end{figure}
-
-
-
-\section{PUF Implementations}
-\label{sec:implementations}
-%Different types of PUF implementation, arbiter, ring oscillator bi-stable PUFS. 3-4 Páginas
-
-
-In this section a brief overview of different PUF implementations is provided. Many different approaches have been published, since the concept of PUFs can be applied to plenty of physical phenomena. Some implementations take advantage of already existing properties of the system they secure, while others are embedded. The implementations presented here cannot be taken as a complete list, only some of the most significant ones are considered. A more comprehensive listing can be found in \cite{McGrath2019,Maes2010}. 
-
-\subsection{Optical and non-electric PUFs}
-
- The original optical PUF presented in \cite{Pappu2002} relies on the interaction of a laser beam with a scattering medium in its path. As shown in fig. \ref{fig:opticalpuf}, the input is the position and polarization of the laser (strong PUF) and the output is the "speckle" of light exiting the scattering medium, which is recorded by an imaging device. A hash is applied to this recording to obtain a string of bits. The scattering path depends heavily on the input and the structure of the scattering medium, and unless this medium is very simple it is practically impossible to model and predict the output. In the mentioned implementation, microscopic refractive glass spheres embedded in a transparent epoxy plate are used as scattering medium. This implementation is not practical due to the complexity of the system, it served as a proof of concept. A more integrated design was proposed in \cite{Tuylsoptic} and more recently in \cite{Rhrmair2013OpticalPR}. Optical PUFs provide an unmatched input/output complexity which cannot be obtained by electrical PUFs, but their high cost make them hard to justify in real implementations. 
+The predictions obtained through the aforementioned physical models should closely match the experimental measurements \cite{saraza-canflancaDeterminationTimeConstant2022}, anticipating degradation at the end-of-life (EOL) of the circuit and providing designers with the ability to mitigate aging at design time. Due to the aforementioned nature of BTI, these predictions consist of aging variability distributions whose values are highly dependent on the transistor's bias conditions. Carrying this information from the device level to the circuit level without abstracting defects away (e.g., by modelling degradation or cell delay by empirical equations directly) is crucial to perform accurate degradation predictions \cite{vansantenModelingMitigatingTimeDependent2019}. However, the computation time required to directly solve the model equations taking into account realistic circuit workloads for each transistor (expressed in terms of a bias waveform $V(t)$ evolving over time) is unfeasible for large digital circuits \cite{vansantenDesigningGuardbandsInstantaneous2016} due to the need to recalculate the model parameters each time bias conditions change. Obtaining the degradation for a waveform with a frequency in the order of GHz at an EOL of 10 years requires an order of \num{e18} recalculations per transistor, an infeasible amount in computational cost. Different strategies have been reported in the literature to overcome this problem, focusing mainly on \textit{workload compression}, which revolves around reducing the complex, long waveform that represents the transistor's workload to a simpler waveform that retains enough information about the original signal to attain a comparatively close degradation to the one obtained through the original waveform. 
  
- \begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm]{images/Optical PUF.pdf}
-    \caption{Schematic illustration of an optical PUF implementation.}
-    \label{fig:opticalpuf}
-\end{figure}
 
-Electrical or silicon-based PUFs are naturally easier to implement in an electronic medium and less costly, so the rest of the designs considered are electrical. There are, however, other proposed non-electrical PUFs such as Paper PUFs (using the unique fiber structure mainly for currency notes) \cite{paperpuf}, CD PUFs (using the lands and pits on a compact disk for identification) \cite{Hammouri2009CDsHF} or Acoustical PUFs (using the characteristic frequency spectrum of an acoustical delay line) \cite{mastersthesis}. The difference between these goes to show how versatile and universal the concept of PUF is, and more possible implementations come up as time goes by \cite{McGrath2019}. 
-
-\subsection{Arbiter PUFs}
-
-The initial proposal for an arbiter PUF was made in \cite{Arbiter}. It is considered a delay PUF. This type of PUFs exploit the random variations in delays of wires and gates on silicon. Arbiter PUFs introduce a digital race condition on two paths on a chip. An arbiter circuit decides which path is faster. They are designed in an identical way so that the resulting difference in delay is a product of manufacturing variations which cannot be controlled. The initial design uses \textit{switch} blocks connected in series with two states, where each state uses a different connection (\textit{straigh} or \textit{switched}). The challenge of the PUF will be the setting of the switches. In this way, the number of CRPs depends exponentially on the number of switch blocks used and it constitutes a strong PUF. Fig. \ref{fig:arbiter} shows a schematic for an arbiter PUF. 
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm]{images/Arbiter.pdf}
-    \caption{Schematic of an arbiter PUF implementation.}
-    \label{fig:arbiter}
-\end{figure}
-
-
-These responses can however be noisy. If the offset between the two paths is too small, the setup-hold time of the arbiter is violated and the result will depend on random noise, causing unreliable bits. Environmental factors such as temperature, supply voltage or aging play a significant role in which path is faster as well.
-Delays in each switch are linear and independent from each other, so arbiter PUFs with this design are vulnerable to the use of standard linear system analysis to model them and predict their response \cite{Arbitermaster}. To solve this, non-linearities are introduced. These come at the cost of even more noisy results and even if the response is less predictable it can still be modelled \cite{Maes2010}.
-
-\subsection{Ring oscillator PUFs}
-
- A Ring Oscillator (RO) is a device composed of an odd number of inverters attached in a chain where the output of the last inverter is fed into the first one. Accordingly, the output oscillates between high and low voltage. Its oscillation frequency ($\nu$) depends on the sum of the gate delays of all inverters, and their structure is very simple (composed only of standard logic gates), so it can be easily implemented in a field-programmable gate array (FPGA) or an application-specific integrated circuit (ASIC). 
-
-The RO PUF, first proposed by Gassend et al. in \cite{oscillatorog}, measures the difference in oscillation frequencies between pairs of identically designed ROs caused by manufacturing variations. Like arbiter PUFs, they fall under the delay PUFs category. Figure \ref{fig:ring oscillator} illustrates a standard RO-PUF implementation. It includes $N$ identically laid out ROs, two $N$-bit multiplexers, two counters and a comparator. Since the delay of each inverter will be different due to process variability, the frequency of each RO will be unique. The outputs of these ROs are fed into the multiplexers, and the PUF challenge determines which ROs are compared. The frequency is measured through the counters, which count the number of oscillations for a fixed interval of time. Finally, the output bit is determined based on which oscillator has a higher frequency, i.e. has a greater count.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=14cm]{images/Ring oscillator.pdf}
-    \caption{Schematic of a conventional RO PUF implementation.}
-    \label{fig:ring oscillator}
-\end{figure}
-
-For $N$ oscillators, up to $log(N!)$ bits can be extracted by comparing frequencies. More pairings are possible but they would start to correlate with each other, compromising the security. This is a weak PUF, as there is a limited number of bits that can configure the PUF's operation. As in the case of the arbiter PUFs, RO PUFs are very susceptible to environmental variations since they are based on delay, and responses can be noisy. 
-
-
-
-
-% \subsection{Coating PUFs}
-
-% Coating PUFs were introduced in \cite{coating}. They use the protective coating that covers an integrated circuit (IC). The coating is doped with dielectric particles. In this way, they rely on both the randomness of manufacturing and the size, shape and location of the particles. An array of sensors measure the capacitance of the coating, and this capacitance is used to characterize the IC.  These PUFs provide good experimental results in terms of randomness and noise \cite{coating}. Their main drawback is the need for a specific manufacturing process. The other electric PUFs use simpler and easier to implement designs.
-
-\subsection{SRAM PUFs}
-\label{ss:cap2SRAM}
-The first SRAM PUF was proposed separately by Guajardo and Holcomb in 2007 \cite{Guajarado_og,Holcomb2007InitialSS}. They use the start-up value of SRAM cells, which consist of cross-coupled inverters and are used as static memory. Before the cell powers up, the SRAM does not have any value stored since it is a volatile memory. Once it powers up, it theoretically exists in a metastable state where the two inverters are identical. However, due to mismatch from process variation, one of the inverters starts conducting before the other. Due to the positive feedback present in the cross-coupled inverters the cells settles in either ``1'' or ``0'' depending on which inverter powers up faster, as shown in \ref{fig:SRAM_PUF}. This state is used as the response. Whether one loop or the other is stronger depends on the relative threshold voltage between the transistors. This behaviour can be exploited to obtain a PUF. A response can be generated by using a number of cells, one per each desired bit. This is an extreme example of a weak PUF , since there is only one challenge (powering up) and one response. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=14cm]{images/SRAM PUF implementation.pdf}
-    \caption{Schematic of an SRAM PUF implementation.}
-    \label{fig:SRAM_PUF}
-\end{figure}
-
- SRAM PUFs are quite popular compared to other implementations \cite{Xiao2014,Zhang2020,Akhundov2019,Hofer2010} because they provide multiple advantages. SRAM memories are a ubiquitous device and a small fraction of a general purpose SRAM memory cells can also be used as PUF, in which case the PUF would come at almost no implementation cost. They have a low area and power consumption when compared to other PUFs and are easily scalable. Since SRAM memories have been a staple of electronic systems for a long time they are efficient, well characterized and understood. However, their main drawback is their limited reliability due to noisy responses. These PUFs will be the focus on this work so a more detailed description on the use of SRAM as PUFS is provided in the next chapter. Many studies have been published regarding the different aspects of SRAM PUFs and how to improve them due to the potential of the technology.
-
-% SRAM cells are biased towards either ``1'' or ``0'' as explained before, but this bias can be strong or weak since it relies on the random distribution of process variation. Cells with a weak bias may sometimes power up in their non-preferred state due to noise or change in environmental conditions (bit flipping) and are considered unstable cells. Cells with a strong bias have a low probability of bit flipping and are considered stable cells. The distribution of the transistors' threshold voltage is assumed to be gaussian as in the mismatch models. In principle, this would make most values fall around the middle, so most cells should be unstable. Nonetheless, the bias does not have to be very strong to have a stable cell, so generally a majority of cells are considered stable \cite{Baturone2015,Bohm2013}. 
-
-
-
-
-
-
-\section{Metrics}
-\label{sec:Metrics}
-
-Proper metrics are fundamental to evaluate the performance of PUFs and ensure their functionality in the applications shown in sec. \ref{sec:applications}. Their goal is to properly measure \textbf{Uniqueness}, \textbf{Reliability} and \textbf{Unpredictability} without redundant metrics. These characteristics have been explained qualitatively but they must be characterized quantitatively. There is a wide range of possibilities on which ones to use. A comprehensive list of metrics specifically created for PUFs can be found in \cite{Maiti2013}. PUF implementations usually provide a binary response either due to the physical property they measure or by applying some postprocessing after that measurement. Accordingly, the metrics used for PUFs are for binary strings of variable length. 
-
-
-\subsection{Probability}
-A fundamental concept in PUFs as a statistical process is the probability of occurrence of a “1” response, $p$. If the elements of a string of bits are random variables, their response corresponds to a binomial distribution \cite{Bohm2013}. This distribution is defined as: 
-\begin{equation}
-\label{eq:binomialpmf}
-P(x=k)=
-\left(\begin{array}{l}
-n \\
-k
-\end{array}\right) p^{k}(1-p)^{n-k}\end{equation}
-
-where $n$ is the number of bits in the bit string and $k$ the number of ``1'' responses. When the number of bits is sufficiently large, it can be approximated by a normal distribution which  significantly simplifies obtaining the probability. The probability density function for the normal distribution is: 
-
-\begin{equation}f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}\end{equation}
-
-where $\mu$ is the mean of the distribution and $\sigma$ is the standard deviation. The conversion from the binomial to the normal distribution is as follows:
-\begin{equation}
-\label{eq:conversion}
-\begin{aligned}
-\mu &=n p \\
-\sigma^{2} &=n p q
-\end{aligned}\end{equation}
-
-Lastly, the mean of the normal distribution for $N$ binomial distributed data sets (DS) can be approximated as \cite{Bohm2013}:
-\begin{equation}\mu_{a l l} \approx \frac{\# \text {of } 1 \text {'s in all  DS}}{n \cdot N}\end{equation}
-And the probability of each cell is derived from here by using eq. \ref{eq:conversion}:
-
-\begin{equation}
-\label{eq:prob}
-p=\frac{\mu_{a l l}}{n} \approx \frac{\# \text {of } 1 \text {'s in all  DS}}{N}
-\end{equation} 
-
-\subsection{Bit Error Rate}
-
-The Bit Error Rate (BER) of a response is defined as the ratio between the number of false bits $e$ and the whole number of bits in a bit string $N$ \cite{Bohm2013}:
-\begin{equation}
-\label{eq:BER}
-\text{BER}=\frac{e}{N}\cdot 100
-\end{equation}
-
-%  This metric is equivalent to the mean intra hamming distance \cite{Bohm2013}, commonly referred in the literature as fractional hamming distance.
-
-It gives a clear measure of how error prone the PUF is. Accordingly, it helps to measure \textbf{Reliability}. The stability (number of correct bits) is complementary to the BER and usually only one of the two is given. To determine whether a bit is correct or false, first, there must be a string with the ideal or golden response for reference. This reference mask is calculated from the probability of each bit, if $p\geq 0.5$ the ideal value will be $1$ and if $p< 0.5$ the ideal value will be $0$. The mask can be determined directly from the evaluated dataset (intrinsically) or given as an input (extrinsically). The extrinsic reference is the golden response obtained under nominal conditions. It can be useful if, for example, the device is measured in varying conditions of voltage or temperature and a bit response switches from preferring 1s to 0s or vice versa. This would introduce a persistent error in the response when compared to the nominal conditions, but if the ideal string were determined intrinsically it would appear as if the cell was working properly. 
-
-The BER can be obtained bit-wise ($N=1$) or response-wise ($N$ depends on the number of bits in the response). The second one gives a clear idea of the response quality and is generally the one used, although the first one can be useful for graphical representations (as in fig \ref{fig:BER}) or to obtain more detailed information about the behaviour of each bit. The ideal value for BER would be 0\% in either case.
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{images/BERexample.png}
-    \caption{Bit-wise representation of BER for a given dataset}
-    \label{fig:BER}
-\end{figure}
-\subsection{Maximum intra hamming distance}
-
-  The hamming distance between two strings is the number of different bits, i.e. the bits that need to be flipped for the two strings to be equal. The maximum intra hamming distance is the highest value among the $m$ hamming distances between each response to the same challenge and the golden response. This can be defined formally as:
-
-\begin{equation}
-\label{eq:maxihd}
-\text{max}_\text{IntraHD}=\max _{i=1, \ldots, m}\left[\frac{H D\left(R_{ideal}, r_{i}\right)}{n}\right] \cdot 100\end{equation}
-
-Where $n$ is the number of memory cells and $m$ the number of responses generated from the device. $R_{ideal}$ is the golden response and $r$ is one of $m$ responses. As in the BER the ideal response can be determined intrinsically or extrinsically. It is a measure of \textbf{Reliability} as well, but gives an idea of how bad the worst case scenario is instead of the general reliability of the device. Zero is the ideal value for this metric, since it means all responses to the same challenge are equal.
-
-\subsection{Mean Inter Hamming distance}
-\label{eq:interhd}
-The mean inter hamming distance is calculated as the mean of the hamming distances between the golden responses of all chips. This is obtained through the following expression \cite{Maiti2013}:
-\begin{equation}\text{mean}_\text{InterHD}=\frac{2}{k(k-1)} \sum_{i=1}^{k-1} \sum_{j=i+1}^{k} \frac{H D\left(R_{i}, R_{j}\right)}{n} \times 100 \%\end{equation}
-Where $k$ is the number of chips. The $2/k(k-1)$ factor computes the mean. This metric gives a measure of the \textbf{Uniqueness} of the PUF. In the ideal case it is 50\%, meaning that the response of each chip is independent from each other. If uniqueness is low, knowing the response of one PUF would make predicting the response of other chips easier and security would be reduced.
-\subsection{Hamming Weight}
-Hamming weight simply measures the percentage of 1s in the $m$ responses to the same challenge:
-\begin{equation}\text{HW}=\frac{1}{n\cdot m} \sum_{i=1}^{m} \sum_{l=1}^{n} b_{i,l} \cdot 100 \end{equation}
-Where $b_{i,l}$ is the $l$-th binary bit of a $n$-bit response from a chip and $m$ is the number of responses. This metric provides an insight into the \textbf{Unpredictability} of the response, as a non uniform one where a certain state is favoured will make predicting the response easier. Ideally the result is 50\%, a balanced distribution of 1s and 0s. 
-
-% \subsection{Minimum entropy}
-
-% This metric is useful when evaluating the capabilities of a PUF as a random number generator instead of as an unique identifier. It summarizes the adequacy of $n$ memory cells to generate random numbers. Assuming that the $n$ memory cells have independent start-up values, the minimum entropy of the $n$-bit sequence (given as a percentage) is \cite{Baturone2015}:
-% \begin{equation}H_{\min }=-\frac{1}{n} \sum_{i=1}^{n} \log _{2}\left(p_{i \max }\right) \cdot 100\end{equation}
-% Where $p_{i \max }$ is the maximum probability of each cell to power-up to ‘0’ or ‘1’. It goes from 0\% for the absolutely reliable devices to 100\% where the probability of each cell is 0.5, an ideal random number generator. This means that it can be a measure of \textbf{Reliability} as well for unique identifiers, although BER covers that role better than minimum entropy since the result is a direct value for reliability. 
-
-
-
-
-
-
-
-
-\section{Helper Data Algorithms} 
-\label{sec:HDAs}
-%Small introduction on the need for HDAs and their goal. 1 page.
-
-For the sake of better understanding, so far the PUF has been considered ideal so that its response meets the specifications described in fig. \ref{fig:req}. However, due to environmental conditions (e.g. noise, polarization changes or temperature variations) and circuit aging, some response bits will not have a stable output and their value will change after repeating the same challenge, as shown in fig. \ref{fig:Unreliability}. This is known as the bit-flipping problem \cite{Baturone2015,Bhargava2012,Eiroa2012}. Bit-flipping is particularly problematic for silicon PUFs and, specifically, SRAM PUFs. Weak PUFs used as unique identifiers or to generate cryptographic keys must have perfect reliability, otherwise a legitimate PUF may be considered a fraudulent one. 
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=8cm]{images/Unreliability.pdf}
-    \caption{Illustration of the bit-flipping problem. The same PUF gives a different response to the same challenge at different points in time. }
-    \label{fig:Unreliability}
-\end{figure}
-
-% Although HDAs can help to improve uniqueness, reliability and unpredictability, generally the focus is put on reliability.  
-%  Sometimes, fuzzy extractors can be thought to be the same thing as HDAs, but there is a slight difference. Fuzzy extractors comprehend only a subset of all HDAs since they offer two guarantees: that the helper data does not reveal information about the key and that as long as the distance between the two readings is smaller than or equal to a constant $t$, the same key is extracted during the recreation step. These two guarantees are not present in HDAs.
-In order to avoid this problem, HDAs are applied so that PUFs responses meet the required reliability specifications for key generation in any implementation \cite{Delvaux2015}. They transform noisy and non-uniform responses into reliable and uniformly distributed keys. To achieve this improvement, they require helper data.  These specifications depend on the implementation's demands (such as the mean time between two successive accesses) but a target used thorough the literature is a failure rate of less than $10^{-4}\ \%$ \cite{Bohm2013,Delvaux2015}. This means that the key has a chance of one in a million to be erroneous. The failure rate is also known as Key Error Rate (KER).  $10^{-4}\ \%$ is a reasonable target for a mean inter access time of one minute \cite{Alioto2019}. 
-
-HDAs are applied in three consecutive steps: bit selection, error correction and entropy compression \cite{Delvaux2015}. Bit selection consists on using the most reliable bits out of the available ones. Error correction uses ECCs which lower the probability of failure by taking redundant bits. Finally, entropy compression uses a hash function to make the key uniform with perfect entropy and requires redundant bits as well. The need for these redundant bits means that the required PUF's response will be longer than the resulting key.
-
-There is always a trade-off in terms of cost and improvement with each technique used. The goal when selecting a HDA is to meet the required specifications in the most efficient way possible. Bit selection, error correction and entropy compression are not mandatory, there are schemes that rely only on heavy error correction \cite{Bosch2008}, that do not require any error correction \cite{Liu2017} or that go without entropy compression \cite{Martinez-Rodriguez2018}.  
-
-%It is important to keep in mind that enhancing the PUF's response can be achieved through design techniques to improve the output of the PUF itself, not just HDAs. 
-
-The specific implementation of a HDA can take different forms \cite{Hiller2020}. Two common constructions are considered:  Code-offset, presented in \cite{Dodis2004} and applied for example in \cite{Maes2009,Bosch2008}, and fuzzy commitment presented in \cite{Juels1999} and applied in \cite{VanDerLeest2012soft,Kusters2017}. They are capable of reaching a similar level of reliability \cite{Yu2013} and employ the same type of ECCs. 
-
-%Fuzzy commitment \cite{VanDerLeest2012},
-
-In a code-offset construction two phases are required: Enrollment and Reconstruction. Enrollment, shown in fig. \ref{fig:HDA} (a), is performed only once in a secure environment and after manufacturing. In this phase, a codeword $c$ is generated with the error correction encoder by using a random secret $x$. The PUF response $r$ is employed to generate the key through a hash function. A XOR operation is performed on this response and the code word to generate the helper data $h$. In principle, helper data can be made public without compromising the security of the key, and may be stored in an internal NVM, an external memory, in a server, etc. Reconstruction, shown in fig. \ref{fig:HDA} (b), is in-the-field deployment, performed when the key is required. First, a XOR on the noisy PUF response $r'$ and the stored helper data results in a codeword $c'$. Then, if the number of errors does not exceed the tolerance of the code, the error correction decoder fixes the mistakes in $c'$ and returns $c$. Afterwards,  the original PUF response $r$ is recovered by performing a XOR on the codeword $c$ and the helper data. The original key is obtained after $r$ is hashed.  
-
-%To reduce the impact of errors in this phase and since it is performed only once, taking the average of a number of CRPs can prove useful. \cite{Bohm2013}.     
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=12.5cm]{images/code offset.pdf}
-    \caption{Helper data algorithm based on the code-offset construction. This algorithm has two phases: Enrollment (a) and Reconstruction (b).}
-    \label{fig:HDA}
-\end{figure}
-
-In a fuzzy-commitment construction, the same two phases used in the code-offset construction are employed: Enrollment and Reconstruction. However, the approach in this construction is to obfuscate a randomly generated key or secret information through the PUF response instead of obtaining a key from the PUF response itself. In the Enrollment phase, shown in fig. \ref{fig:commitment}, $key$ is generated and then codified through the error correction encoder, obtaining $c$. Then, a XOR operation is performed on the codeword $c$ and the PUF response $r$ to obtain the helper data $h$, which is stored. During Reconstruction, $c'$ is obtained by performing a XOR on the noisy PUF response $r'$ and $h$. If the number of errors is low enough, $key$ is successfully recovered.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=13cm]{images/Fuzzy commitment.pdf}
-    \caption{Helper data algorithm based on the fuzzy commitment construction. This algorithm has two phases: Enrollment (a) and Reconstruction (b).}
-    \label{fig:commitment}
-\end{figure}
-
-Comparing both techniques, fuzzy commitment is simpler and easier to implement than code-offset. However, since it does not have a hash function, the helper data can leak information if the PUF response is non-uniform \cite{Dodis2004}.
-
-In the next subsections bit selection techniques, ECCs and entropy compression are examined one by one.
-
-
-
-
-
-\subsection{Bit selection}
-
-% Selection based on Multiple evaluation, activation control, post silicon selection, directed accelerated aging (basically different methods found in the bibliography to reduce error before the error correction phase). Compilation of results from different approaches. 3-4 pages
-
-Bit selection improves the output reliability by using as PUF only a subset of the available bits. Their goal is to reduce the requirements for the ECCs. In some cases this selection simply removes the unstable bits out of the pool of available bits and in others it tries to rank the bits according to their reliability so the best selection possible is used. 
-
-
-Bit selection techniques vary according to the type of PUF employed. Since this work focuses on SRAM PUFs, only techniques applicable for SRAMs are considered. In these devices, the selection is done on the cells. For example, Multiple evaluation \cite{Baturone2015} is a widely used technique where all cells are powered up a number of times and those that do not always produce the same response are discarded. This is a straightforward technique but presents some drawbacks, as it requires many power ups and only discards unstable bits without making a classification of the stable ones. New bit selections techniques are sought, and some of them will be evaluated in chapter \ref{chap:4}, where a new selection technique is presented.
-
-
-\subsection{ECCs}
-
-\label{ss:ecc}
-
-% Basic introduction and theory, Repetition, golay, BCH, Reed-Solomon... 3-4 pages
-
-
-ECCs are a powerful and easy to scale tool to achieve any degree of reliability from a PUF response. They are well established since ECCs are of great importance in multiple fields such as computing, telecommunication or information theory to control errors in data over unreliable or noisy communication channels \cite{CastineiraMoreira2006}. ECCs are the most common way to implement forward error correction (FEC) \cite{CastineiraMoreira2006}. The central idea of FEC is to correct errors without requesting retransmission of the original information by introducing a known structure into a data sequence.
-
-ECCs can be designed to correct bit-flips, bit-insertions and bit-deletion. The concern for PUFs is correcting bit-flips, so only ECCs geared towards this purpose are considered. In this work the PUF response is assumed to be a binary string, so only binary codes are evaluated.
-
-The drawback of ECCs is their area and energy cost. These are around two orders of magnitude greater than the PUF itself \cite{Alioto2019} for common silicon PUF implementations and they increase linearly with the number of correcting bits \cite{Taneja2019}. On top of that, requiring redundant bits from the PUF comes at an expense that varies depending on the implementation. The rise in cost due to the increased hardware complexity provides a great incentive to reduce the unreliability of the response before applying the ECC.
-
-%In most cases, the ECC is implemented with the worst case corner in mind. In \cite{Taneja2019} an architecture that adjusts the number of ECC bits required based on the actual instantaneous unstable bits is proposed. This saves up on energy requirements but not on area consumption. 
-
-As explained before, ECCs require certain helper data obtained during the enrollment phase of the HDA. This helper data differs from one ECC to another, and many are available \cite{CastineiraMoreira2006}. To effectively choose one, an ECC can be evaluated through three criteria \cite{Xu2015}:
-
+\textit{Our Novel Contributions are as Follows:}
 \begin{enumerate}
-    \item \textbf{Error reduction:} Measured simply as the reduction in BER achievable through the ECC. 
-    \item \textbf{Redundancy:} It is defined as the ratio of the number of bits required from the PUF to the length of the resulting key. As redundancy increases, so do the error correction capabilities, as well as the area and energy costs. Low redundancy is important if there is a constraint in the number of available bits in the PUF.
-    \item \textbf{Complexity:} Some ECCs are harder to implement in hardware than others or require more computational time. This criteria is more complicated to evaluate as it is heavily dependent on the specific implementation, but it is nonetheless important to consider. If, for example, a specific code performs better in redundancy or error correction compared to another one but the cost of implementing it increases significantly, the benefits from better performance may not be worth.
-    
+
+
+    \item We review compression approaches employed in the literature, unifying the evaluation criteria and, for the first time, comparing these techniques with the same workloads on the same circuits for a fair comparison. These are judged under the same benchmark circuit on 7 nm FinFET standard cells from the open-source ASAP7 standard cell library \cite{vashishthaASAP7PredictiveDesign2017} in terms of speed and accuracy when predicting threshold voltage degradation and the subsequent change in delay, showing how the previous approaches in the literature have an unacceptably high error (73.34\% and 84.85\% average error in threshold voltage for the two approaches studied, when compared to the reference uncompressed workload). 
+    \item We introduce and implement two novel compression approaches (\textit{Gate-level} and \textit{Super CDW}) to compress workloads with minimal accuracy loss (1.31\% and 2.31\% average error respectively, clearly surpassing the reviewed previous approaches) while achieving execution speeds sufficient for large digital circuits (1,151 and 146 seconds respectively, compared to 10 hours for the reference uncompressed workload, for a benchmark circuit with 3100 transistors).
+
+   
 \end{enumerate}
 
-Each type of ECC offers advantages and disadvantages compared to the rest in terms of these criteria, and there is not a universally good choice. It is important to select the ECC that meets the requirements in the most efficient way possible, as the ideal choice may vary between implementations. Improving one of the criteria usually represents a trade-off with the others. 
-
-
-
- There are two categories of ECCs: block codes and convolutional codes \cite{CastineiraMoreira2006}. Block codes add fixed size block of bits to the initial message. A sequence of message bits is followed by a sequence of redundant bits, which forms the codeword. In convolutional codes, the redundant bits are spread along the codeword. The choice between block code and convolutional code depends on the application \cite{Johannesson2015}. Convolutional codes require a memory for encoding and decoding while block codes do not, which may be a limitation in certain implementations. Block codes are more established and easier to implement than convolutional codes \cite{CastineiraMoreira2006}, although the full potential of convolutional codes has not been reached yet \cite{Rachinger2015}.  Convolutional codes allow for on-the-fly decoding, which is very useful in continuous communications. Block codes require waiting for the entire codeword to start decoding. However, since PUF responses have a fixed length, they do not make use of this property, and convolutional codes are not as popular for PUF implementations since block codes seem like an easier and more obvious solution \cite{Maes2009}. For this reason, block codes will be examined in more detail. 
+ % Together, these contributions will pave the way for computationally efficient aging simulations for digital circuits that fully take into account the complexity of underlying degradation phenomena. 
  
- 
+ %The paper is structured as follows: In Section \ref{section:ModelingBTI}, the equations that describe the defect-centric model are introduced. In Section \ref{section:RelatedWork}, the compression techniques used in the literature are reviewed. In Section \ref{section:Framework}, the framework used in this work is explained in detail, while in Section \ref{section:new_compression} the novel compression techniques introduced in this work are presented. In Section \ref{section:Results}, the performance of these techniques is evaluated against the ones presented in the literature, and finally, in Section \ref{section:Conclusions} conclusions are drawn. 
 
-A block code $C$ obtains a codeword $c$ from a message $m$:
+\section{Calculating BTI degradation with defect-centric models}
+\label{section:ModelingBTI}
+This section illustrates the calculation of the BTI degradation caused by complex waveforms in a transistor, demonstrating the computational limitation when using uncompressed workloads in large digital circuits. In this work, the PDO model is employed \cite{martin-martinezProbabilisticDefectOccupancy2011}, which models the capture and emission of carriers in the defects of the gate dielectric of a transistor, being agnostic with respect to their physical properties. Defects are simply described in terms of three parameters (each depending on bias voltage and temperature): mean capture $\tau_c (\text{V},\text{T})$ and emission times $\tau_e (\text{V},\text{T})$ and the change on the transistor's threshold voltage $\eta (\text{V},\text{T})$. The mean capture and emission times represent, respectively, the average time it takes for a carrier to be captured by the defect when empty and for a carrier to be emitted when the defect is occupied. In this way, the emission probability $p_e$ given a certain time interval $\Delta t$ is $p_e=\Delta t / \tau_e$, while the capture probability is $p_c=\Delta t / \tau_c$. Time constants are modeled according to a bivariate lognormal distribution $D\left(\tau_e, \tau_c\right)$, as shown in Fig. \ref{fig:PDO_Intro}(a).
+\begin{figure*}[!t]
+    \includegraphics[width=\textwidth,trim={0 0.5mm 0 0mm},clip]{images/ch2/plot_pocc_ddefect_together.pdf}
+    \caption{Representations in a logarithmic scale for the time constants of: (a) the distribution of defects used in this work; (b) the probability of a defect being occupied after an arbitrary waveform $V_{Arb}(t)$ with occupied and unoccupied defects highlighted; and (c) the product of both, which provides in the mean degradation through eq. (\ref{Equation:MeanVt}).}
+    \label{fig:PDO_Intro}
+\end{figure*}
+Thus, any defect will have a certain probability of occupation ($\text{P}_{\text{occ}}$) that depends on the history of the operating conditions of the transistor, with a captured carrier adding its specific amplitude to the overall threshold voltage degradation value. Adding together the mean contribution of these defects, the mean degradation $(\overline{\Delta V_\text{th}})$ of a transistor at EOL ($t_\text{EOL}$) when compared to a fresh device (at $t_\text{fresh}$) can be obtained through the PDO model as:
 \begin{equation}
-    c=C(m)
-\end{equation} 
+\label{Equation:MeanVt}
+\overline{\Delta V_{t h}}\left(t_\text{EOL}\right)=\bar{N} \bar{\eta} \iint_0^{\infty} D\left(\tau_e, \tau_c\right)  \Delta \text{P}_{\text{occ}}\left( t_\text{EOL}\right) \mathrm{d} \tau_e \mathrm{~d} \tau_c
+\end{equation}
+where $\bar{N}$ is the mean number of defects, $ \bar{\eta} $ is the mean change in threshold voltage for a single defect being charged and $\Delta \text{P}_{\text{occ}}\left(t_\text{EOL}\right)$ is the change in probability of occupation at EOL, defined as $\Delta \text{P}_{\text{occ}}\left( t_\text{EOL}\right) = \text{P}_{\text{occ}}\left(t_\text{EOL}\right) - \text{P}_{\text{occ}}\left(t_\text{fresh}\right)$. The value of $\text{P}_{\text{occ}}$ at any point in time depends on the time constants as well as on the biasing history of the transistor and can be expressed in differential form as a differential equation \cite{saraza-canflancaDeterminationTimeConstant2022} whose solution yields a general expression for the probability of occupation after a certain time interval $\Delta t =t_f - t_0$, under constant operating conditions (i.e., bias voltage and temperature) and given an initial value $\text{P}_{\text{occ}}(t_0)$ :
+\begin{equation}
+\label{Equation:Pocc}
+\text{P}_{\text{occ}}(\Delta t)=\frac{\tau_e}{\tau_e+\tau_c}+\left(\text{P}_{\text{occ}}(t_0)-\frac{\tau_e}{\tau_e+\tau_c}\right) e^{-\left(\frac{1}{\tau_e}+\frac{1}{\tau_c}\right) \Delta t}
+\end{equation}
 
-In this way, the block code maps the message to a unique codeword (encoding). The length of message $m$ is represented by $k$, while $n$ represents the length of codeword $c$. The redundancy can then be expressed as $R=k/n$. 
+An example of the resulting $\text{P}_{\text{occ}}$ from an arbitrary waveform is shown in Fig. \ref{fig:PDO_Intro}(b), as well as the product of this $\text{P}_{\text{occ}}$ with the distribution $D\left(\tau_e, \tau_c\right)$ in Fig. \ref{fig:PDO_Intro}(c), which after applying eq. (\ref{Equation:MeanVt}), results in the mean degradation of the transistor. 
 
-ECCs have a set of valid codewords in a certain space. The rest of possible codewords in that space are considered non-valid codewords. They are able to correct errors by changing non-valid codewords to their closest valid codeword and then decoding $c$ back to $m$. Accordingly, a key parameter in a block code is the distance $d$. It is defined as the minimum hamming distance between two valid code words. This distance provides a direct measure of the error correcting capabilities of the code: up to $d-1$ errors may be detected and up to $(d-1)/2$ corrected, rounded down.
+Calculating the mean degradation at EOL requires knowing $\text{P}_{\text{occ}}(t_\text{EOL})$, which implies reevaluating eq. (\ref{Equation:Pocc}) for all CET values each time the operating conditions of the transistor change due to the dependence of ${\tau_e},{\tau_c}$ on temperature and voltage bias. The bias workload $V(t)$ for a transistor can use a \textit{Digital} format, i.e., with two discrete valid voltage values $V_{\text{high}}$ and $V_{\text{low}}$ or an \textit{Analog} format with continuous voltage values. The \textit{Digital} format is simpler, but some information is lost compared to the \textit{Analog} format, as in reality the voltage waveform is not perfectly square, with transition slopes, overshoots, and transient states due to the stacking effect \cite{HongStacking2007, firouziLinearProgrammingApproach2011}. Taking these effects into account has an impact on the resulting mean degradation, for example, not considering voltage overshoots results in an underestimation of 4 \% in degradation, as reported in \cite{gieringNBTIModelingAnalog2014}. 
 
-%If the valid codewords are very different from each others, i.e. have a large $d$, many errors need to occur for an incorrect decoding.
-The most important and commonly used ECCs are linear codes \cite{CastineiraMoreira2006}, which will be the ones considered here.
- A linear code is one where the linear combination of two valid codewords is a valid codeword. Linear binary block codes are represented with the notation $[n,k,d]$, which sets the parameters of a specific block code.
- 
+Although the focus so far has been on obtaining the mean degradation and it will be used in this work as a metric to evaluate the accuracy of the aging prediction, one of the key features of a defect-centric model is the ability to model the aging variability of BTI. This can be done by considering, for each transistor, multiple sets of defects with their specific time constants and amplitude. Then, the contribution of these individual defects to the threshold voltage depending on their $\text{P}_{\text{occ}}$ is added together and multiple aging variability samples of $\Delta V_\text{th}({t_\text{EOL}})$ can be generated for the same transistor. This is crucial to analyze the effect of aging variability at the circuit level \cite{santana-andreoImpactBTIHCI2022,toro-friasFastAccurateReliability2015,vansantenModelingMitigatingTimeDependent2019}, which has been confirmed to have a significant effect on the performance of aged circuits \cite{santana-andreoReliabilityImprovementSRAM2024a, santana-andreoCharacterizingAgingDegradation2022, saraza-canflancaSmartSRAMCellArray2022}. To mitigate the effect of aging in digital circuits, a guardband (i.e., a timing slack on top of circuit delay) is typically used. When no aging variability information is available, a pessimistic, worst-case degradation is uniformly applied to all transistors. Meanwhile, in \cite{vansantenModelingMitigatingTimeDependent2019} it is shown how, by building aging variability-aware cell libraries, the required timing guardband is reduced by 46\%. Consequently, having the ability to consider the aging variability of BTI (i.e., by not abstracting away the defects) is a critical feature of a methodology making aging predictions for large digital circuits. 
 
-
-There are plenty of possibilities regarding block codes, but some of the most important ones and their strengths will be evaluated now in increasing order of complexity. After that, one convolutional code implementation for PUFs will be briefly examined. Lastly, different ECCs implemented in PUFs and their requirements will be compared. 
-
-\subsubsection{Repetition Code}
-
-% 
-The repetition code $(R)$ is is the simplest code available. It obtains one bit of the key from $n$ bits of the PUF's response through majority vote, so $n$ must be odd and the redundancy is $n$. The distance in a repetition code is simply $n$. Some examples of PUF implementations that use this code can be found in \cite{Bohm2011,Maes2009,Martinez-Rodriguez2018}.
- 
- To illustrate how this code work, a simple implementation using $R[3,1,3]$ for each bit of a 4-bit string will be examined in fig. \ref{fig:Repetition}. Initially the original message is encoded into four codewords by simply repeating each bit three times (fig. \ref{fig:Repetition} (a)). Two different examples are considered for decoding. In the first one, fig. \ref{fig:Repetition} (b), the codewords have three errors. However, they are spaced from each other and there is a majority of correct bits in each codeword. After doing a majority vote on each one, the original message is decoded. In the second one, fig. \ref{fig:Repetition} (c), the codewords have seven errors. In this case, two of them have a majority of errors and the resulting message is incorrect.
- 
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=13cm]{images/Repetition ECC.pdf}
-    \caption{Repetition code $R[3,1,3]$ example for four bits. (a) shows the error correction encoding, (b) a successful decoding and (c) a failed decoding. }
-    \label{fig:Repetition}
-\end{figure}
- 
-In any case, if less than half of the $n$ bits of each codeword come with no error the original value will be recovered since the majority of bits will have the correct answer, otherwise it will fail. The error reduction capabilities of this code mostly depend on the initial BER. For a BER of $15-50 \%$, the $n$ required to meet specifications is prohibitively high, e.g. $n=33$ for a BER of $15\%$ \cite{Bohm2013}. However, if the BER is previously reduced, a repetition code with a small $n$ is pretty effective. 
-
-This ECC has the highest redundancy possible, but its complexity is the lowest possible which makes it very easy to implement in any microcontroller. Repetition codes have entropy leakage issues, as pointed out by \cite{Delvaux2015,Koeberl2014}. These are specially significant for responses that are not perfectly uniform. 
-
-\subsubsection{Hamming Code}
-
-The hamming code was one of the earliest ECCs developed, in 1950 by Richard Hamming \cite{Hamming50}.  It employs parity checks through embedded parity bits to detect up to two-bit errors and correct up to one $(d=3)$. Parity checks consist in evaluating the parity of a set of bits and comparing it to a reference value, the parity bit. In binary, evaluating the parity of a set of bits is equivalent to performing a XOR operation. The most common hamming code is $Hamming[7,4,3]$, which has three parity bits $(p_1,p_2,p_3)$ and four message bits $(d_1,d_2,d_3,d_4)$. One way to graphically represent these bits is shown in fig. \ref{fig:HammingVenn}. 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=5cm]{images/HammingVenn.png}
-    \caption{Graphical depiction of the 4 data bits $d_1$ to $d_4$ and 3 parity bits $p_1$ to $p_3$ and which parity bits apply to which data bits \cite{Hammingwiki}.}
-    \label{fig:HammingVenn}
-\end{figure}
-
-
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=12cm]{images/Hamming ECC.pdf}
-    \caption{Hamming code $Hamming[7,4,3]$ example for four bits. (a) shows the error correction encoding, (b) a successful decoding and (c) a failed decoding. }
-    \label{fig:HammingECC}
-\end{figure}
-
-Each parity bit checks three different combinations of three data bits. Error correction is performed by evaluating the parity bits, and the erroneous parity bits determine which bit has to be corrected. Suppose that there is one bit error. If one of the parity bits is incorrect, then the error is in that bit. If two are incorrect, either $d_1$, $d_2$ or $d_3$ (determined by the two parity bits) have a bit flip. If all three are incorrect, $d_4$ has the error. This is illustrated by a practical example in fig. \ref{fig:HammingECC}.
-
-First, in fig. \ref{fig:HammingECC} (a), the original message is encoded by simply computing the parity bits and adding them to the message. Two different examples are considered for decoding. In the first one, in fig. \ref{fig:HammingECC} (b), the codeword has one error. Evaluating the parity bits reveals that $p_1$, $p_2$ and $p_3$ are wrong. If all three are incorrect, then $d_4$ has an error and gets corrected. The codeword is recovered and the message is correct. In the second one, in fig. \ref{fig:HammingECC} (c), the codeword has two errors. Evaluating the parity bits reveals that $p_3$ is wrong, so that bit gets corrected. Error correction failed because hamming codes can correct only one error, so the message is incorrect. 
-
-
-Regarding their performance, redundancy in hamming codes is very good, as they use the minimum amount of parity bits for their length \cite{Huffman2003}. This ratio becomes even better as the length of the message $k$ increases.  Their complexity is high compared to repetition codes but low compared to more advanced codes as they only require a few XOR operations to perform parity checks. However, they have low error reduction capabilities, as they can only correct one error. Since most PUFs do not have low error rates, Hamming codes are not popular. 
-
-
-\subsubsection{Reed-Muller code}
-
-Reed-Muller (RM) codes are a big family of ECCs. They can be described in multiple ways. One clear explanation is provided in \cite{Abbe2020}. The code construction can be described as a greedy procedure, where the best set of codewords for each message $m$ with a length $k$ and a desired distance $d$ are sought. Consider building a binary linear code; it must contain the all-0 codeword. If one has to pick a second codeword, then the all-1 codeword is the best choice under any meaningful criteria. If now one has to keep these two codewords, the next best choice to maximize the code distance is to include the half-0 half-1 codeword and to continue building codewords sequentially. Once saturation is reached at relative distance $d$, it is less clear how to pick the next codeword, but one can simply take linear combinations of the previously picked codewords, and iterate this after each saturation. This procedure results in the valid set of $2^k$ RM codewords, so that each possible combination of $k$ bits has one codeword associated. 
-
-% Another way to understand these codes comes from the fact that RM are considered polynomial codes. In polynomial codes, a string of $n$ bits can be identified with the polynomial:
-
+In any case, computing $\text{P}_{\text{occ}}(t_\text{EOL})$ considering the complete workload of each transistor until EOL is not feasible: considering a single transistor, an EOL of 10 years (around \num{3.15e+8} seconds) and a complex waveform with a mean frequency of around 4 GHz (in the order of the frequency of commercial processors \cite{AMDRyzenProcessors}) will require approximately \num{2.52e+18} iterations of eq. (\ref{Equation:Pocc}). This is a general problem for defect-centric models and not specific to the PDO model, as calculating the probability of occupation, which depends on the bias history of the transistor, to obtain the final degradation is a common element of defect-centric models \cite{grasserParadigmShiftUnderstanding2011, reisingerUnderstandingModelingAC2011, kaczerDefectcentricPerspectiveDevice2015}. To solve this issue, a naive approach is to assume that the transistor is at a constant, uniform high value (e.g., ignoring aging recovery entirely) so that eq. (\ref{Equation:Pocc}) is only computed once until EOL. However, this is not acceptable, as it significantly overestimates aging \cite{vansantenModelingMitigatingTimeDependent2019}. 
+A better approach is to consider that the complex waveform that represents the transistor workload can be modeled as a shorter, representative periodic waveform of duration $\Delta t_{\text{signal}}$, such as the waveform corresponding to an application periodically triggered throughout the lifetime of the circuit. This imposes a limitation on the applications that can be considered, although they are typical in embedded systems \cite{amrouchConnectingPhysicalApplication2015} such as wireless body sensor networks \cite{duchAnalysisFunctionalErrors2020}, and for non-periodic applications the workload size can be adapted to make it more representative. Considering a period of total duration $\Delta t_\text{signal}$ consisting of $n$ total distinct points of bias $V_i$, each $i$-th point with their own $\tau_{ei}(V_i)$, $\tau_{ci}(V_i)$ and $\Delta t_i$ values, a general expression for $\text{P}_{\text{occ}}$ after $\Delta t_\text{signal}$ can be obtained by applying eq. (\ref{Equation:Pocc}) successively: 
 % \begin{equation}
-% a_{n-1} x^{n-1}+\cdots+a_{1} x+a_{0}
+% \label{Equation:One_period}
+% \text{P}_{\text{occ}}(t_0+ \Delta t_{\text{signal}})=A +B \text{P}_{\text{occ}}(t_0)
 % \end{equation}
+% where $A$ and $B$ are multiplicative factors:
+% \begin{multline*}
+% A=\sum_{i=1}^n \frac{\tau_{e i}}{\tau_{e i}+\tau_{c i}} \cdot\left(\prod_{j=0}^{n-i-1} e^{-\left(\frac{1}{\tau_{e(n-j)}}+\frac{1}{\tau_{c(n-j)}}\right)\Delta t_{(n-j)}}\right) \cdot
+% \\\left(1-e^{-\left(\frac{1}{\tau_{e i}}+\frac{1}{\tau_{c i}}\right) \Delta t_i}\right) 
+% \end{multline*}
+\begin{equation}
+\label{Equation:One_period}
+\text{P}_{\text{occ}}(\Delta t_{\text{signal}})=A +B \text{P}_{\text{occ}}(t_0)
+\end{equation}
+where $A$ and $B$ are multiplicative factors. Factor $B$ is the weight of the initial probability of occupation on the final value, while $A$ is associated with the shift in probability of occupation due to the applied workload. As $\Delta t$ becomes larger, $A$ dominates over $B$ for more pairs of time constant values. They are defined as:
 
-% For example, a bit string 11001 would be equivalent to $x^4+x^3+1$. In this way, the valid codewords are are those that are divisible by a certain fixed generator polynomial, which defines the code. RM codes with parameters $m$ and $d$ consist of all the evaluation vectors of polynomials with m variables and degree no larger than r \cite{Abbe2020}.
+\begin{equation*}
+f_k = e^{-\left(\frac{1}{\tau_{e k}}+\frac{1}{\tau_{c k}}\right) \Delta t_k} \ \ \ \  ; \ \ \ \ B=\prod_{i=1}^n f_i 
+\end{equation*}
+\begin{equation*}
+A=\sum_{i=1}^n \frac{\tau_{e i}}{\tau_{e i}+\tau_{c i}} \cdot \left(1-f_{i}\right) \cdot\left(\prod_{j=0}^{n-i-1} f_{n-j}\right)  
+\end{equation*}
 
-RM codes are often expressed as $RM(r,t)$, which corresponds to $RM\left[2^{t}, k, 2^{t-r}\right]$ in the standard notation. In this way, $n=2^t$ and $r$ represents the order of the code, an order by which the RM codes are classified. Reed-Solomon codes are one popular example of a high order RM code. However, for PUFs only RM codes of the first order are considered \cite{Bosch2008}, also known as augmented Hadamard codes. These codes are relatively easy to encode and decode by using majority-logic circuits, unlike higher order codes which require complex decoders. They are represented as $RM[2^{(k-1)},k,2^{(k-2)}]$, for a message $m$ of length $k$. These codes offer a middle ground between hamming and repetition in terms of redundancy and error correction capabilities, while being more complex than either of them. RM codes used in PUF implementations are found in \cite{Bosch2008,VanDerLeest2012soft,Hiller2015}. 
+Applying eq. (\ref{Equation:One_period}) over successive $M$ periods results in a geometric series, which can be expressed as:
+\begin{equation}
+\label{Equation:Pocc_periodic}
+\text{P}_{\text{occ}}(M \Delta t_\text{signal})=A \frac{1-B^M}{1-B}+B^M \text{P}_{\text{occ}}(t_0)
+\end{equation}
+ This equation, applicable to any arbitrary periodic waveform \cite{gieringNBTIModelingAnalog2014}, reduces the number of evaluations of eq. (\ref{Equation:Pocc}) from each bias change until EOL to only changes in the considerably shorter representative waveform of duration $\Delta t_\text{signal}$ by considering $M=t_\text{EOL} / \Delta t_{\text{signal}} $. If, say, we assumed a 1 ms workload of an application execution to be representative of the operation until EOL, for the previous example of a mean frequency of 4 GHz the number of iterations of eq. (\ref{Equation:Pocc}) required to estimate degradation at EOL are significantly reduced from \num{2.52e+18} to \num{8e6}. Although the improvement is notable, reducing the number of iterations by 12 orders of magnitude, \num{8e6} iterations per transistor is still too large for a circuit with many transistors.  
+
+
+\section{Related Work}
+\label{section:RelatedWork}
+Different approaches have been used to solve the issue of bringing workload-dependent aging predictions to large digital circuits. In \cite{klemmeMachineLearningCircuit2021,klemmeScalableMachineLearning2022a,klemmeEfficientLearningStrategies2022} the calculation of the probability of occupation is circumvented using a curve that translates the average duty cycle of the transistor workload directly into mean degradation, making the problem computationally trivial. Although the curve itself is obtained through a physics-based model \cite{thirunavukkarasuDeviceCircuitFramework2019}, the transistor-level information
+$\text{P}_{\text{occ}}(t_0 + t_\text{EOL})$ required to model aging variability is lost in the process. Additionally, only average long-term degradation is obtained, so short-term degradation cannot be properly modeled. 
+
+By contrast, the strategies in \cite{vansantenDesigningGuardbandsInstantaneous2016,AtomisticPseudoRodopoulos2014,fornaciariHarnessingPerformanceVariability2019, duchAnalysisFunctionalErrors2020, amrouchConnectingPhysicalApplication2015} focus on workload compression to obtain the degradation at EOL. Through compression, calculating $\text{P}_{\text{occ}}(t_\text{EOL})$ becomes computationally feasible, and the transistor-level information is not lost. In \cite{vansantenDesigningGuardbandsInstantaneous2016}, a compression technique was introduced that will be referred to as \textit{longest continuous stress (\textit{LCS}) compression}. By calculating the duty cycle $\lambda$ (ON-/OFF-ratio) and the longest continuous ON-time $t_{\text{LCS}}$, the original waveform is reduced to three points, a \textit{stress} phase where high voltage is applied for a time $t_{s}=\lambda t_\text{EOL}$, a recovery phase where low voltage is applied for $t_{r}=(1-\lambda) t_\text{EOL}$ and finally a LCS phase where high voltage is applied for $t_\text{LCS}$, as shown in Fig. \ref{fig:sect2waveformRepresentations}. The driving idea for this compression method is to use the first two phases to represent the average long-term impact of BTI, which is considered frequency independent, and the last LCS phase as a worst-case value of short-term BTI. This approach requires only three iterations of eq. (\ref{Equation:Pocc}) per transistor, significantly reducing the execution time.
+
+\begin{figure}[!b]
+    \includegraphics[width=0.48\textwidth,trim={7mm 3.5mm 10.5mm 3mm},clip]{images/ch2/WaveformRepresentationsSect2.pdf}
+    \caption{Conceptual waveform representations for state-of-the-art compression techniques. For the \textit{LCS compression}, $t_s$ is the stress phase, $t_r$ the recovery phase and $t_{\text{LCS}}$ the longest continous ON-time in the original workload. For the \textit{CDW compression}, the duty cycle $\lambda$, frequency $f$, and total elapsed time $\Delta t'_{\text{CDW}}$ are the triplet of values that represent one workload segment and $M$ the number of times that segment is repeated. The number of data points, in red, drive the computational effort to obtain the transistor's degradation.}
+    \label{fig:sect2waveformRepresentations}
+\end{figure}
+
+On the other hand, the authors in \cite{AtomisticPseudoRodopoulos2014} propose taking the uncompressed workload of duration $\Delta t_\text{signal}$, dividing it into segments, and simplifying them into \textit{Compact Digital Waveform} (CDW) segments. This method is termed \textit{CDW compression}, and is further utilized in \cite{duchAnalysisFunctionalErrors2020, fornaciariHarnessingPerformanceVariability2019}. A CDW segment consists on three values: duty cycle $\lambda$, average frequency $f$, and segment duration $\Delta t_{\text{CDW}}$. The values of each CDW segment match the average values of their corresponding original workload segment. In this way, a complex segment that, in the original workload, required many points to be described is reduced to a repeating two-point AC waveform with matching duty cycle and frequency. The number of periods $M$ for each segment is computed as $\Delta t_{\text{CDW}} \cdot f$. The CDW equivalent for the first and last segments of an example workload with their different triplet of values is shown in Fig. \ref{fig:sect2waveformRepresentations}. Thanks to this simplification, $\text{P}_{\text{occ}}$ can be computed significantly faster through eq. (\ref{Equation:Pocc_periodic}). The number of segments $n_\text{CDW}$ used to divide the workload is the user's choice, which introduces a trade-off between accuracy and computation time. Two options are possible when computing the CDW workload \cite{fornaciariHarnessingPerformanceVariability2019}: (a) to employ a fixed number of segments and divide the original workload into a number of intervals of certain, uniform duration $\Delta t_{\text{CDW}}$, or (b) to group segments with similar duty cycle $\lambda$ and average frequency $f$ through a dedicated algorithm.  Through this procedure, the degradation caused by one execution of the representative workload, after $\Delta t_\text{signal}$, can be easily calculated. Still, this degradation must be extrapolated to EOL, a much larger time value (e.g., years) than $\Delta t_\text{signal}$ (e.g., seconds). To perform this extrapolation, the authors in \cite{AtomisticPseudoRodopoulos2014} increase the $\Delta t_{\text{CDW}}$ value of each segment by a proportional factor to cover the entire time range, so that $(\sum{\Delta t'_{\text{CDW}}}) =  t_\text{EOL}$ \cite{AtomisticPseudoRodopoulos2014, fornaciariHarnessingPerformanceVariability2019}. However, this gives \textit{disproportionally more weight to the last CDW segments when determining the final degradation}, causing a prediction error.
+
+ %An algorithm is also proposed as an alternative to group regions with similar CDW values together to improve the trade-off. 
+
+Finally, there are works \cite{gholveCARATReliabilityAnalysis2023,vansantenBTIHCDDegradation2020,gensslerModelingPredictingTransistor2023, amrouchConnectingPhysicalApplication2015, duchAnalysisFunctionalErrors2020} where a ``short" initial aging simulation is performed, obtaining a degradation curve from which the degradation at EOL is extrapolated through a fitting procedure. Some of these fitting approaches employ compression \cite{amrouchConnectingPhysicalApplication2015, duchAnalysisFunctionalErrors2020} to be able to perform longer initial simulations and improve fit quality. However, this approach comes with fundamental drawbacks. By construction, these works abstract defects away, losing the transistor-level information required to accurately consider aging variability. Additionally, a fitting procedure is required for \textit{each individual transistor} in the circuit, adding significant computational and implementation overhead. Furthermore, the length required for the initial simulation to obtain a precise extrapolation is not clear (\qty{1}{\micro s} workload in \cite{gholveCARATReliabilityAnalysis2023,vansantenBTIHCDDegradation2020,gensslerModelingPredictingTransistor2023}, \qty{100}{s} workload in \cite{amrouchConnectingPhysicalApplication2015} and a \qty{10}{min} workload in \cite{duchAnalysisFunctionalErrors2020}) a so-called ``short" simulation can still include a high number of points. Due to these drawbacks, this work will only employ techniques to obtain degradation at EOL \textit{without abstracting defects away}, namely \textit{LCS compression} and the original \textit{CDW compression}. The two techniques proposed in this work (\textit{Gate-level} and \textit{Super CDW} compression, section \ref{section:new_compression}), satisfy this requirement with minimal accuracy loss. 
+
+%Specifically, the works \cite{gholveCARATReliabilityAnalysis2023,vansantenBTIHCDDegradation2020,gensslerModelingPredictingTransistor2023} obtain the degradation curve after a \qty{1}{\micro s} workload. This degradation is extrapolated to EOL by using the easy-to-compute degradation from a DC stress to EOL as reference. In \cite{amrouchConnectingPhysicalApplication2015} the workload is divided into segments, compressing each one into a single two-point waveform that maintains the duty cycle of the original segment but disregards its frequency. Through this procedure, the degradation curve of a 100-s-long workload is obtained, to which the EOL extrapolation is applied. Lastly, in \cite{duchAnalysisFunctionalErrors2020}, they start from a 2 s workload, obtain the CDW-equivalent of that workload, and compute the degradation curve resulting from repeating those 2 s of activity for 10 minutes. Then, they extrapolate to EOL through a fitted curve and perform another short simulation adding the EOL degradation value to capture the short-term degradation.
+
+\section{Reliability Framework}
+
+\label{section:Framework}
+In this section, the reliability framework employed in this work and its features are introduced. This framework needs to be able to, from a realistic, representative workload, extract its compressed counterparts and compare the degradation obtained through them with the one obtained without compression.
+
+\subsection{CASE: A circuit-level aging simulator}
+
+To evaluate the aging degradation of each digital gate, we employ our circuit-level aging simulator, CASE \cite{martin-lloretCASEReliabilitySimulation2017}. CASE works with a certain circuit netlist as input, simulates the circuit topology with the SPICE circuit simulator taking into account aging variability and returns the aging-induced degradation per transistor and the circuit's aged performances. This is necessary as current commercial tools such as RelXpert \cite{CadenceReliability} or PrimeSim MOSRA \cite{SynopsysReliability} employ deterministic compact models, unable to accurately model aging variability when compared to defect-centric models. To estimate the impact of aging on digital circuit delays, it is important to work at the transistor level, since not taking individual transistor degradations into account will result in erroneous estimations \cite{khanBTIImpactLogical2012, vansantenModelingMitigatingTimeDependent2019, vansantenNewWorstcaseTiming2019}, with degradation on certain transistors having a larger impact on circuit delay and therefore being more susceptible to aging \cite{mohamedGraphAttentionNetworks2024}. CASE was conceived to study the circuit degradation at the electrical level, obtaining the workload of each transistor through SPICE simulations by specifying a transient simulation. Additional features were required for this work, such as a module to compute the probability of occupation through an efficient implementation of eq. (\ref{Equation:Pocc_periodic}) and the ability to work with workloads expressed in different formats, as detailed in the next subsection. 
+
+%When employing an analog format, a set of gate inputs is specified in a SPICE standard VEC digital vector file format, a transient simulation is performed, and the transistor's workload is obtained. For the digital format, the individual workloads of each transistor are fed directly into the simulator's aging calculation through an external file, bypassing the need to perform electrical simulations in SPICE.
+
+
+% Given how the number of iterations of (\ref{Equation:Pocc}) is determined by the number of transient points used to describe these analog waveforms, it is important to reduce the number of points employed to describe it to the minimum required. This is distinct from compression, as it refers only to optimizing the workload waveform without changing its shape. For an analog representation, the waveform is represented by evenly spaced points in the time domain printed by the electrical simulator, even if there is no significant voltage change between two points, which is the case for most of the period of a transistor workload in a digital gate. To remove these redundant points, sections of similar voltage values, i.e., where points are within a certain range from the first point of the section, are grouped together. In this work a value of 10 mV is used as the maximum distance between points for each group. However, digital workloads do not require any post-processing, as there are only two possible voltage values. In that case,
+
+% \subsection{Probability of occupation at time zero}
+% To apply eq. \ref{Equation:Pocc}, a value for $\text{P}_{\text{occ}}(t_0)$ at time zero is required. Applying that equation for a situation where the device is left unbiased indefinitely $(V = 0, \Delta t = \infty)$, a reasonable assumption for a fresh, unused device, results in a certain, non-zero probability of occupation $\text{P}_{\text{occ}}(t_{0})$ as shown in Fig. \ref{fig:IntialPocc}. One may consider that probability at the begining of the lifetime of a device to be zero, but that would result in a number of defects being occupied on the first application of (\ref{Equation:Pocc}) and a significant mean degradation even after an infinitesimally small $\Delta t$. To correct for the resulting offset, probability of occupation is redefined as:
+% \begin{equation}
+% \label{Equation:Pocc_adjusted}
+% \Delta \text{P}_{\text{occ}}(\Delta t)=\text{P}_{\text{occ}}(\Delta t) - \text{P}_{\text{occ}}(t_0)
+% \end{equation}
+% Which, for the arbitrary waveform employed in Fig. \ref{fig:PDO_Intro} (b) results in the probability of occupation shown in Fig. \ref{fig:IntialPocc} (b).
+% \begin{figure*}[!t]
+%     \includegraphics[width=\textwidth,trim={-5mm 0.5mm -5mm 0mm}]{images/ch2/plot_together_pocc.pdf}
+%     \caption{Increase in probability of occupation due to the application until EOL of (a) the arbitrary waveform employed in Fig. \ref{fig:PDO_Intro} and (b) the worst-case probability of occupation after constant DC stress. In (c), the mask extracted from (b) of relevant values to calculate with a tolerance of $10^{-6}$, which reduces the computational effort to obtain the probability of occupation without impacting the precision of the degradation prediction.}
+%     \label{fig:IntialPocc}
+% \end{figure*}
+% \subsection{Probability of occupation masking}
+
+% As already mentioned, calculating $\Delta P_{\text{occ}}$ is the critical aspect in terms of execution time to obtain the degradation at EOL. Taking, for example, the arbitrary waveform used to obtain Fig. \ref{fig:PDO_Intro} (b), the change $\Delta P_{\text{occ}}$ is shown in Fig. \ref{fig:IntialPocc} (a).
+% To reduce the computational effort to calculate $\Delta\text{P}_{\text{occ}}$ to a minimum, one can determine the region of CET values that is relevant for BTI degradation, so that only the values contained in that area are re-evaluated. A high bound for degradation, considering the gate bias dependence, is a situation in which the transistor remains biased at a high voltage until EOL, equivalent to a constant DC stress. The evaluation of the degradation in this case is trivial, as it requires only one application of (\ref{Equation:Pocc}). The resulting $\text{P}_{\text{occ}}$ is shown in Fig. \ref{fig:IntialPocc} (b). Then, we can define a certain tolerance beyond which the change in the probability of occupation is considered to be zero and not recalculated each time. The mask generated from this approach is shown in Fig. \ref{fig:IntialPocc} (c) and significantly reduces the number of values that must be computed, resulting in an improvement of the execution speed.
+
+
+\begin{figure}[!b]
+    \includegraphics[width=0.48\textwidth,trim={7mm 3.5mm 13mm 4.5mm},clip]{images/ch2/FrameworkCellweaver.pdf}
+    \caption{Overview of the flow employed in this work to analyze different compression approaches.}
+    \label{fig:Framework Diagram}
+\end{figure}
+\subsection{Extending CASE to large digital circuits}
+\label{ss:ExtendingCASE}
+ A custom script is employed to implement the flow illustrated in Fig. \ref{fig:Framework Diagram}, building a reliability framework to extend CASE from small circuits like individual cells to large scale circuits with thousands of cells. First, to obtain the input vectors of each digital cell, a gate-level HDL simulation is performed on the circuit under study, resulting in a standard \textit{Value Change Dump} (VCD) file with input vectors (i.e., cell inputs) expressed in terms of logic levels, that is, $V_{\text{high}}$ or $V_{\text{low}}$ voltage levels. Input vectors are usually automatically translated into individual transistor level waveforms through the SPICE-level transistor topology from the standard cell library from the Process Design Kit (PDK) \cite{vansantenDesigningGuardbandsInstantaneous2016, duchAnalysisFunctionalErrors2020, fornaciariHarnessingPerformanceVariability2019}, in what is referred to as \textit{Activity Monitoring}. This results in a digital format workload of each transistor, which can be fed directly into the aging simulation through an external file without performing SPICE simulations, as shown in the bottom half of Fig. \ref{fig:Framework Diagram}. However, a reduction to a square-wave signal with only two possible logic values purposely removes information (e.g., rise time, transient states in intermediate nodes) potentially altering the predicted aging-induced degradation, particularly in complex cells with many transistors. For example, for two serially connected transistors, the intermediate node can be in an indeterminate state when both transistors are OFF. This state depends on the previous logic state and the charge leakage of that node \cite{zhangAgingAwareGateLevelModeling2021}, a level of detail which cannot be captured by \textit{Activity Monitoring}. An alternative to avoid this is to specify the input vectors in a SPICE standard VEC digital vector file format, perform a transient simulation, and obtain the transistor’s analog format workload. To compare both approaches, we name the uncompressed analog waveform as \textit{Analog Golden} and the uncompressed digital waveform as \textit{Digital Golden}. Later we will introduce other analog/digital compressions and use the golden references as the baseline. Although accurate, these workloads require long execution times that are \textit{unbounded}, i.e., they will require more time for longer workloads.
+
+\subsection{Strategy for low frequency workloads}
+
+
+\label{subsection:Defect_distribution_shifting}
+
+Performing the aging simulations for a workload corresponding to low switching frequencies introduces an issue, as simulation has to cover at least one full period (which gets longer at the lower frequency) of the representative workload. Unfortunately, the switching frequency is much lower than the clock frequency in a circuit. For instance, an Adder which solely adds small numbers will keep its most significant bit at ``0''. Therefore, the switching frequency $f_\text{switch}$ of a transistor is typically much lower than the clock frequency $f_\text{clk}$ of a circuit. The work in \cite{vansantenWorkloadDependenceSelfHeating2020} showed how in a processor with a 2-GHz $f_\text{clk}$, $f_\text{switch}$ is actually in the kHz-range. These kHz frequencies are currently not supported due to how slower workloads will require more simulation time. An example is shown in Table \ref{tab:lowfreqexample}, where the degradation of an inverter is calculated using the \textit{Analog Golden} approach. It is clear how the simulation time and resulting VEC file size grow linearly with the reduction in frequency, making detailed simulations for slower signals unfeasible. Changing the frequency of the input signal without changing the workload duration is not an acceptable solution either, as it will distort the workload of each transistor.
+
+\begin{table}[!t]
+    \caption{Computational effort for low frequency workloads}
+    \begin{center}
+    \addtolength{\tabcolsep}{-0.2em}
+       \begin{tabular}{@{}lcccc@{}}\toprule
+        & \multicolumn{3}{c}{Frequency} \\   \cmidrule(lr){2-5}
+                        & 500 MHz  & 50 MHz & 5 MHz & $<$1 MHz\\ \midrule
+        Waveform Length & \qty{1}{\micro s} & \qty{10}{\micro s} & \qty{100}{\micro s} & Unfeasible \\
+        Waveform File Size & 10 MB & 100 MB & 1 GB & Unfeasible\\
+        Execution time  & 10 s & 30 s & \makecell{Memory error} & Unfeasible  \\ \bottomrule
+    \end{tabular}     
+    \end{center}
+    \label{tab:lowfreqexample}
+\end{table} 
+
+A useful strategy to solve this problem is to keep the workload at a high frequency and instead scale the distribution of defects, changing its time constants to match the reduction in circuit frequency. In this way, only the PDO parameters have to be changed, bypassing the need to change the simulated workload and the slower execution times for slower workloads. \textit{It is important to note that these two approaches are mathematically equivalent and thus result in exactly the same result (no accuracy loss).} This equivalence is proven as follows: we start with a certain \textit{frequency factor} $\epsilon$, which determines how much the workload is slowed down and plug it in eq. (\ref{Equation:Pocc}). If we consider a certain slower workload, $\Delta t$ is increased so that the new $\Delta t' = \epsilon \Delta t$. The technique used is to keep $\Delta t$ unchanged and instead modify the time constants so that $\tau_e', \tau_c' = \tau_e / \epsilon , \tau_c / \epsilon$. Plugging these time constants into eq. (\ref{Equation:Pocc}) results in the \textit{same probability of occupation as the one obtained with the longer $\Delta t$.} The shift in the defect distribution means that we also have to shift the simulation time ($t_\text{EOL}$) in the opposite direction to ensure equivalency when extrapolating through eq. (\ref{Equation:Pocc_periodic}), so that $t'_\text{EOL} = t_\text{EOL} / \epsilon$. 
+
+
+\section{Proposed compression methods}
+\label{section:new_compression}
+In this section, we propose two novel compression methods, \textit{Gate-level compression} and \textit{Super CDW compression}.
+
+\subsection{Gate-level compression}
+Since the compression methods found in the literature are used only for digital formats of the transistor $V(t)$ waveform, an alternative method is proposed for analog formats. This method is termed \textit{Gate-level compression}. Instead of compressing transistor waveforms, our method compresses the cell's input vectors. For example, consider a 2-input gate with inputs A, B and for which the four possible input vectors are (A = 0, B = 0), (A = 1, B = 0), (A = 0, B = 1), (A = 1, B = 1). The occurrence of each input vector and how frequently they change is recorded for a representative period. We then create a set of synthetic compressed input vectors with each combination appearing only once and maintaining the occurrence ratio of each combination, as shown in Fig. \ref{fig:GateLevelCompression}. The gate is simulated in SPICE for the compressed VEC file generated (as shown in Fig. \ref{fig:Framework Diagram}), extracting the individual transistor waveforms $V(t)$ in analog format. Compared to the methods found in the literature, using this format has the advantage of enabling multiple transistor bias values, while keeping the execution time bounded. This will result in more accurate results as the real bias conditions of the cell are considered (with slopes, overshoots...) and it can be useful in situations where the circuit operates at different supply voltages; for example, a digital circuit that operates between low-power mode ($V_\text{DD}= \qty{0.7}{V}$) and high-performance mode ($V_\text{DD}=\qty{1.0}{V}$) and switches between these two voltages. The drawbacks are requiring more points than a digital signal and performing SPICE calls for short simulations, as well as the inability to properly model short-term BTI, which will come to light in subsection \ref{subsection:freq_dependence}. 
+
+\begin{figure}[!t]
+\captionsetup{labelfont={color=blue}}
+    \includegraphics[width=0.48\textwidth,trim={7mm 5mm 7mm 6mm},clip]{images/ch2/GateLevelCompression.pdf}
+    \caption{Example showing how \textit{Gate-level} compression is performed on a 2-input AND gate for one period of the representative waveform. }
+    \label{fig:GateLevelCompression}
+\end{figure}
+
+
+\subsection{Super CDW compression}
+\label{subsection:SuperCDWcompression}
+Although the \textit{CDW compression} technique is quite efficient, performing the extrapolation to EOL by increasing the $\Delta t_{\text{CDW}}$ of each segment is a weakness, as it will give significantly more weight to the last CDW segments, resulting in an erroneous prediction. To avoid this weakness, we propose a technique termed \textit{Super CDW compression}. Each waveform is first translated to a set of CDW segments, as in the original \textit{CDW compression}. Then, instead of modifying $\Delta t_{\text{CDW}}$, we repeat the process used to derive eq. (\ref{Equation:Pocc_periodic}), obtaining the degradation after $M_{\text{super}}$ successive sets of CDW segments. Each CDW segment $k$ has its corresponding values $A_k$ and $B_k$, obtained by the expressions in eq. (\ref{Equation:One_period}). Applying a complete set of these segments for a number of segments $n_{\text{CDW}}$ will result in the following expression according to eq. (\ref{Equation:Pocc_periodic}):
+
+\begin{equation}
+\label{Equation:Super_CDW}
+\text{P}_{\text{occ}}(\Delta t_{\text{signal}})=A_{\text{super}} +B_{\text{super}} \text{P}_{\text{occ}}(t_0)
+\end{equation}
+with:
+\begin{equation*}
+A_{\text{super}}=\sum_{k=1}^{n_{\text{CDW}}} A_k \frac{1-B_k^{M_k}}{1-B_k} \cdot\left(\prod_{l=0}^{n_{\text{CDW}}-k-1} B_{n_{\text{CDW}}-l}^{M_k}\right)  
+\end{equation*}
+
+\begin{equation*}
+B_{\text{super}}=\prod_{k=0}^{n_{\text{CDW}}} B_k^{M_k}
+\end{equation*}
+In the same way as before, applying eq. (\ref{Equation:Super_CDW}) over successive $M_{\text{super}}$ periods results in a geometric series, which can be expressed as:
+\begin{equation}
+\label{Equation:Super_CDW_periodic}
+\text{P}_{\text{occ}}(M_{\text{super}} \Delta t_\text{signal})=A_{\text{super}} \frac{1-B_{\text{super}}^{M_{\text{super}}}}{1-B_{\text{super}}}+B_{\text{super}}^{M_{\text{super}}} \text{P}_{\text{occ}}(t_0)
+\end{equation}
+
+
+Consequently, we have $M_k = \Delta {t_{\text{CDW}}}_k / f_k$ for each individual segment $k$ and $M_{\text{super}} = \Delta t_\text{signal} /  t_\text{EOL}$ for the collection of segments to reach EOL. Unlike \cite{AtomisticPseudoRodopoulos2014}, our approach repeats the same complete periodic waveform $M_{\text{super}}$ times instead of distorting the CDW segments to match $ t_\text{EOL}$ and applying only the periodic waveform once. An example showing how a CDW segment is extrapolated with our \textit{Super CDW} technique and the original \textit{CDW} approach in \cite{AtomisticPseudoRodopoulos2014} is shown in Fig. \ref{fig:CDWvsSuperCDW}. The \textit{CDW} method increases the $\Delta t_{\text{CDW}}$ of each segment to reach EOL, which results in a distorted workload, where, in the example shown in the figure, a part of the workload that would only last for 10 ms lasts for 1 year. The \textit{Super CDW} compression avoids this issue by performing the extrapolation in two steps, one for the duration of the segment compared to the workload and another for the entire workload. 
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={11mm 8mm 18.5mm 5mm},clip]{images/ch2/CDWvsSuperCDW.pdf}
+    \caption{Example showing how waveforms are extrapolated to EOL for the \textit{CDW} method \cite{AtomisticPseudoRodopoulos2014} and the \textit{Super CDW} method presented in this work. In this example, the third CDW segment representing 1 ms of an arbitrary workload is used to illustrate the differences between both methods. }
+    \label{fig:CDWvsSuperCDW}
+\end{figure}
+
+The \textit{CDW} method requires a user-driven trade-off in the number of segments employed. This governs the (super) CDW fidelity/resolution and is a trade-off in accuracy versus computational effort. For instance, we can consider an inverter comprising a PMOS and an NMOS transistor whose input signal has two regions, split in the middle, of complementary signal probability, e.g., $\text{SP } (0.8 = 80\% )$ and $1-\text{SP } (0.2 = 20\%)$, as shown in Fig. \ref{fig:CDWTestPoints}. The length of the signal is set at 10 ms, while the frequency is set at 2 MHz and the degradation is calculated at an EOL of 10 years. The NMOS duty cycle is equal to the signal probability $\lambda_{\text{NMOS}} = \text{SP}$, while the PMOS duty cycle is $\lambda_{\text{PMOS}} = 1 - \text{SP}$. From start to finish the signal in Fig. 6 has a duty cycle of 0.5, however, smaller regions within might temporarily exhibit different duty cycles (shown 0.2 and 0.8 in the signal halves in Fig. \ref{fig:CDWTestPoints}). In fact, if we set $n_\text{CDW}$ to 1, we end up with an overall duty cycle of 0.5 as the later half of the signal averages out with the first half. However, starting from $n_\text{CDW} \geq 2$, we can correctly represent the duty cycle with 0.2 and 0.8 respectively (see Fig. \ref{fig:CDWTestPoints}). Comparing the degradation obtained for two segments for different values of $\text{SP}$ will give an insight into the potential error by oversimplifying the signal. Hence, we can represent the error range as a function of the heterogeneity of the input signal, since the one-segment workload will always predict the same degradation. The difference comes from the finer resolution of the \textit{CDW} method at $n_\text{CDW} > 1$. These temporarily higher or lower duty cycles are taken into account when $n_\text{CDW} > 1$ and might stimulate short-term BTI, i.e., have an impact on the final degradation. Furthermore, the final BTI-induced $\Delta V_{th}$-value differs considerably if the transistor ends under stress (high degradation) or with recovery (low degradation). Since CDW does not determine ending on 0 (OFF = recovery) or 1 (ON = stress), we explore this with the following test: we will consider the difference in the resulting degradation when the last segment is arbitrarily set at high or low and when it is set to finish at the same value as the original signal, i.e., with a matching end state. Exploring the error by setting $n_\text{CDW}$ to 1 (oversimplifying) and 2 (considering temporary differences in each half) is shown in Fig. \ref{fig:CDWTestFinishSweep} (a). We can observe that if the difference between the halves is more extreme (drifting further away from the overall average of 0.5), the importance of using the appropriate number of CDW segments increases. Actual signals might require $n_\text{CDW}$ at values higher than 2, which will increase with the heterogeneity of the uncompressed workload. Using the matching end-state approach results in the best-case error in each case, particularly for these extreme values. Consequently, it will be the approach used moving forward.
+
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={7mm 5mm 13mm 3mm},clip]{images/ch2/CDWTestPoints.pdf}
+    \caption{Conceptual representation of the waveforms employed to illustrate the accuracy vs. number of segments trade-off.}
+    \label{fig:CDWTestPoints}
+\end{figure}
+\begin{figure*}[!t]
+    \includegraphics[width=\textwidth,trim={0 0 0 0},clip]{images/ch2/joint_plot_vth_difference_sign_finish.pdf}
+    \caption{Error in computing the threshold voltage when comparing the 1-segment to the 2-segment workload as a function of signal probability, with different: (a) finishing values and (b) frequencies.}
+    \label{fig:CDWTestFinishSweep}
+\end{figure*}
+
+
+Another aspect that influences this error is the total duration of each segment $\Delta t_{\text{CDW}}$. Depending on the strength of short-term and long-term BTI the error introduced by ignoring the temporarily higher/lower SP becomes higher or lower. This is governed by the switching frequency. To prove this, we repeat the test varying the frequency, as shown in Fig. \ref{fig:CDWTestFinishSweep} (b). We consider 2 GHz, 2 MHz and 2 kHz. The results clearly show how the error increases significantly when considering the slower case, while it is reduced when considering the faster case. Given how the frequency of the signal will determine the significance of the short-term component of BTI, the compression methods used in this work will be tested under different frequencies to ensure they are universally applicable for a wide range of workload frequencies. 
 
 
 
-\subsubsection{BCH Code}
 
-BCH stands for Bose–Chaudhuri–Hocquenghem, their inventors. They are cyclic codes, meaning that codewords generated through circular shifts of a valid codeword are a valid codeword. In a string of bits, a circular shift implies moving every bit to the left one position and the last bit to the beginning. Its capabilities are based on certain algebraic properties obtained from identifying each string of bits with a polynomial. However, an explanation of these properties is complex and beyond the scope of this work, so the focus will be on its practical features as ECCs. 
+\section{Results and discussion}
+\label{section:Results}
 
-One of the main advantages of BCH codes is that they provide a wide variety of block lengths and corresponding code rates. All codewords will have a size $n=2^i-1$, where $i$ is an arbitrary integer greater than two. The corresponding $k$ and $d$ parameters have to be calculated for each possible $n$. For example, for $n=31$ the possible codes are $BCH[31,26,1]$, $BCH[31,21,2]$, $BCH[31,16,3]$, $BCH[31,11,1]$ and $BCH[31,6,7]$. 
+In this work, a 32-bit Multiply-and-Accumulate (MAC) unit (a typical computing block in DSPs or in artificial intelligence accelerators such as systolic arrays or tensor processors) is synthesized and used as a benchmark circuit. This block multiplies an 8-bit weight by an 8-bit value and accumulates the result with a 32-bit partial sum. The block contains a total of 459 logic gates, comprising 3,100 transistors. Two workloads are considered for this circuit with the goal of obtaining the degradation after 10 years of operation. For workload ``W1'', we consider $f_\text{clk} = \qty{100}{MHz}$ and inputs (value, weight) follow a uniform random distribution and update every $\qty{10}{ns}$ for a total duration of $\qty{10}{\micro s}$, making it an unbiased, fair workload. This results in an output where the first 16 least significant bits are frequently switching, while the next ones only switch when enough multiplications have been accumulated, as illustrated in Fig. \ref{fig:MAC_bit_dist}. In fact, inspecting the distribution of values, the 16 least significant bits are constantly changing as they are the product of two random numbers. The next bits accumulate the result of the products, so they have a decreasingly low switching frequency. The last bits are zero, as not enough products have been performed to fill the output register. As a result, a wide range of patterns emerge, which will reflect in the internal gate workloads, clearly showing how a certain frequency for the input signal translates into different switching frequencies for the transistors depending on the location within the circuit's netlist. A second workload ``W2'' is considered. It is identical to the previous one for the initial $\qty{8}{\micro s}$ of simulation, but diverges in the final $\qty{2}{\micro s}$, during which all inputs are set to zero and the reset is activated. This represents sleep periods in circuits that, in many applications, are not active during their entire lifetime \cite{duchAnalysisFunctionalErrors2020}. The workload W2 is equivalent to the distribution in Fig. \ref{fig:MAC_bit_dist} for the first 800 product operations and has 0 in all output bits for the remaining 200. While other non-uniform workload scenarios exist, these two serve as unbiased benchmarks: one fully random and the other with a sharp inhomogeneity, facilitating a clear analysis of compression approaches. Simulations are performed with the open-source ASAP7 7nm PDK \cite{vashishthaASAP7PredictiveDesign2017}.
+\begin{figure}[!t]
+    \includegraphics{images/ch2/MAC_bit_distribution.pdf}
+    \caption{Output bit value distribution for the first MAC unit testbench, with 0s in white and 1s in black. }
+    \label{fig:MAC_bit_dist}
+\end{figure}
+%with aging parameters extrapolated from experimental measurements \cite{saraza-canflancaDeterminationTimeConstant2022, saraza-canflancaStatisticalCharacterizationTimeDependent2021a}. 
+Although the results reported here have been developed for this technology, the methodology is applicable for any technology in which BTI can be properly modeled using individual charge trapping-detrapping events, spanning bulk CMOS (45nm and 65nm in \cite{procelDefectCentricPerspectiveChannel2015} or 28nm in \cite{kaczerDefectcentricPerspectiveDevice2015}), FinFET (8nm and 7nm in \cite{jiangTimeDependentVariability2021a}), Gate-All-Around (GAA) Nanosheet FETs \cite{choudhuryAnalysisBTISHE2020} and stacked Nanowire GAA FETs \cite{chasinBTIReliabilityTimedependent2017}. 
 
-BCH codes use similar decoding algorithms as RM \cite{Guruswami2010} so their complexity is similar. They offer better redundancy, close to Hamming codes, and the error correction capability depends on the parameters chosen. All of these facts make BCH codes a popular choice for PUFs \cite{Delvaux2015,Bosch2008,Maes2012pufky}. 
-
-\subsubsection{Viterbi}
-
-In contrast with the proposed block codes so far, the Viterbi algorithm is a decoding algorithm for convolutional codes. In convolutional codes, the output code bits are continuously determined by logic operations (generally shifts and XORs) on the present input bit in a stream and a small number of previous bits, so a memory is required for encoding and decoding. Viterbi algorithms find the most likely sequence of hidden states (the message) that result in a sequence of observed events (the measured code bits). Error correction is based on the fact that a low number of erroneous bits are not influential enough to change the most likely sequence of hidden states.
-
-PUFs implementations of convolutional codes with Viterbi algorithms are found in \cite{Hiller2013,Hiller2014}. These show promising results, outperforming block-code implementations in error correction capabilities and redundancy. Their main drawbacks are higher complexity and response times \cite{Hiller2013}. 
-
-\subsubsection{Comparison of ECCs in PUFs}
-
-In essence, there are many possibilities regarding ECCs. There has been a lot of effort by the scientific community to try and find progressively better codes, due to how promising PUFs are. A combination of ECCs in two or more stages (concatenated code) can make use of the strengths of two different codes \cite{Bohm2013,Bosch2008} and are quite popular. For two codes, $C_1$ and $C_2$, the message is codified by applying first $C_2$ and then $C_1$. The message is later decoded by applying first $C_1$ and then $C_2$.
-
-Table \ref{tab:ECCs} shows different ECC implementations found in the literature. All of these extract a 128-bit key from a PUF response that is presumed to have an average BER of 15 \%, a very safe estimate even under the worst corners of reliability \cite{Maes2009}.   A fair comparison in terms of how costly the hardware implementation will be is hard to make as it is heavily dependant on the specific technology used, so only the required PUF size and final KER are shown. However, it is an important factor to keep in mind. It is important as well to distinguish between soft- and hard-decision decoding \cite{Hiller2013}. For hard decision decoding, all codeword bits have the same weight and contribute equally to decoding. Meanwhile, soft decision decoding uses reliability information about each bit to increase efficiency, increasing the error correction capabilities at the cost of higher complexity. Soft decision decoding is employed in \cite{Maes2009,VanDerLeest2012soft}.
-
-\begin{table}[H]
-  \centering
-  \caption{Comparison of different ECC approaches with aimed KER 1 E-4 \% showing required PUF bits and redundancy for a key length of 128 bits and a presumed BER of 15\%. }
-  \resizebox{\linewidth}{!}{%
-    \small
-    \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    Reference   & $C_1$   & $C_2$ & PUF bits & Redundancy & KER (\%)  \bigstrut\\
-    \hline
-    \cite{Bosch2008}   & $R[33,1,33]$ & - & 5643 & 33 & 1 E-4 \bigstrut\\
-    \hline
-    \cite{Bosch2008}   & $BCH[1023,46,439]$ & - & 4092 & 23.92 &1.85 E-6 \bigstrut\\
-    \hline
-    \cite{Bosch2008}   & $R[3,1,3]$ & $BCH[127,7,31]$ & 2286 & 13.37  & 8.48 E-4 \bigstrut\\
-    \hline
-    \cite{Bosch2008}   & $R[7,1,7]$ & $RM[16,5,8]$ & 3920 & 22.92 & 3.47 E-4 \bigstrut\\
-    \hline
+Seven different approaches to obtain the degradation of the MAC unit are considered: two used as reference for accuracy (\textit{Analog Golden}, \textit{Digital Golden}), two from the state-of-the-art  (\textit{5-segment CDW},  \textit{LCS}), two introduced in this work (\textit{Gate-level}, \textit{5-segment Super CDW}) and a baseline \textit{1-segment CDW}. The \textit{1-segment CDW} approach compresses the entire workload into one segment, being the coarsest and fastest implementation of the \textit{CDW} method for which both the \textit{Super CDW} approach proposed in this work and the \textit{CDW} approach in \cite{AtomisticPseudoRodopoulos2014} are mathematically equivalent. However, this represent the crudest approximation of the workload and additional segments are required to obtain higher accuracy in the degradation predictions for non-uniform workloads \cite{AtomisticPseudoRodopoulos2014}. A fixed number of segments is used to compute the \textit{5-segment CDW} and \textit{5-segment Super CDW} workloads, resulting in five segments of equal length. Five segments are the minimum required to properly model the hetereogeneity of the ``W2'' workload, so that the sleep period is included in a single segment. A diagram presenting the workload representation for each approach is shown in Fig. \ref{fig:sect4waveformRepresentations}. For \textit{LCS} and \textit{CDW} the representations were shown in Fig. \ref{fig:sect2waveformRepresentations}. Furthermore, Table \ref{tab:approaches} summarizes the main characteristics of each approach. They are evaluated below in terms of their required computational effort and their ability to predict threshold voltage degradation, analyzing finally how these differences in threshold voltage prediction impact the delay of the digital gates in the circuit.
+\begin{figure}[!t]
     
-    \cite{Maes2009}   & $R[3,1,3]$ & $RM[64,22,16]$ & 1536 & 8.98 & 1 E-6 \bigstrut\\ %KER from Koeberl
-    \hline
-    \cite{VanDerLeest2012soft}   & $R[14,1,14]$ & $RM[8,4,4]$ & 4816 & 28.16 & 3.3 E-5 \bigstrut\\ %KER from Koeberl
-    \hline
-    \cite{Hiller2016}   & Viterbi & - & 974 & 7.61 & 7.94 E-5 \bigstrut\\
-    \hline
-\end{tabular}%
-}
-  \label{tab:ECCs}%
-\end{table}%
+    \includegraphics[width=0.48\textwidth,trim={7.5mm 6mm 10mm 8mm},clip]{images/ch2/WaveformRepresentationsSect4.pdf}
+    \caption{Conceptual workload representations for the approaches under analysis. Golden workloads are unbounded (will increase in size with larger workloads). }
+    \label{fig:sect4waveformRepresentations}
+\end{figure}
 
-It is clear that a large amount of PUF bits are required to obtain a 128-bit key, around five to fifty times the actual key size. This helps illustrate how costly ECCs are, and why there is such a motivation to preemptively reduce the PUF's BER by any means possible. 
+\begin{table}
+    \caption{Compressed and Uncompressed approaches used in this work}
+    \begin{center}
+    \addtolength{\tabcolsep}{-0.2em}
+       \begin{tabular}{@{}lccc@{}}\toprule
+        Approach & \makecell{Workload \\ format} & \makecell{ SPICE \\ required} & Eq. (\ref{Equation:Pocc}) iterations \\ \midrule
+        \textit{Analog Golden} [Reference] & Analog & Yes & Unbounded (Very high) \\
+        \textit{Digital Golden} [Reference] & Digital & No & Unbounded (High) \\
+        \textit{Gate-level} [Our work] & Analog & Yes & Bounded (Low)  \\
+        \textit{LCS} \cite{vansantenDesigningGuardbandsInstantaneous2016} & Digital & No &  3 \\
+        \textit{1-seg. CDW} \cite{AtomisticPseudoRodopoulos2014} & Digital & No &  2 \\
+        \textit{5-seg. CDW} \cite{AtomisticPseudoRodopoulos2014} & Digital & No &  10 \\
+        \textit{5-seg. Super CDW} [Our work] & Digital & No &  10 \\ \bottomrule
+    \end{tabular}     
+    \end{center}
+    \label{tab:approaches}
+\end{table} 
+
+\subsection{Execution speed}
+The reduction in execution time through compression is shown in Fig. \ref{fig:Execution time} for workload W1. We plot the execution time of each circuit (cell) versus the number of transistors within the cell to indicate that larger circuits require longer times. Both golden simulations are unbounded and hence impose limits on the maximum circuit/workload size still feasible to simulate. The \textit{Gate-level} approach, although bounded, is considerably slower than the other compressed methods, which do not use an analog representation or require SPICE executions. The compressed methods using a digital format can handle larger circuits in computation times below 1 second. The total computation time of the 1-segment approach is lower by 1.27X when compared to the 5-segment. Execution times are strongly correlated with the number of iterations of eq. \ref{Equation:Pocc} required, as can be seen in Table \ref{tab:approaches}. Note that workloads compressed through the \textit{LCS}, \textit{CDW} and \textit{Super CDW} compression methods have their number of points (and thus, iterations) set to a specific value by construction. The number of iterations in the golden approaches is unbounded because the longer the workload duration, the higher the number of points. The number of iterations of the \textit{Gate-level} approach is bounded because independently of the workload duration, the number of input vectors of each cell is necessarily limited. Except for very short workloads, this number will be considerably smaller than for the golden approaches.
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 1mm 0 1mm},clip]{images/ch2/execution_time_report_plot.pdf}
+    \caption{Mean execution time for each approach plotted against the number of transistors for the circuit gates. Segment is abbreviated as seg.}
+    \label{fig:Execution time}
+\end{figure}
+
+\subsection{Accuracy of Aging-Induced Degradation}
+On the other hand, the accuracy of each approach is shown in Fig. \ref{fig:Mean error}, where the mean threshold voltage degradation prediction of each transistor in the digital circuit is compared to the prediction made by the baseline \textit{Analog Golden} approach, which is assumed to be the most accurate. The threshold voltage degradations are obtained by computing eq. (\ref{Equation:MeanVt}) for the $\text{P}_{\text{occ}}$ resulting from each approach. W2 (with sleep period) is harder to compress and results into higher errors. The \textit{Gate-level} approach outperforms the digital approaches, which are hindered by the accuracy loss from the \textit{Activity Monitoring} step. The \textit{1-segment CDW} and \textit{5-segment Super CDW} have an error similar to the \textit{Digital Golden} approach. The \textit{5-segment CDW} approach is more error-prone due to the distortion required to extend each segment to EOL, specially for workload W2. This is explained by the shape of the waveform in W2, where the last $\qty{2}{\micro s}$ are extended to 2 years following the original approach (see Fig. \ref{fig:CDWvsSuperCDW} again for a detailed example). Assuming that the circuit is under continuous operation for 8 years followed by 2 years in sleep is a completely different degradation scenario than having a circuit which operates for $\qty{8}{\micro s}$ followed by $\qty{2}{\micro s}$ sleep continuously. The 2 years of sleep mode are essentially 2 years of DC stress, with conducting transistors capturing many carriers and non-conducting transistors releasing most of the captured ones. This issue does not exist with the \textit{Super CDW} approach, as the EOL extrapolation is correctly made without modifying the length of each segment and distorting the signal. Finally, the \textit{LCS} approach has a significant error under both scenarios because it fails to predict the long-term BTI caused by complex waveforms. Using two long DC periods to model long-term stress will result in a different set of defects being captured when compared to a complex waveform with quick successions of stress and recovery. 
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 1mm 0 0},clip]{images/ch2/mean_error_bar_scatter_report_plot.pdf}
+    \caption{Mean relative error with error bars for 10th-quantiles and 90th-quantiles of the considered approaches when predicting the threshold voltage degradation of each transistor after comparing the prediction to the golden analog reference for both workloads under consideration. Transistors with a duty cycle of 0 or 1 are not considered as DC stress requires no compression. }
+    \label{fig:Mean error}
+\end{figure}
+Given how the W2 workload is the hardest to compress accurately for all approaches, it will be the one used moving forward. A closer look into the error in predicting the degradation of each transistor is shown in Fig. \ref{fig:cellwise error}. These results confirm how \textit{Activity Monitoring} is causing the errors for the \textit{Digital Golden} approach in complex cells (those errors above 10 mV) that are harder to translate from input signal to transistor duty cycle, as discussed in subsection \ref{ss:ExtendingCASE}. Meanwhile, transistors corresponding to inverters (i.e., those within a 2-transistor gate) do not have a significant error for the \textit{Digital Golden} approach. The \textit{Activity Monitoring} errors are carried into the \textit{1-segment CDW} and \textit{5-segment Super CDW} predictions, as they employ a digital format for the workload. It is also clear how the \textit{LCS} and \textit{5-segment CDW} approaches fail to accurately represent the degradation of most transistors.
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 0 0 1mm},clip]{images/ch2/absolute_error_histogram_plot.pdf}
+    \caption{Error in threshold voltage degradation prediction for each transistor in the circuit using workload W2. The transistors are differentiated depending on the complexity (defined as the number of transistors) of their corresponding gate.}
+    \label{fig:cellwise error}
+\end{figure}
+
+%In any case, if short-term BTI is a concern, one may add a LCS phase to any of the previous approaches without a significant cost in execution time. 
+
+    % The large error bars are mostly due to outliers caused by transistors with a duty cycle close to 0 or 1, where a small difference in the waveform can result in a large relative difference in degradation.
+\subsection{Delay change estimation}
+
+It is important to translate the threshold voltage degradation, which is a transistor-level parameter, into the relevant circuit-level figure of merit for digital standard cells, i.e., propagation delays. A detailed list of the logic gates present in the 32-bit MAC design is shown in Table \ref{table:gates}, ranging in complexity from 2-transistor inverters to 18-transistor 8-input complex cells such as AOI332. A digital gate with more than one input will have more than one valid timing path for a transition propagating from input to output. A change in the output with a certain unateness requires the appropriate, gate-dependent combination of input values (determined by the logic operation of the gate), and the propagation delay will be different depending on the timing path's input and the state of the other inputs. In this way, the number of possible delays increases rapidly with the number of gate inputs, as shown in the second column of Table \ref{table:gates}. 
+
+\begin{table}
+	\caption{32-bit MAC gates and their characteristics}
+	\begin{center}
+		\begin{tabular}{lcccc} \toprule
+			Gate & Inputs & Delay combinations & Transistors & Instances \\ \midrule
+			INV & 1 & 2 & 2 & 103 \\
+			NOR2 & 2 & 4 & 4 & 25 \\
+			NAND2 & 2 & 4 & 4 & 62 \\
+			XOR2 & 2 & 8 & 10 & 48 \\
+			XNOR2 & 2 & 8 & 10 & 66 \\
+			NAND3 & 3 & 6 & 6 & 25 \\
+			OAI21 & 3 & 10 & 6 & 7 \\
+			AOI21 & 3 & 10 & 6 & 4 \\
+			AO21 & 3 & 10 & 8 & 2 \\
+			NOR4 & 4 & 8 & 8 & 2 \\
+			NAND4 & 4 & 8 & 8 & 4 \\
+			AND4 & 4 & 8 & 10 & 2 \\
+			OAI211 & 4 & 16 & 8 & 1 \\
+			A2O1A1I & 4 & 20 & 8 & 40 \\
+			OAI31 & 4 & 20 & 8 & 2 \\
+			AOI31 & 4 & 20 & 8 & 2 \\
+			AOI22 & 4 & 24 & 8 & 8 \\
+			OAI22 & 4 & 24 & 8 & 20 \\
+			OAI222 & 6 & 108 & 12 & 16 \\
+			AOI332 & 8 & 448 & 16 & 13 \\
+			OAI332 & 8 & 448 & 16 & 2 \\
+			AO332 & 8 & 448 & 18 & 3 \\
+			OA332 & 8 & 448 & 18 & 2 \\ \bottomrule
+		\end{tabular}
+	\end{center}
+	\label{table:gates}
+\end{table}
 
 
-\subsection{Entropy compression}
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 0 0 0},clip]{images/ch2/box_cellwise_delay.pdf}
+    \caption{Box plot showing the distribution of the mean increases in delay caused by aging degradation, using the \textit{Analog Golden} approach and the W2 workload. }
+    \label{fig:cellwisedelay}
+\end{figure}
 
-The entropy of the response is non-maximum due to intrinsic correlation and bias introduced in the PUF, as well as leakage from the HDA \cite{Delvaux2015}. By using this information, an attacker can reduce the search space required to obtain the secret key. A hash function solves this problem, as first proposed in \cite{Gassend2002}. This step is also known as privacy amplification.  Hash functions require more input than output bits and work by compressing the entropy of the input into a shorter output. In this way, the total amount of entropy remains constant but the entropy per bit increases. The hash function breaks the link between responses and physical details of the PUF as well, adding one more layer of security and making model-building attacks much more difficult. Entropy compression further increases the amount of bits required out of the ECC and, accordingly, the amount of bits required out of the PUF. 
+With these considerations in mind, the delay change distributions are shown in Fig. \ref{fig:cellwisedelay}. A distinction is made between rise and fall delays as well as their unateness, which may be positive (0 $\xrightarrow{}$ 1, ``pos'') or negative (1 $\xrightarrow{}$ 0, ``neg''). Not all combinations are possible for all gates by construction. There are also edge cases where only the transistors that oppose the change in output value when a transition occurs are the ones that degrade, resulting in a delay reduction, which explains the small negative values \cite{santana-andreoImpactBTIHCI2022}. Beyond the gate characteristics, degradation is driven, naturally, by the workload that propagates from the MAC inputs to each individual gate. The variety in distributions for each gate in Fig. \ref{fig:cellwisedelay} clearly illustrates why careful and precise transistor-level predictions of degradation are necessary to arrive at the delay increase of each gate. These distributions are for the mean degradation, and the aging variability of each transistor needs to be considered on top of it to obtain a complete aging prediction. 
 
-In \cite{Guajarado_og,Bhargava2014}, the entropy per bit of an SRAM PUF is estimated to be at around 0.75. To achieve a perfect entropy per bit of 1, $N/0.75$ bits are required \cite{Guajarado_og} where $N$ is the length of the key. This would be 171 bits for a 128-bit key or 342 bits for a 256-bit key. There are a variety of hash functions available with their advantages and drawbacks. A popular implementation is the SPONGENT lightweight hash function \cite{Hiller2014, Maes2012}. An implementation of SHA-256 that is lightweight as well is found in \cite{VanDerLeest2012}. The more bulky universal Toeplitz hash is used in \cite{Maes2009}.
+%An important factor to consider is the fact that BTI degradation in PMOS (Negative Bias Temperature Instability, NBTI) is significantly greater than BTI degradation in NMOS (Positive Bias Temperature Instability, PBTI). This can be clearly distinguished in the aforementioned topologically simpler gates (INV, NAND, NOR ...) where the increase in rise delay, determined mostly by the degradation of the pull-up network (NBTI), is significantly larger than the increase in fall delay, determined mostly by the degradation of the pull-down network (PBTI).
+
+Given these degradation values in terms of the delay obtained for the \textit{Analog Golden} workload, they can be compared to the degradation obtained through each compression method. The resulting error is expressed in terms of percentage points (p.p.). To clarify with an example, given a delay increase of 10\%, if the prediction of the compressed waveform results in an increase of 6\% the error is $-4$ p.p. (40\% less), while if the prediction is of 12\% the error is $2$ p.p. (20\% more). An overestimation (positive p.p.) implies that the gate will not degrade as much as predicted, leading to design overcompensation when specifying the guardband and just an unnecessary performance loss. Meanwhile, an underestimation (negative p.p.) implies that the gate will degrade more than expected, leading to unacceptable timing violations. Hence, slight overestimation is fine, while even minor underestimation is catastrophic. The compression errors are shown in detail in Fig. \ref{fig:delay_compression_error}. The \textit{Gate Level} approach manages the best accuracy, matching the original degradation in most cases. \textit{Digital Golden}, \textit{1-segment CDW} and \textit{5-segment Super CDW} are similar in accuracy, having a higher error than the previous approach, with the \textit{1-segment CDW} method having a slightly larger number of overestimations.  All four of these distributions are reasonably symmetric, not exceeding 3 p.p. of over- or underestimation in any case. The \textit{5-segment CDW} does introduce significant errors in both directions, ranging from $-10$ p.p. of underestimation and 7.5 p.p. of overestimation. Given how the highest degradations observed in Fig. \ref{fig:cellwisedelay} are around 12.5\%, these errors are large. The \textit{LCS} method leads almost exclusively into underestimation, due to the inability to capture long-term degradation by applying the recovery phase. 
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 0 0 0},clip]{images/ch2/error_delay_report_plot.pdf}
+    \caption{Distributions for errors in the delay estimation of each compression method expressed in percentage points for workload W2. Mind the logarithmic scale for the y-axis. Underestimations, which can lead to timing violations, are shown in blue, while overestimations, which can lead to unnecessary performance loses, are shown in red. Those cases where compression matches the original prediction are shown in green.}
+    \label{fig:delay_compression_error}
+\end{figure}
+
+\subsection{Frequency dependence}
+\label{subsection:freq_dependence}
+The technique detailed in subsection \ref{subsection:Defect_distribution_shifting} is employed to analyze the performance of each compression method under different frequency scenarios. The short-term component of BTI is driven by the latest bias conditions of the transistor. In low-frequency scenarios, the time transistors are at a high or low bias before switching increases, making the short-term component greater in amplitude, as stress and relaxation times are longer. The time constants are shifted by a certain \textit{frequency factor} (without any loss in accuracy, see subsection \ref{subsection:Defect_distribution_shifting}), which determines the shift in terms of orders of magnitude. For example, applying a \textit{frequency factor} of 3, $f_\text{clk}$ goes from $\qty{100}{MHz}$ to $\qty{100}{kHz}$ and the workload duration goes from $\qty{10}{\micro s}$ to $\qty{10}{ms}$. Frequency factors range from $-1$ to 9, to get a wide range of frequencies from GHzs to $<$ 1 Hz. To evaluate the performance of each compression method, the number of overestimations, underestimations, and mean deviation for each case are used, as in Fig. \ref{fig:delay_compression_error}. 
+
+\begin{figure}[!t]
+    \includegraphics[width=0.48\textwidth,trim={0 0 0 0},clip]{images/ch2/delay_error_frequency_dependence.pdf}
+    \caption{Bubble chart indicating the number of over and under estimations in terms of delay prediction from each compression method for a set of different \textit{frequency factors} and workload W2. The bubble size indicates the mean deviation. The \textit{Digital Golden} and \textit{5-segment Super CDW} approaches overlap each other in accuracy.}
+    \label{fig:delay_error_frequency_dependence}
+\end{figure}
+\begin{figure}[!t]
+    \includegraphics[width=0.46\textwidth,trim={0 0 0 1mm},clip]{images/ch2/absolute_error_histogram_plot_tau6.pdf}
+    \caption{Error in threshold voltage degradation prediction for each transistor in the circuit, workload W2 and a \textit{frequency factor} of 6.}
+    \label{fig:cellwise error tau6}
+\end{figure}
+The results are shown in Fig. \ref{fig:delay_error_frequency_dependence}. It is clear that the conclusions extracted from the original workload do not hold for the entire frequency range. \textit{Digital Golden} and \textit{5-segment Super CDW} are able to maintain a consistent error rate, associated with the \textit{Activity Monitoring} step, and which slightly decreases with slower frequency as the importance of that error is reduced when the short-term component becomes stronger. It is remarkable to note that the \textit{5-segment Super CDW} compression is able to exactly match the \textit{Digital Golden} accuracy. Both the \textit{Gate-level} and \textit{1-segment CDW} suffer from the fact that they cannot properly represent the heterogeneity of the signal. Although for high frequencies \textit{Gate-level} is the best in terms of accuracy and \textit{1-segment CDW} matches \textit{Digital Golden} and \textit{5-segment Super CDW}, they start to become inaccurate (over- and underestimations, higher mean error) when frequency decreases. For the \textit{1-segment CDW} this is consistent with the results shown in Fig. \ref{fig:CDWTestFinishSweep} (b) and discussed in Subsection \ref{subsection:SuperCDWcompression}: Increasing the number of CDW segments and correctly representing the heterogeneity of the signal becomes more important as the short-term component of BTI becomes more significant. The \textit{Gate-level} generates a synthetic workload that matches the characteristics of the entire representative workload but is not able to capture the hetereogenity of the signal to model the short-term component properly. Finally, both \textit{5-segment CDW} and \textit{LCS} are not able to accurately represent the degradation for the entire range. These conclusions are further supported by inspecting the error in the threshold voltage degradation for a specific \textit{frequency factor}, as shown in Fig. \ref{fig:cellwise error tau6} for a \textit{frequency factor} of 6. \textit{5-segment Super CDW} and \textit{Digital Golden} have the error associated with \textit{Activity Monitoring} and complex cells, while \textit{Gate-level} and \textit{1-segment CDW} perform significantly worse than with the original frequency. \textit{LCS} performs better when short-term BTI is more dominant, it shifts from underestimation to overestimation as the longest continuous stress time increases at lower frequencies. Overestimation is a built-in feature of \textit{LCS} as it tries to provide the worst-case degradation scenario. It is clear how, when considering which compression method to employ, the frequency of the signal is important. Given that there is no universal switching frequency for a large digital circuit, it is not straightforward to have a clear cut-off point for all instances in the circuit. In that context, the \textit{5-segment Super CDW} is clearly superior and the best general approach given the aforementioned variety in switching frequencies, as it achieves great accuracy and low execution times across the board. However, considering that originally the input signal changes every 10 ns with a $f_\text{clk}$ of 100 MHz and that both the \textit{Gate-level} and \textit{1-segment CDW} approaches become comparatively worse to the \textit{5-segment Super CDW} for a \textit{frequency factor} of 2, we can estimate that, in this specific scenario, for a $f_\text{clk}$ in a range of GHzs to tens of MHzs, using the \textit{Gate-level approach} is best for accuracy, and using a \textit{1-segment CDW} is valid for speed. 
+
+
+
+
+
+\section{Conclusions}
+\label{section:Conclusions}
+
+After a thorough exploration of the compression techniques found in the literature and comparing them on the same workload and circuits for the first time, we have successfully introduced two novel approaches (\textit{Gate-level} and \textit{Super CDW} compression) that surpass existing methods in terms of speed and accuracy. The accuracy of each compression method is not solely evaluated based on the predicted threshold voltage shift per transistor, but additionally also wholistically, i.e., with aging-aware circuit delay estimations. We explored a wide range of conditions (e.g., switching frequencies) to illustrate the robustness of our proposed techniques. For the entire range of frequency values, using the compression methods found in the literature (\textit{CDW} and \textit{LCS}) yields unacceptable results (up to 73.34\% for the \textit{5-segment CDW} average error in threshold voltage and 84.85\% for \textit{LCS}) in terms of accuracy. On the other hand, the proposed \textit{Super CDW} method performs well in the entire frequency range in terms of accuracy and speed. Specifically, it is 295X faster compared to the analog uncompressed workload, 8X faster than the digital uncompressed workload, and has a 2.31\% average error in threshold voltage degradation, matching the digital uncompressed workload, while featuring a low upper bound for execution time and making it the superior choice in most scenarios. For high transistor switching frequencies, \textit{Gate-level} is the best choice in terms of accuracy (1.31\% average error in threshold voltage degradation) and \textit{1-segment CDW} is the best choice in terms of speed (1.27X faster than \textit{5-segment Super CDW)}, but both drop significantly in accuracy as frequency decreases. Hence, only the proposed \textit{Super CDW} technique with an appropriate number of segments has a consistent, low error rate for the entire range of switching frequencies.
+
+%due to their inability to correctly represent the impact of a workload's heterogeneity on the short-term component of BTI.
+
+% In future work, these approaches will be used to predict the long-term degradation of larger digital circuits with a strong foundation in the physics of BTI without compromising speed. 

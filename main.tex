@@ -1,23 +1,25 @@
-% !TEX root = relative/or/absolute/path/to/root/file.tex
+% !TeX root = main.tex
 \documentclass[
     12pt,
     twoside, 
     ]{report}
 \input{Packages}
+\makeglossaries
+\input{chapters/acronyms}
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0em}
 \setcounter{secnumdepth}{3} %Subsubsection with numbers and without toc
 \raggedbottom %To avoid weird spaces
-
-
 \author{Andrés Santana Andreo}
-\date{15. July 2019}
+%\date{31. July 2025}
 \begin{document}
 \newcommand{\longstring}[1]{{\ttfamily\seqsplit{#1}}}
 \thispagestyle{empty}
 \maketitle
 \chapter*{Acknowledgements}
 \input{chapters/acknowledgement}
+\chapter*{List of Abbreviations}
+\printglossaries
 \tableofcontents{\small}
 \listoffigures
 \listoftables
@@ -25,7 +27,7 @@
 
 \chapter{Introduction}
 \input{chapters/chapter01}
-\chapter{Physical Unclonable Functions}
+\chapter{Aging simulation in digital circuits}
 \input{chapters/chapter02}
 \chapter{SRAM PUFs}
 \input{chapters/chapter03}
@@ -38,13 +40,13 @@
 \chapter{Conclusions}
 \input{chapters/conclusion}
 
- 
+
 
 % \appendix
 % \chapter*{Tables}
 % \input{chapters/appendix}
-\printbibliography
 
+\printbibliography{}
 
 \clearpage
 

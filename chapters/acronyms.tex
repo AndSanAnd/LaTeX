@@ -1,0 +1,40 @@
+%Check: https://tex.stackexchange.com/questions/8946/how-to-combine-acronym-and-glossary
+% Note that glossaries requires a perl installation. Unrelated note, but java is also required for the linter in VSCode.
+\newcommand{\acronymwithdescription}[4]{
+    \newglossaryentry{#1}{
+        text={#1},
+        long={#3},
+        name={#1},
+        first={#3 (#1)},
+        firstplural={#3\glspluralsuffix~(#1\glspluralsuffix)},
+        description={#4},
+        type=\acronymtype
+    }
+}
+\newcommand{\acronymwithdescriptionspecialplural}[5]{
+    \newglossaryentry{#1}{
+        text={#1},
+        long={#3},
+        name={#1},
+        first={#3 (#1)},
+        firstplural={#5~(#1\glspluralsuffix)},
+        description={#4},
+        type=\acronymtype
+    }
+}
+\acronymwithdescription{DRV}{DRV}{Data Retention Voltage}{Data Retention Voltage}
+\acronymwithdescription{PUF}{PUF}{Physical Unclonable Function}{Physical Unclonable Function}
+\acronymwithdescription{SRAM}{SRAM}{Static Random Access Memory}{Static Random Access Memory}
+\acronymwithdescription{ECC}{ECC}{Error Correction Code}{Error Correction Code}
+\acronymwithdescription{HDA}{HDA}{Helper Data Algorithm}{Helper Data Algorithm}
+\acronymwithdescription{BTI}{BTI}{Bias Temperature Instability}{Bias Temperature Instability}
+\acronymwithdescription{PDO}{PDO}{Probabilistic Defect Occupancy}{Probabilistic Defect Occupancy}
+\acronymwithdescription{CET}{CET}{Capture and Emission Time}{Capture and Emission Time}
+\acronymwithdescription{EOL}{EOL}{End of Life}{End of Life}
+\acronymwithdescription{CDW}{CDW}{Compact Digital Waveform}{Compact Digital Waveform}
+\acronymwithdescription{LCS}{LCS}{Longest Continous Stress}{Longest Continous Stress}
+\acronymwithdescription{FinFET}{FinFET}{Fin Field-Effect Transistor}{Fin Field-Effect Transistor}
+\acronymwithdescription{BSIM}{BSIM}{Berkeley Short-channel IGFET Model}{Berkeley Short-channel IGFET Model}
+\acronymwithdescription{SPICE}{SPICE}{Simulation Program with Integrated Circuit Emphasis}{Simulation Program with Integrated Circuit Emphasis}
+\acronymwithdescription{RoT}{RoT}{Root-of-Trust}{Root-of-Trust}
+\acronymwithdescription{NVM}{NVM}{Non-Volatile Memory}{Non-Volatile Memory}

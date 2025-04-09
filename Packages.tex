@@ -18,7 +18,6 @@ output-decimal-marker = {.},
 separate-uncertainty = true,
 group-digits=false
 }
-\usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage[official]{eurosym}
 % \usepackage{titlesec}%new page each section
@@ -51,15 +50,9 @@ group-digits=false
 \usepackage{multirow}
 \usepackage{textcomp}
 \usepackage{gensymb}
-\usepackage{fancyhdr}
 \usepackage{mathrsfs}
-
-\usepackage{xcolor}
-\usepackage{graphicx}
 \usepackage{listings}
-\usepackage{hyperref}
 \usepackage{enumitem}
-\usepackage{float}
 \usepackage{fancyvrb}
 \usepackage{calc}
 %\usepackage[T1]{fontenc}
@@ -69,8 +62,7 @@ group-digits=false
 
 %% PhD. Thesis Additions
 
-\usepackage{todonotes} %To add comments on things to do
-\usepackage{cleveref} % For references that also include fig., eq., etc.
+%\usepackage{todonotes} %To add comments on things to do
 \usepackage[style=ieee]{biblatex} % IEEE tran works without biblatex but only for the IEEEtran document class. For the thesis, we use biblatex, with this style that implements the IEEEtran style without using the IEEEtran document class.
 \addbibresource{IEEEabrv.bib}
 \addbibresource{refs.bib}
@@ -88,5 +80,6 @@ group-digits=false
     pdfkeywords={SRAM, PUF, HDA, ECC, MTSV, Sevilla, Seville, IMSE, TFM, Santana}
 }
 %%Should be loaded after hyperref
+\usepackage{cleveref} % For references that also include fig., eq., etc.
 \usepackage[acronym]{glossaries}  %For acronyms and glossaries. 
 %\glsdisablehyper % Disable hyperref for glossary entries

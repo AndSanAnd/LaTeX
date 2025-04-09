@@ -1,0 +1,83 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[198] biber-MSWIN64:340> INFO - === 
+[285] Biber.pm:419> INFO - Reading 'main.bcf'
+[489] Biber.pm:979> INFO - Found 48 citekeys in bib section 0
+[531] Biber.pm:4419> INFO - Processing section 0
+[554] Biber.pm:4610> INFO - Looking for bibtex file 'IEEEabrv.bib' for section 0
+[657] bibtex.pm:1713> INFO - LaTeX decoding ...
+[689] bibtex.pm:1519> INFO - Found BibTeX data source 'IEEEabrv.bib'
+[716] Biber.pm:4610> INFO - Looking for bibtex file 'refs.bib' for section 0
+[813] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1207] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[1719] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1719] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1719] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1719] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1768] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1816] bbl.pm:763> INFO - Output to main.bbl
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 98, warning: 2664 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 108, warning: 46 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 117, warning: 41 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 124, warning: 19 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 132, warning: 67 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 146, warning: 14 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 156, warning: 36 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 159, warning: 20 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 174, warning: 3 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 180, warning: 33 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 188, warning: 43 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 210, warning: 18 characters of junk seen at toplevel
+[1817] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 219, warning: 38 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 227, warning: 77 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 234, warning: 18 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 237, warning: 19 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 241, warning: 19 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 246, warning: 49 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 254, warning: 20 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 260, warning: 23 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 269, warning: 47 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 281, warning: 51 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 298, warning: 25 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 313, warning: 32 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 327, warning: 29 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 332, warning: 22 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 339, warning: 10 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 341, warning: 21 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 347, warning: 20 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 354, warning: 40 characters of junk seen at toplevel
+[1818] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 368, warning: 28 characters of junk seen at toplevel
+[1819] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 376, warning: 61 characters of junk seen at toplevel
+[1819] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 389, warning: 11 characters of junk seen at toplevel
+[1823] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 395, warning: 59 characters of junk seen at toplevel
+[1825] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 403, warning: 7 characters of junk seen at toplevel
+[1826] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 408, warning: 4 characters of junk seen at toplevel
+[1827] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 418, warning: 34 characters of junk seen at toplevel
+[1829] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 431, warning: 22 characters of junk seen at toplevel
+[1829] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 439, warning: 17 characters of junk seen at toplevel
+[1829] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 464, warning: 97 characters of junk seen at toplevel
+[1829] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\823fed5bedc0df355dc2eb8abd78e28d_40832.utf8, line 469, warning: 29 characters of junk seen at toplevel
+[1829] Biber.pm:131> WARN - Duplicate entry key: 'duchAnalysisFunctionalErrors2020' in file 'refs.bib', skipping ...
+[1829] Biber.pm:131> WARN - Duplicate entry key: 'AtomisticPseudoRodopoulos2014' in file 'refs.bib', skipping ...
+[1830] Biber.pm:131> WARN - Duplicate entry key: 'saraza-canflancaDeterminationTimeConstant2022' in file 'refs.bib', skipping ...
+[1830] Biber.pm:131> WARN - Duplicate entry key: 'amrouchMLRescueReliability2023' in file 'refs.bib', skipping ...
+[1830] Biber.pm:131> WARN - Duplicate entry key: 'martin-martinezProbabilisticDefectOccupancy2011' in file 'refs.bib', skipping ...
+[1830] Biber.pm:131> WARN - Duplicate entry key: 'vansantenDesigningGuardbandsInstantaneous2016' in file 'refs.bib', skipping ...
+[1831] Biber.pm:131> WARN - Duplicate entry key: 'santana-andreoImpactBTIHCI2022' in file 'refs.bib', skipping ...
+[1831] Biber.pm:131> WARN - Duplicate entry key: 'vansantenModelingMitigatingTimeDependent2019' in file 'refs.bib', skipping ...
+[1831] Biber.pm:131> WARN - Duplicate entry key: 'martin-lloretCASEReliabilitySimulation2017' in file 'refs.bib', skipping ...
+[1831] Biber.pm:131> WARN - Duplicate entry key: 'klemmeMachineLearningCircuit2021' in file 'refs.bib', skipping ...
+[1832] Biber.pm:131> WARN - Duplicate entry key: 'klemmeEfficientLearningStrategies2022' in file 'refs.bib', skipping ...
+[1832] Biber.pm:131> WARN - Duplicate entry key: 'klemmeScalableMachineLearning2022a' in file 'refs.bib', skipping ...
+[1832] Biber.pm:131> WARN - Duplicate entry key: 'saraza-canflancaSmartSRAMCellArray2022' in file 'refs.bib', skipping ...
+[1832] Biber.pm:131> WARN - Duplicate entry key: 'santana-andreoCharacterizingAgingDegradation2022' in file 'refs.bib', skipping ...
+[1833] Biber.pm:131> WARN - Duplicate entry key: 'santana-andreoReliabilityImprovementSRAM2024a' in file 'refs.bib', skipping ...
+[1833] Biber.pm:131> WARN - Duplicate entry key: 'vansantenNewWorstcaseTiming2019' in file 'refs.bib', skipping ...
+[1833] Biber.pm:131> WARN - Duplicate entry key: 'grasserParadigmShiftUnderstanding2011' in file 'refs.bib', skipping ...
+[1833] Biber.pm:131> WARN - Duplicate entry key: 'reisingerUnderstandingModelingAC2011' in file 'refs.bib', skipping ...
+[1833] Biber.pm:131> WARN - Duplicate entry key: 'kaczerDefectcentricPerspectiveDevice2015' in file 'refs.bib', skipping ...
+[1834] Biber.pm:131> WARN - ISBN '978-1-4673-7133-9 978-1-4673-7135-3' in entry 'kaczerDefectcentricPerspectiveDevice2015' is invalid - run biber with '--validate_datamodel' for details.
+[1834] Biber.pm:131> WARN - ISBN '978-1-4673-1188-5 978-1-4673-1187-8 978-1-4673-1186-1' in entry 'khanBTIImpactLogical2012' is invalid - run biber with '--validate_datamodel' for details.
+[1834] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\8fe4c9854184545302f21ebf0d47516c_40832.utf8, line 1781, warning: 1 characters of junk seen at toplevel
+[1835] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\usuario\AppData\Local\Temp\biber_tmp_aH33\8fe4c9854184545302f21ebf0d47516c_40832.utf8, line 2262, warning: 9 characters of junk seen at toplevel
+[1835] Biber.pm:133> INFO - WARNINGS: 64

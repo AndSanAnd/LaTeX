@@ -19,576 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{McGrath2019}{article}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{issn}{19319401}
-      \field{journaltitle}{Applied Physics Reviews}
-      \field{number}{1}
-      \field{title}{{A PUF taxonomy}}
-      \field{volume}{6}
-      \field{year}{2019}
-      \verb{doi}
-      \verb 10.1063/1.5079407
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Downloads/1.5079407.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Bohm2013}{book}{}
-      \name{author}{2}{}{%
-        {{hash=769034bfef49037ec8331e37e31bf7a0}{%
-           family={Böhm},
-           familyi={B\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=0f172c46148db92b5ef2e7569f0e3ec2}{%
-           family={Hofer},
-           familyi={H\bibinitperiod},
-           given={Maximilian},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY}%
-      }
-      \list{publisher}{1}{%
-        {Springer New York}%
-      }
-      \strng{namehash}{9c765b9165904361d02e641727ad9a41}
-      \strng{fullhash}{9c765b9165904361d02e641727ad9a41}
-      \strng{bibnamehash}{9c765b9165904361d02e641727ad9a41}
-      \strng{authorbibnamehash}{9c765b9165904361d02e641727ad9a41}
-      \strng{authornamehash}{9c765b9165904361d02e641727ad9a41}
-      \strng{authorfullhash}{9c765b9165904361d02e641727ad9a41}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-1-4614-5039-9}
-      \field{title}{{Physical Unclonable Functions in Theory and Practice}}
-      \field{year}{2013}
-      \field{pages}{300}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1007/978-1-4614-5040-5
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/B{\"{o}}hm, Hofer - 2013 - Physical Unclonable Functions in Theory and Practice.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/978-1-4614-5040-5
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/978-1-4614-5040-5
-      \endverb
-    \endentry
-    \entry{NXP}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{title}{{Search | NXP}}
-      \field{urlday}{17}
-      \field{urlmonth}{11}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.nxp.com/search?keyword=AN12292{\&}start=0
-      \endverb
-      \verb{url}
-      \verb https://www.nxp.com/search?keyword=AN12292%7B%5C&%7Dstart=0
-      \endverb
-    \endentry
-    \entry{Intrinsic}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{title}{{QuiddiKey - Intrinsic ID | Home of PUF Technology}}
-      \field{urlday}{17}
-      \field{urlmonth}{11}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.intrinsic-id.com/products/quiddikey/
-      \endverb
-      \verb{url}
-      \verb https://www.intrinsic-id.com/products/quiddikey/
-      \endverb
-    \endentry
-    \entry{Microsemi}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labeltitlesource}{title}
-      \field{title}{{Libero SoC v11.6 Resources Archive | Microsemi}}
-      \field{urlday}{17}
-      \field{urlmonth}{11}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.microsemi.com/product-directory/design-resources-archive/5086-libero-soc-v11-6-resources-archive
-      \endverb
-      \verb{url}
-      \verb https://www.microsemi.com/product-directory/design-resources-archive/5086-libero-soc-v11-6-resources-archive
-      \endverb
-    \endentry
-    \entry{Delvaux2015}{article}{}
-      \name{author}{4}{}{%
-        {{hash=947b499d768ced0937b4d0cb15176963}{%
-           family={Delvaux},
-           familyi={D\bibinitperiod},
-           given={Jeroen},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c4f7eb3a78e33fb582c82f6d2dd9e8c2}{%
-           family={Gu},
-           familyi={G\bibinitperiod},
-           given={Dawu},
-           giveni={D\bibinitperiod}}}%
-        {{hash=60555b637819ca0cfd8b4d3c87799db9}{%
-           family={Schellekens},
-           familyi={S\bibinitperiod},
-           given={Dries},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
-           family={Verbauwhede},
-           familyi={V\bibinitperiod},
-           given={Ingrid},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
-      \strng{fullhash}{ceb06cc3176537ff4552a9cce94fb09d}
-      \strng{bibnamehash}{ceb06cc3176537ff4552a9cce94fb09d}
-      \strng{authorbibnamehash}{ceb06cc3176537ff4552a9cce94fb09d}
-      \strng{authornamehash}{ba4bafa1301f93c2ea904c51f1ee0f20}
-      \strng{authorfullhash}{ceb06cc3176537ff4552a9cce94fb09d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{02780070}
-      \field{journaltitle}{{IEEE} Trans. Comput.-Aided Design Integr. Circuits Syst.}
-      \field{number}{6}
-      \field{title}{{Helper data algorithms for puf-based key generation: Overview and analysis}}
-      \field{volume}{34}
-      \field{year}{2015}
-      \field{pages}{889\bibrangedash 902}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCAD.2014.2370531
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Desktop/article-2494.pdf:pdf
-      \endverb
-      \keyw{helper data algorithm,key generation,physically unclonable function}
-    \endentry
-    \entry{Hiller2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=048897926083f82c0a0242a747db3f60}{%
-           family={Hiller},
-           familyi={H\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=52ff54aeb792c96bdcd0b0f11c659470}{%
-           family={Kürzinger},
-           familyi={K\bibinitperiod},
-           given={Ludwig},
-           giveni={L\bibinitperiod}}}%
-        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
-           family={Sigl},
-           familyi={S\bibinitperiod},
-           given={Georg},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Berlin Heidelberg}%
-      }
-      \strng{namehash}{a4380d0d88e0ce5552387917d0a7e512}
-      \strng{fullhash}{71d6a8c998ea746101aaa7d4e09a14d7}
-      \strng{bibnamehash}{71d6a8c998ea746101aaa7d4e09a14d7}
-      \strng{authorbibnamehash}{71d6a8c998ea746101aaa7d4e09a14d7}
-      \strng{authornamehash}{a4380d0d88e0ce5552387917d0a7e512}
-      \strng{authorfullhash}{71d6a8c998ea746101aaa7d4e09a14d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{21908516}
-      \field{journaltitle}{Journal of Cryptographic Engineering}
-      \field{number}{3}
-      \field{title}{{Review of error correction for PUFs and evaluation on state-of-the-art FPGAs}}
-      \field{volume}{10}
-      \field{year}{2020}
-      \field{pages}{229\bibrangedash 247}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1007/s13389-020-00223-w
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Downloads/Hiller2020{\_}Article{\_}ReviewOfErrorCorrectionForPUFs.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s13389-020-00223-w
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s13389-020-00223-w
-      \endverb
-      \keyw{FPGA,Fuzzy extractor,Hardware implementation,Key generation,Physical unclonable functions}
-    \endentry
-    \entry{Alioto2019}{article}{}
-      \name{author}{1}{}{%
-        {{hash=8cb76a54b4f6e4be260556c94a0d3ff4}{%
-           family={Alioto},
-           familyi={A\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \strng{fullhash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \strng{bibnamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \strng{authorbibnamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \strng{authornamehash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \strng{authorfullhash}{8cb76a54b4f6e4be260556c94a0d3ff4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Solid-State Circuits Magazine}
-      \field{title}{Trends in Hardware Security: From basics to ASICs}
-      \field{volume}{11}
-      \field{year}{2019}
-      \field{pages}{56\bibrangedash 74}
-      \range{pages}{19}
-    \endentry
-    \entry{Shifman2018}{article}{}
-      \name{author}{5}{}{%
-        {{hash=2b2898cd62402bb51f81bac22c1f6f4f}{%
-           family={Shifman},
-           familyi={S\bibinitperiod},
-           given={Yizhak},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=cf956ed3ac2ab54b8c8e73bd6b75a526}{%
-           family={Miller},
-           familyi={M\bibinitperiod},
-           given={Avi},
-           giveni={A\bibinitperiod}}}%
-        {{hash=6b5d48b1f03c05b0f1f10f0229f8d9c9}{%
-           family={Keren},
-           familyi={K\bibinitperiod},
-           given={Osnat},
-           giveni={O\bibinitperiod}}}%
-        {{hash=ddd52fc28ab52568b7c791ba808aeae1}{%
-           family={Weizmann},
-           familyi={W\bibinitperiod},
-           given={Yoav},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=3344975bd53f2cd4f3a2f4e9ff0a966a}{%
-           family={Shor},
-           familyi={S\bibinitperiod},
-           given={Joseph},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers Inc.}%
-      }
-      \strng{namehash}{be11f6e2ad9604da8601077056136ae8}
-      \strng{fullhash}{e8a2e319ace6e5ca934f730c3be48971}
-      \strng{bibnamehash}{e8a2e319ace6e5ca934f730c3be48971}
-      \strng{authorbibnamehash}{e8a2e319ace6e5ca934f730c3be48971}
-      \strng{authornamehash}{be11f6e2ad9604da8601077056136ae8}
-      \strng{authorfullhash}{e8a2e319ace6e5ca934f730c3be48971}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2573-9603}
-      \field{journaltitle}{IEEE Solid-State Circuits Letters}
-      \field{number}{6}
-      \field{title}{{A Method to Improve Reliability in a 65-nm SRAM PUF Array}}
-      \field{volume}{1}
-      \field{year}{2018}
-      \field{pages}{138\bibrangedash 141}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/LSSC.2018.2879216
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Documents/08519616.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/8519616/
-      \endverb
-      \verb{url}
-      \verb https://ieeexplore.ieee.org/document/8519616/
-      \endverb
-      \keyw{Physical unclonable function (PUF),SRAM,preselection}
-    \endentry
-    \entry{duchAnalysisFunctionalErrors2020}{article}{}
-      \name{author}{7}{}{%
-        {{hash=5c27b47b40671be2c794de8a70e2db37}{%
-           family={Duch},
-           familyi={D\bibinitperiod},
-           given={Loris},
-           giveni={L\bibinitperiod}}}%
-        {{hash=262bd74c43e37c2f70b53279f5a05a7d}{%
-           family={{Peon-Quiros}},
-           familyi={P\bibinitperiod},
-           given={Miguel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=236a852b8954155c91eb051c1abe0e25}{%
-           family={Weckx},
-           familyi={W\bibinitperiod},
-           given={Pieter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
-           family={Levisse},
-           familyi={L\bibinitperiod},
-           given={Alexandre},
-           giveni={A\bibinitperiod}}}%
-        {{hash=498b0993ab168773d2062439f92f6527}{%
-           family={Braojos},
-           familyi={B\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
-           family={Catthoor},
-           familyi={C\bibinitperiod},
-           given={Francky},
-           giveni={F\bibinitperiod}}}%
-        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
-           family={Atienza},
-           familyi={A\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{e96e4ce66f5837fa8cf485f551e68b6b}
-      \strng{fullhash}{43375ab55a93e98e3aa6234f9fb71065}
-      \strng{bibnamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
-      \strng{authorbibnamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
-      \strng{authornamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
-      \strng{authorfullhash}{43375ab55a93e98e3aa6234f9fb71065}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1063-8210, 1557-9999}
-      \field{journaltitle}{{IEEE} Trans. {VLSI} Syst.}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{10}
-      \field{title}{Analysis of {{Functional Errors Produced}} by {{Long-Term Workload-Dependent BTI Degradation}} in {{Ultralow Power Processors}}}
-      \field{urlday}{22}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{volume}{28}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-      \field{pages}{2122\bibrangedash 2133}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1109/TVLSI.2020.3003471
-      \endverb
-    \endentry
-    \entry{santana-andreoImpactBTIHCI2022}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
-           family={{Santana-Andreo}},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={{Castro-Lopez}},
-           familyi={C\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{fullhash}{5de692251a66733eb53c28b6681cce9e}
-      \strng{bibnamehash}{5de692251a66733eb53c28b6681cce9e}
-      \strng{authorbibnamehash}{5de692251a66733eb53c28b6681cce9e}
-      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{authorfullhash}{5de692251a66733eb53c28b6681cce9e}
-      \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} 18th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD'22)}
-      \field{isbn}{978-1-66546-703-2}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{title}{Impact of {{BTI}} and {{HCI}} on the {Reliability} of a {{Majority Voter}}}
-      \field{urlday}{13}
-      \field{urlmonth}{7}
-      \field{urlyear}{2022}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1109/SMACD55068.2022.9816353
-      \endverb
-    \endentry
-    \entry{moritaEfficientAnalysisMitigation2022}{article}{}
-      \name{author}{4}{}{%
-        {{hash=efe9ea3d2f778087ab6456974a6b5668}{%
-           family={Morita},
-           familyi={M\bibinitperiod},
-           given={Shumpei},
-           giveni={S\bibinitperiod}}}%
-        {{hash=f09f38153d6acf226c14585ff184481a}{%
-           family={Bian},
-           familyi={B\bibinitperiod},
-           given={Song},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7181949a81a5a65c9731de87c828c503}{%
-           family={Shintani},
-           familyi={S\bibinitperiod},
-           given={Michihiro},
-           giveni={M\bibinitperiod}}}%
-        {{hash=6a8f6c95ce4c5c103420b0fc89b80aa1}{%
-           family={Sato},
-           familyi={S\bibinitperiod},
-           given={Takashi},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{c89b4d9c883b32b653ad0059d382f002}
-      \strng{fullhash}{ecf803f6e2b488dfa7b56220d80e0131}
-      \strng{bibnamehash}{ecf803f6e2b488dfa7b56220d80e0131}
-      \strng{authorbibnamehash}{ecf803f6e2b488dfa7b56220d80e0131}
-      \strng{authornamehash}{c89b4d9c883b32b653ad0059d382f002}
-      \strng{authorfullhash}{ecf803f6e2b488dfa7b56220d80e0131}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0278-0070, 1937-4151}
-      \field{journaltitle}{{IEEE} Trans. Comput.-Aided Design Integr. Circuits Syst.}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{12}
-      \field{title}{Efficient {{Analysis}} for {{Mitigation}} of {{Workload-Dependent Aging Degradation}}}
-      \field{urlday}{9}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{volume}{41}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{5515\bibrangedash 5525}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1109/TCAD.2022.3149856
-      \endverb
-    \endentry
-    \entry{klemmeEfficientLearningStrategies2022}{article}{}
-      \name{author}{2}{}{%
-        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
-           family={Klemme},
-           familyi={K\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
-           family={Amrouch},
-           familyi={A\bibinitperiod},
-           given={Hussam},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1549-8328, 1558-0806}
-      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{12}
-      \field{title}{Efficient {{Learning Strategies}} for {{Machine Learning-Based Characterization}} of {{Aging-Aware Cell Libraries}}}
-      \field{urlday}{17}
-      \field{urlmonth}{7}
-      \field{urlyear}{2023}
-      \field{volume}{69}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{5233\bibrangedash 5246}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCSI.2022.3201431
-      \endverb
-    \endentry
-    \entry{martin-martinezProbabilisticDefectOccupancy2011}{inproceedings}{}
-      \name{author}{7}{}{%
-        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
-           family={{Martin-Martinez}},
-           familyi={M\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=0762e97f6e11586e304dc9b225713e5a}{%
-           family={Kaczer},
-           familyi={K\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=c254bcab8d43817a52bdb821e545905f}{%
-           family={{Toledano-Luque}},
-           familyi={T\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=234562cdaaf8356a43e42d5f3036bb8f}{%
-           family={Rodriguez},
-           familyi={R\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
-           family={Nafria},
-           familyi={N\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=48ee278284b82bd650aab4a96ddcd84c}{%
-           family={Aymerich},
-           familyi={A\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod}}}%
-        {{hash=52fcc6d5395e334098e42bf5b86720da}{%
-           family={Groeseneken},
-           familyi={G\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{7e4a3b2c5c015628099e84f06995d594}
-      \strng{fullhash}{1ca1d3cf5fb36f7ee1ac4775dafd8a15}
-      \strng{bibnamehash}{7e4a3b2c5c015628099e84f06995d594}
-      \strng{authorbibnamehash}{7e4a3b2c5c015628099e84f06995d594}
-      \strng{authornamehash}{7e4a3b2c5c015628099e84f06995d594}
-      \strng{authorfullhash}{1ca1d3cf5fb36f7ee1ac4775dafd8a15}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} International Reliability Physics Symposium (IRPS'11)}
-      \field{isbn}{978-1-4244-9113-1}
-      \field{issn}{15417026}
-      \field{month}{4}
-      \field{title}{{Probabilistic Defect Occupancy Model for {{NBTI}}}}
-      \field{year}{2011}
-      \field{pages}{XT.4.1\bibrangedash XT.4.6}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1109/IRPS.2011.5784605
-      \endverb
-    \endentry
     \entry{grasserParadigmShiftUnderstanding2011}{article}{}
       \name{author}{11}{}{%
         {{hash=0853f6a1e046077355103ffb9123653f}{%
@@ -653,8 +83,8 @@
       \strng{authorbibnamehash}{b5a902ef3edabb73133c4f310658ac36}
       \strng{authornamehash}{b5a902ef3edabb73133c4f310658ac36}
       \strng{authorfullhash}{e4fc6b01c77688c4667563d043c87625}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0018-9383, 1557-9646}
@@ -715,12 +145,12 @@
       \strng{authorbibnamehash}{4368ac4ad83ac0029633ca967ec7ec9d}
       \strng{authornamehash}{dfa9fa70a9ad2085f732f4a2a3fe538b}
       \strng{authorfullhash}{4368ac4ad83ac0029633ca967ec7ec9d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. IEEE International Reliability Physics Symposium (IRPS'11)}
-      \field{title}{{Understanding and Modeling {{AC BTI}}}}
+      \field{title}{Understanding and Modeling {{AC BTI}}}
       \field{year}{2011}
     \endentry
     \entry{kaczerDefectcentricPerspectiveDevice2015}{inproceedings}{}
@@ -807,16 +237,15 @@
       \strng{authorbibnamehash}{3036ab3836a693186dcaaa24d619cf9b}
       \strng{authornamehash}{3036ab3836a693186dcaaa24d619cf9b}
       \strng{authorfullhash}{d8c89c607b1698bedd1ad90465ad3047}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. 45th {{European Solid State Device Research Conference}} ({{ESSDERC'15}})}
       \field{isbn}{978-1-4673-7133-9 978-1-4673-7135-3}
       \field{langid}{english}
       \field{month}{9}
-      \field{title}{{The Defect-Centric Perspective of Device and Circuit Reliability - {{From}} Individual Defects to Circuits}}
+      \field{title}{The Defect-Centric Perspective of Device and Circuit Reliability - {{From}} Individual Defects to Circuits}
       \field{urlday}{26}
       \field{urlmonth}{9}
       \field{urlyear}{2024}
@@ -826,6 +255,66 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.1109/ESSDERC.2015.7324754
+      \endverb
+    \endentry
+    \entry{martin-martinezProbabilisticDefectOccupancy2011}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
+           family={{Martin-Martinez}},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0762e97f6e11586e304dc9b225713e5a}{%
+           family={Kaczer},
+           familyi={K\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c254bcab8d43817a52bdb821e545905f}{%
+           family={{Toledano-Luque}},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=234562cdaaf8356a43e42d5f3036bb8f}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
+           family={Nafria},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=48ee278284b82bd650aab4a96ddcd84c}{%
+           family={Aymerich},
+           familyi={A\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=52fcc6d5395e334098e42bf5b86720da}{%
+           family={Groeseneken},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e4a3b2c5c015628099e84f06995d594}
+      \strng{fullhash}{1ca1d3cf5fb36f7ee1ac4775dafd8a15}
+      \strng{bibnamehash}{7e4a3b2c5c015628099e84f06995d594}
+      \strng{authorbibnamehash}{7e4a3b2c5c015628099e84f06995d594}
+      \strng{authornamehash}{7e4a3b2c5c015628099e84f06995d594}
+      \strng{authorfullhash}{1ca1d3cf5fb36f7ee1ac4775dafd8a15}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} International Reliability Physics Symposium (IRPS'11)}
+      \field{isbn}{978-1-4244-9113-1}
+      \field{issn}{15417026}
+      \field{month}{4}
+      \field{title}{{Probabilistic Defect Occupancy Model for {{NBTI}}}}
+      \field{year}{2011}
+      \field{pages}{XT.4.1\bibrangedash XT.4.6}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/IRPS.2011.5784605
       \endverb
     \endentry
     \entry{saraza-canflancaDeterminationTimeConstant2022}{article}{}
@@ -860,21 +349,21 @@
            familyi={N\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
            family={Fernandez},
            familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
+           given={F.\bibnamedelimi V.},
            giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
       \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{fullhash}{964dffbaa633c479f679312fb95917c1}
+      \strng{fullhash}{460ec00f01fab373a582fcb2630d9a5a}
       \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
       \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
       \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authorfullhash}{964dffbaa633c479f679312fb95917c1}
+      \strng{authorfullhash}{460ec00f01fab373a582fcb2630d9a5a}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9383, 1557-9646}
@@ -895,7 +384,171 @@
       \verb 10.1109/TED.2022.3198383
       \endverb
     \endentry
-    \entry{vansantenModelingMitigatingTimeDependent2019}{article}{}
+    \entry{amrouchMLRescueReliability2023}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
+           family={Amrouch},
+           familyi={A\bibinitperiod},
+           given={Hussam},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
+           family={Klemme},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{385dc208d3b0211773a4940fb43c63fa}
+      \strng{fullhash}{385dc208d3b0211773a4940fb43c63fa}
+      \strng{bibnamehash}{385dc208d3b0211773a4940fb43c63fa}
+      \strng{authorbibnamehash}{385dc208d3b0211773a4940fb43c63fa}
+      \strng{authornamehash}{385dc208d3b0211773a4940fb43c63fa}
+      \strng{authorfullhash}{385dc208d3b0211773a4940fb43c63fa}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proc. 28th Asia and South Pacific Design Automation Conference (ASP-DAC'23)}
+      \field{isbn}{978-1-4503-9783-4}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{{{ML}} to the {{Rescue}}}
+      \field{title}{{{ML}} to the {{Rescue}}: {{Reliability Estimation}} from {{Self-Heating}} and {{Aging}} in {{Transistors All}} the {{Way}} up {{Processors}}}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{76\bibrangedash 82}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3566097.3568344
+      \endverb
+    \endentry
+    \entry{klemmeMachineLearningCircuit2021}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
+           family={Klemme},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
+           family={Amrouch},
+           familyi={A\bibinitperiod},
+           given={Hussam},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} International Test Conference (ITC'21)}
+      \field{isbn}{978-1-66541-695-5}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{Machine {{Learning}} for {{Circuit Aging Estimation}} under {{Workload Dependency}}}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{37\bibrangedash 46}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ITC50571.2021.00011
+      \endverb
+    \endentry
+    \entry{klemmeScalableMachineLearning2022a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
+           family={Klemme},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
+           family={Amrouch},
+           familyi={A\bibinitperiod},
+           given={Hussam},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328, 1558-0806}
+      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Scalable {{Machine Learning}} to {{Estimate}} the {{Impact}} of {{Aging}} on {{Circuits Under Workload Dependency}}}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{69}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{2142\bibrangedash 2155}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCSI.2022.3147587
+      \endverb
+    \endentry
+    \entry{klemmeEfficientLearningStrategies2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
+           family={Klemme},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
+           family={Amrouch},
+           familyi={A\bibinitperiod},
+           given={Hussam},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328, 1558-0806}
+      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Efficient {{Learning Strategies}} for {{Machine Learning-Based Characterization}} of {{Aging-Aware Cell Libraries}}}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{volume}{69}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{5233\bibrangedash 5246}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCSI.2022.3201431
+      \endverb
+    \endentry
+    \entry{vansantenNewWorstcaseTiming2019}{article}{}
       \name{author}{3}{}{%
         {{hash=dd4d1dcd323048b73683d41226f1fc02}{%
            family={Van\bibnamedelima Santen},
@@ -920,26 +573,191 @@
       \strng{authornamehash}{7472cc4a169919926b98a62a2bb3578d}
       \strng{authorfullhash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1549-8328, 1558-0806}
-      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
-      \field{langid}{english}
-      \field{month}{7}
-      \field{number}{7}
-      \field{title}{Modeling and {{Mitigating Time-Dependent Variability From}} the {{Physical Level}} to the {{Circuit Level}}}
-      \field{urlday}{14}
-      \field{urlmonth}{9}
-      \field{urlyear}{2023}
-      \field{volume}{66}
+      \field{issn}{15582574}
+      \field{journaltitle}{{IEEE} Trans. Device Mater. Rel.}
+      \field{number}{1}
+      \field{title}{{New Worst-Case Timing for Standard Cells under Aging Effects}}
+      \field{volume}{19}
       \field{year}{2019}
-      \field{urldateera}{ce}
-      \field{pages}{2671\bibrangedash 2684}
-      \range{pages}{14}
+      \field{pages}{149\bibrangedash 158}
+      \range{pages}{10}
       \verb{doi}
-      \verb 10.1109/TCSI.2019.2898006
+      \verb 10.1109/TDMR.2019.2893017
+      \endverb
+    \endentry
+    \entry{santana-andreoImpactBTIHCI2022}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.V.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{fullhash}{1b894c2047064059b2df3ae70b5e73fb}
+      \strng{bibnamehash}{1b894c2047064059b2df3ae70b5e73fb}
+      \strng{authorbibnamehash}{1b894c2047064059b2df3ae70b5e73fb}
+      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authorfullhash}{1b894c2047064059b2df3ae70b5e73fb}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} 18th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD'22)}
+      \field{isbn}{978-1-66546-703-2}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Impact of {{BTI}} and {{HCI}} on the {Reliability} of a {{Majority Voter}}}
+      \field{urlday}{13}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1109/SMACD55068.2022.9816353
+      \endverb
+    \endentry
+    \entry{santana-andreoCharacterizingAgingDegradation2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=02c87b143121e53a7baec3ddb09665ef}{%
+           family={{Martin-Lloret}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.V.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{fullhash}{9811a245e0e68647f0c6366101363e0e}
+      \strng{bibnamehash}{9811a245e0e68647f0c6366101363e0e}
+      \strng{authorbibnamehash}{9811a245e0e68647f0c6366101363e0e}
+      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authorfullhash}{9811a245e0e68647f0c6366101363e0e}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} 34th International Conference on Microelectronic Test Structures (ICMTS'22)}
+      \field{isbn}{978-1-66548-566-1}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Characterizing {{Aging Degradation}} of {{Integrated Circuits}} with a {{Versatile Custom Array}} of {{Reliability Test Structures}}}
+      \field{urlday}{6}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICMTS50340.2022.9898256
+      \endverb
+    \endentry
+    \entry{saraza-canflancaSmartSRAMCellArray2022}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
+           family={{Saraza-Canflanca}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d8f0e7ced164b40e21bdbc0319a321c3}{%
+           family={{Carrasco-Lopez}},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c470527a9637be6552327c1adea56319}{%
+           family={{Diaz-Fortuny}},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.\bibnamedelimi V.},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{fullhash}{161529d108777d7176109ea990fceddf}
+      \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorfullhash}{161529d108777d7176109ea990fceddf}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} International Reliability Physics Symposium (IRPS'22)}
+      \field{isbn}{978-1-66547-950-9}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{A {{Smart SRAM-Cell Array}} for the {{Experimental Study}} of {{Variability Phenomena}} in {{CMOS Technologies}}}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{P3-1-P3\bibrangedash 5}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/IRPS48227.2022.9764587
       \endverb
     \endentry
     \entry{vansantenDesigningGuardbandsInstantaneous2016}{inproceedings}{}
@@ -979,8 +797,8 @@
       \strng{authornamehash}{61b7b020287dd6545206887397df650d}
       \strng{authorfullhash}{263b234d54347dcbf79f93f3b09f6bb6}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Bias Temperature Instability (BTI) is one of the key causes of reliability degradations of nano-CMOS circuits. While the long-term impact of BTI has been studied since years, the short-term implications of BTI on circuits are unexplored. In fact, in physics short-term BTI effects, i.e. instantaneous (i.e. sub μs) frequency dependent processes, have been recently reported. In order to design circuits with guardbands that are safe for long-term and instantaneous effects, new aging models are required. We are presenting the first approach that in fact considers both long-term as well as instantaneous BTI effects. It can be employed for complex circuits at the micro-architecture level. Designing guardbands based upon our physical BTI model reduces the guardbands by 41\% and thus allows for the development of more cost-effective yet reliable designs. We also revisit existing state-of-the-art aging mitigation techniques to investigate how they can be properly adapted to additionally account for instantaneous aging effects. Along with our BTI model this further reduces the guardbands by up to 59\%.}
@@ -990,6 +808,657 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1145/2897937.2898006
+      \endverb
+    \endentry
+    \entry{AtomisticPseudoRodopoulos2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=8d63be062298970a4a9bf85e862b2730}{%
+           family={Rodopoulos},
+           familyi={R\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=236a852b8954155c91eb051c1abe0e25}{%
+           family={Weckx},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6850e341862b11b1a2a6b917a7ece6a2}{%
+           family={Noltsis},
+           familyi={N\bibinitperiod},
+           given={Michail},
+           giveni={M\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+        {{hash=394cbb14cf6883da43854f8011b6f44d}{%
+           family={Soudris},
+           familyi={S\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{19566d0756e1b1bfa7f18909972208a1}
+      \strng{fullhash}{b664423bef269494f0c1ebc1642f2d2b}
+      \strng{bibnamehash}{b664423bef269494f0c1ebc1642f2d2b}
+      \strng{authorbibnamehash}{b664423bef269494f0c1ebc1642f2d2b}
+      \strng{authornamehash}{19566d0756e1b1bfa7f18909972208a1}
+      \strng{authorfullhash}{b664423bef269494f0c1ebc1642f2d2b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Trans. Device Mater. Rel.}
+      \field{number}{2}
+      \field{title}{{Atomistic Pseudo-Transient {BTI} Simulation With Inherent Workload Memory}}
+      \field{volume}{14}
+      \field{year}{2014}
+      \field{pages}{704\bibrangedash 714}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TDMR.2014.2314356
+      \endverb
+      \keyw{Mathematical model;Computational modeling;Accuracy;Equations;Integrated circuit modeling;Logic gates;SPICE;Analytical models;circuit simulation;digital circuit simulation;semiconductor device reliability}
+    \endentry
+    \entry{duchAnalysisFunctionalErrors2020}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5c27b47b40671be2c794de8a70e2db37}{%
+           family={Duch},
+           familyi={D\bibinitperiod},
+           given={Loris},
+           giveni={L\bibinitperiod}}}%
+        {{hash=262bd74c43e37c2f70b53279f5a05a7d}{%
+           family={{Peon-Quiros}},
+           familyi={P\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=236a852b8954155c91eb051c1abe0e25}{%
+           family={Weckx},
+           familyi={W\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=498b0993ab168773d2062439f92f6527}{%
+           family={Braojos},
+           familyi={B\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e96e4ce66f5837fa8cf485f551e68b6b}
+      \strng{fullhash}{43375ab55a93e98e3aa6234f9fb71065}
+      \strng{bibnamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
+      \strng{authorbibnamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
+      \strng{authornamehash}{e96e4ce66f5837fa8cf485f551e68b6b}
+      \strng{authorfullhash}{43375ab55a93e98e3aa6234f9fb71065}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1063-8210, 1557-9999}
+      \field{journaltitle}{{IEEE} Trans. {VLSI} Syst.}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Analysis of {{Functional Errors Produced}} by {{Long-Term Workload-Dependent BTI Degradation}} in {{Ultralow Power Processors}}}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{2122\bibrangedash 2133}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TVLSI.2020.3003471
+      \endverb
+    \endentry
+    \entry{saraza-canflancaImprovingReliabilitySRAMbased2021}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
+           family={{Saraza-Canflanca}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d8f0e7ced164b40e21bdbc0319a321c3}{%
+           family={{Carrasco-Lopez}},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d2f9f677bf755544cb52a8abc249e44}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.V.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pergamon}%
+      }
+      \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{fullhash}{dce02a8c1d301d6ea84108f2c729d0e2}
+      \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
+      \strng{authorfullhash}{dce02a8c1d301d6ea84108f2c729d0e2}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00262714}
+      \field{journaltitle}{Microelectronics Reliability}
+      \field{month}{3}
+      \field{title}{{Improving the Reliability of {{SRAM-based PUFs}} under Varying Operation Conditions and Aging Degradation}}
+      \field{urlday}{11}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{volume}{118}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{114049}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.microrel.2021.114049
+      \endverb
+    \endentry
+    \entry{santana-andreoDRVbasedBitSelection2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
+           family={{Saraza-Canflanca}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d8f0e7ced164b40e21bdbc0319a321c3}{%
+           family={{Carrasco-Lopez}},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4d2f9f677bf755544cb52a8abc249e44}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.V.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{fullhash}{d57bb3eb03e32fc3154b64e8c655066f}
+      \strng{bibnamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authorbibnamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authorfullhash}{d57bb3eb03e32fc3154b64e8c655066f}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{01679260}
+      \field{journaltitle}{Integration}
+      \field{number}{February 2021}
+      \field{title}{{A {{DRV-based}} Bit Selection Method for {{SRAM PUF}} Key Generation and Its Impact on {{ECCs}}}}
+      \field{volume}{85}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.vlsi.2022.02.008
+      \endverb
+    \endentry
+    \entry{santana-andreoReliabilityImprovementSRAM2024a}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
+           family={{Santana-Andreo}},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
+           family={{Saraza-Canflanca}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.V.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{fullhash}{70bab4541fca89831da1759acc81494f}
+      \strng{bibnamehash}{70bab4541fca89831da1759acc81494f}
+      \strng{authorbibnamehash}{70bab4541fca89831da1759acc81494f}
+      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
+      \strng{authorfullhash}{70bab4541fca89831da1759acc81494f}
+      \field{extraname}{4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{14348411}
+      \field{journaltitle}{AEU - International Journal of Electronics and Communications}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{{Reliability Improvement of {{SRAM PUFs}} Based on a Detailed Experimental Study into the Stochastic Effects of Aging}}
+      \field{urlday}{6}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{volume}{176}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{155147}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aeue.2024.155147
+      \endverb
+    \endentry
+    \entry{kimSiliconOdometerOnchip2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3002ce07f3926a158cbb40a6bf645ead}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Tae\bibnamedelima Hyoung},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=be96b11b0a48f2b073316ef00ce8cdd2}{%
+           family={Persaud},
+           familyi={P\bibinitperiod},
+           given={Randy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f2fea301143372b75b8cd8b4e34cc59}
+      \strng{fullhash}{ff1c5bed046736786dc4ad0119a782e0}
+      \strng{bibnamehash}{ff1c5bed046736786dc4ad0119a782e0}
+      \strng{authorbibnamehash}{ff1c5bed046736786dc4ad0119a782e0}
+      \strng{authornamehash}{2f2fea301143372b75b8cd8b4e34cc59}
+      \strng{authorfullhash}{ff1c5bed046736786dc4ad0119a782e0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189200}
+      \field{journaltitle}{{IEEE} J. Solid-State Circuits}
+      \field{number}{4}
+      \field{title}{{Silicon Odometer: {{An}} On-Chip Reliability Monitor for Measuring Frequency Degradation of Digital Circuits}}
+      \field{volume}{43}
+      \field{year}{2008}
+      \field{pages}{874\bibrangedash 880}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/JSSC.2008.917502
+      \endverb
+    \endentry
+    \entry{keaneArraybasedOdometerSystem2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8812a00b5f17adf9c30f204aec0ff809}{%
+           family={Keane},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=25bbf4047d900f3760c65b01ee899dba}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6a4a3446a397a589b0c1e19a42c7701f}
+      \strng{fullhash}{6882f82f550e45c1d1f248e1c007b3c8}
+      \strng{bibnamehash}{6882f82f550e45c1d1f248e1c007b3c8}
+      \strng{authorbibnamehash}{6882f82f550e45c1d1f248e1c007b3c8}
+      \strng{authornamehash}{6a4a3446a397a589b0c1e19a42c7701f}
+      \strng{authorfullhash}{6882f82f550e45c1d1f248e1c007b3c8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189200}
+      \field{journaltitle}{{IEEE} J. Solid-State Circuits}
+      \field{number}{10}
+      \field{title}{{An Array-Based Odometer System for Statistically Significant Circuit Aging Characterization}}
+      \field{volume}{46}
+      \field{year}{2011}
+      \field{pages}{2374\bibrangedash 2385}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/JSSC.2011.2160813
+      \endverb
+    \endentry
+    \entry{parkAllBTINPBTI2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=cd9a5485b74d32e057c7bcc511e3591a}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Gyusung},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d8d3d5fe3e68e2fb03264b09165c1c2e}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Hanzhao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=52398e4a5b4aa6b6a34f8822104a849b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Minsu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{621be42c23295d74a50768c1ee620c6a}
+      \strng{fullhash}{99c21b9313293e17ce3337f4a7288805}
+      \strng{bibnamehash}{99c21b9313293e17ce3337f4a7288805}
+      \strng{authorbibnamehash}{99c21b9313293e17ce3337f4a7288805}
+      \strng{authornamehash}{621be42c23295d74a50768c1ee620c6a}
+      \strng{authorfullhash}{99c21b9313293e17ce3337f4a7288805}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Reliability Physics Symposium (IRPS'21)}
+      \field{isbn}{9781728168937}
+      \field{issn}{15417026}
+      \field{title}{{An {{All BTI}} ({{N-PBTI}}, {{N-NBTI}}, {{P-PBTI}}, {{P-NBTI}}) {{Odometer}} Based on a {{Dual Power Rail Ring Oscillator Array}}}}
+      \field{volume}{2021-March}
+      \field{year}{2021}
+      \field{pages}{7\bibrangedash 11}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/IRPS46558.2021.9405181
+      \endverb
+    \endentry
+    \entry{islamCalibrationFreeSynthesizableOdometer2022}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=678daaf6ec33d9a06be59953a9f18878}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Tahmida},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b3451f62eaebe6b0d4815ffab64cf4a4}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Junkyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=64e6eeafe83c21cb0fa360dbed1eaedb}{%
+           family={Tipple},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4fffdc0a424ef030f38816b3f6412433}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fe1a70fca20c589313b9303d7016739b}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=45d57d8d6ca3ec03b4b0b82517ff20d2}{%
+           family={Jarrar},
+           familyi={J\bibinitperiod},
+           given={Anis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f885e6f5618ade497c8db3bb9e43af5}
+      \strng{fullhash}{cec9778247b1de63a82b7ef2189f47e7}
+      \strng{bibnamehash}{8f885e6f5618ade497c8db3bb9e43af5}
+      \strng{authorbibnamehash}{8f885e6f5618ade497c8db3bb9e43af5}
+      \strng{authornamehash}{8f885e6f5618ade497c8db3bb9e43af5}
+      \strng{authorfullhash}{cec9778247b1de63a82b7ef2189f47e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Reliability Physics Symposium (IRPS'22)}
+      \field{title}{{A Calibration-Free Synthesizable Odometer Featuring Automatic Frequency Dead Zone Escape and Start-up Glitch Removal}}
+      \field{year}{2022}
+      \field{pages}{P2-1-P2\bibrangedash 6}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/IRPS48227.2022.9764518
+      \endverb
+      \keyw{Ring oscillators;Degradation;Frequency synthesizers;Automatic frequency control;Codes;Aging;Silicon;Silicon odometer;aging sensor;ring oscillators;RTL;ASIC;synthesized}
+    \endentry
+    \entry{martin-lloretCASEReliabilitySimulation2017}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=02c87b143121e53a7baec3ddb09665ef}{%
+           family={{Martin-Lloret}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2b0b9668acab1abd151deda6de81d8a5}{%
+           family={{Toro-Frias}},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
+           family={{Castro-Lopez}},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
+           family={Roca},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c734a60b39de091a4eb699b264c572af}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={F.\bibnamedelimi V.},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
+           family={{Martin-Martinez}},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=234562cdaaf8356a43e42d5f3036bb8f}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
+           family={Nafria},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8a103d2713df5c799d1c1fe251573a0}
+      \strng{fullhash}{631b956e271dc01d1f5486253dad9606}
+      \strng{bibnamehash}{a8a103d2713df5c799d1c1fe251573a0}
+      \strng{authorbibnamehash}{a8a103d2713df5c799d1c1fe251573a0}
+      \strng{authornamehash}{a8a103d2713df5c799d1c1fe251573a0}
+      \strng{authorfullhash}{631b956e271dc01d1f5486253dad9606}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. {IEEE} 14th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD'17)}
+      \field{isbn}{9781509050529}
+      \field{title}{{{{CASE}}: {{A}} Reliability Simulation Tool for Analog {{ICs}}}}
+      \field{year}{2017}
+      \field{pages}{42\bibrangedash 45}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/SMACD.2017.7981588
+      \endverb
+    \endentry
+    \entry{vansantenModelingMitigatingTimeDependent2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd4d1dcd323048b73683d41226f1fc02}{%
+           family={Van\bibnamedelima Santen},
+           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Victor\bibnamedelima M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
+           family={Amrouch},
+           familyi={A\bibinitperiod},
+           given={Hussam},
+           giveni={H\bibinitperiod}}}%
+        {{hash=477ace1045b1c86e655b18fc4c342fbd}{%
+           family={Henkel},
+           familyi={H\bibinitperiod},
+           given={Jorg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7472cc4a169919926b98a62a2bb3578d}
+      \strng{fullhash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
+      \strng{bibnamehash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
+      \strng{authorbibnamehash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
+      \strng{authornamehash}{7472cc4a169919926b98a62a2bb3578d}
+      \strng{authorfullhash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328, 1558-0806}
+      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Modeling and {{Mitigating Time-Dependent Variability From}} the {{Physical Level}} to the {{Circuit Level}}}
+      \field{urlday}{14}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{66}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{2671\bibrangedash 2684}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCSI.2019.2898006
+      \endverb
+    \endentry
+    \entry{moritaEfficientAnalysisMitigation2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=efe9ea3d2f778087ab6456974a6b5668}{%
+           family={Morita},
+           familyi={M\bibinitperiod},
+           given={Shumpei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f09f38153d6acf226c14585ff184481a}{%
+           family={Bian},
+           familyi={B\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7181949a81a5a65c9731de87c828c503}{%
+           family={Shintani},
+           familyi={S\bibinitperiod},
+           given={Michihiro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6a8f6c95ce4c5c103420b0fc89b80aa1}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{c89b4d9c883b32b653ad0059d382f002}
+      \strng{fullhash}{ecf803f6e2b488dfa7b56220d80e0131}
+      \strng{bibnamehash}{ecf803f6e2b488dfa7b56220d80e0131}
+      \strng{authorbibnamehash}{ecf803f6e2b488dfa7b56220d80e0131}
+      \strng{authornamehash}{c89b4d9c883b32b653ad0059d382f002}
+      \strng{authorfullhash}{ecf803f6e2b488dfa7b56220d80e0131}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0278-0070, 1937-4151}
+      \field{journaltitle}{{IEEE} Trans. Comput.-Aided Design Integr. Circuits Syst.}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Efficient {{Analysis}} for {{Mitigation}} of {{Workload-Dependent Aging Degradation}}}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{41}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{5515\bibrangedash 5525}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TCAD.2022.3149856
       \endverb
     \endentry
     \entry{vashishthaASAP7PredictiveDesign2017}{inproceedings}{}
@@ -1016,8 +1485,8 @@
       \strng{authorbibnamehash}{881ca77b69261564861689c1468b207d}
       \strng{authornamehash}{1b38f230a388916cee2d43d66b9e89a2}
       \strng{authorfullhash}{881ca77b69261564861689c1468b207d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proc. IEEE/ACM International Conference on Computer-Aided Design (ICCAD'17)}
@@ -1075,8 +1544,8 @@
       \strng{authorbibnamehash}{8cbaa36a7a1f921e012de5a8b849bd03}
       \strng{authornamehash}{74a52e0985f16ee39c1e1ae09675f67e}
       \strng{authorfullhash}{8cbaa36a7a1f921e012de5a8b849bd03}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we propose a gate-level NBTI delay degradation model, where the stress voltage variability due to PMOS transistors' stacking effect is considered for the first time. Experimental results show that our gate-level NBTI delay degradation model results in a tighten upper bound for circuit performance analysis. The traditional circuit degradation analysis leads to on average 59.3{\%} overestimation. The pin reordering technique can mitigate on average 6.4{\%} performance degradation in our benchmark circuits.}
@@ -1114,8 +1583,8 @@
       \strng{authorbibnamehash}{d7c67a6d4c545aeabc2566cce219aeed}
       \strng{authornamehash}{f39b5bea68618dd61a7c1c51207c2405}
       \strng{authorfullhash}{d7c67a6d4c545aeabc2566cce219aeed}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc.{ACM} 21st Edition of the Great Lakes Symposium on VLSI (GLSVLSI'11)}
@@ -1173,8 +1642,8 @@
       \strng{authorbibnamehash}{2873a44486ce712dd945cb3b462a9d9d}
       \strng{authornamehash}{de5fd1e5fa69e371e9ff44d3a55989ea}
       \strng{authorfullhash}{2873a44486ce712dd945cb3b462a9d9d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. IEEE International Reliability Workshop (IIRW'14)}
@@ -1231,8 +1700,8 @@
       \strng{authorbibnamehash}{8d8d664394276258fe9f34d7c2274d2b}
       \strng{authornamehash}{8d8d664394276258fe9f34d7c2274d2b}
       \strng{authorfullhash}{dbd617a598b73b502dfecc2d336fcaf5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. {IEEE} 12th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD'15)}
@@ -1249,185 +1718,9 @@
       \verb 10.1109/SMACD.2015.7301704
       \endverb
     \endentry
-    \entry{santana-andreoReliabilityImprovementSRAM2024a}{article}{}
-      \name{author}{5}{}{%
-        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
-           family={{Santana-Andreo}},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
-           family={{Saraza-Canflanca}},
-           familyi={S\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={{Castro-Lopez}},
-           familyi={C\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{fullhash}{f7a4ca28b9f745022d16a4ee22f0dc68}
-      \strng{bibnamehash}{f7a4ca28b9f745022d16a4ee22f0dc68}
-      \strng{authorbibnamehash}{f7a4ca28b9f745022d16a4ee22f0dc68}
-      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{authorfullhash}{f7a4ca28b9f745022d16a4ee22f0dc68}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{14348411}
-      \field{journaltitle}{AEU - International Journal of Electronics and Communications}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{{Reliability Improvement of {{SRAM PUFs}} Based on a Detailed Experimental Study into the Stochastic Effects of Aging}}
-      \field{urlday}{6}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{volume}{176}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \field{pages}{155147}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.aeue.2024.155147
-      \endverb
-    \endentry
-    \entry{santana-andreoCharacterizingAgingDegradation2022}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
-           family={{Santana-Andreo}},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=02c87b143121e53a7baec3ddb09665ef}{%
-           family={{Martin-Lloret}},
-           familyi={M\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={{Castro-Lopez}},
-           familyi={C\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{fullhash}{a44ccbc7ad3f8a1acf2eafbe7fbe9d6b}
-      \strng{bibnamehash}{a44ccbc7ad3f8a1acf2eafbe7fbe9d6b}
-      \strng{authorbibnamehash}{a44ccbc7ad3f8a1acf2eafbe7fbe9d6b}
-      \strng{authornamehash}{88a2ae600c370660ec79c76b6d2098a1}
-      \strng{authorfullhash}{a44ccbc7ad3f8a1acf2eafbe7fbe9d6b}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} 34th International Conference on Microelectronic Test Structures (ICMTS'22)}
-      \field{isbn}{978-1-66548-566-1}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{Characterizing {{Aging Degradation}} of {{Integrated Circuits}} with a {{Versatile Custom Array}} of {{Reliability Test Structures}}}
-      \field{urlday}{6}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 6}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/ICMTS50340.2022.9898256
-      \endverb
-    \endentry
-    \entry{saraza-canflancaSmartSRAMCellArray2022}{inproceedings}{}
-      \name{author}{7}{}{%
-        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
-           family={{Saraza-Canflanca}},
-           familyi={S\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=d8f0e7ced164b40e21bdbc0319a321c3}{%
-           family={{Carrasco-Lopez}},
-           familyi={C\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=3a415c42147b84cde794fa89d642c5a8}{%
-           family={{Santana-Andreo}},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=c470527a9637be6552327c1adea56319}{%
-           family={{Diaz-Fortuny}},
-           familyi={D\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={{Castro-Lopez}},
-           familyi={C\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{fullhash}{076f37cfa81f7897918cad12b1c390ec}
-      \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authorfullhash}{076f37cfa81f7897918cad12b1c390ec}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} International Reliability Physics Symposium (IRPS'22)}
-      \field{isbn}{978-1-66547-950-9}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{A {{Smart SRAM-Cell Array}} for the {{Experimental Study}} of {{Variability Phenomena}} in {{CMOS Technologies}}}
-      \field{urlday}{22}
-      \field{urlmonth}{1}
-      \field{urlyear}{2023}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{P3-1-P3\bibrangedash 5}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1109/IRPS48227.2022.9764587
-      \endverb
-    \endentry
     \entry{AMDRyzenProcessors}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{month}{10}
@@ -1488,8 +1781,8 @@
       \strng{authorbibnamehash}{a9aaf1a2814895bd40a977c6ddcc8c13}
       \strng{authornamehash}{a9aaf1a2814895bd40a977c6ddcc8c13}
       \strng{authorfullhash}{3b43df4bfe965c2dd9669d98da72456a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{{{IEEE International Reliability Physics Symposium (IRPS'15)}}}
@@ -1506,88 +1799,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1109/IRPS.2015.7112711
-      \endverb
-    \endentry
-    \entry{klemmeMachineLearningCircuit2021}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
-           family={Klemme},
-           familyi={K\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
-           family={Amrouch},
-           familyi={A\bibinitperiod},
-           given={Hussam},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} International Test Conference (ITC'21)}
-      \field{isbn}{978-1-66541-695-5}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{title}{Machine {{Learning}} for {{Circuit Aging Estimation}} under {{Workload Dependency}}}
-      \field{urlday}{17}
-      \field{urlmonth}{7}
-      \field{urlyear}{2023}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \field{pages}{37\bibrangedash 46}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/ITC50571.2021.00011
-      \endverb
-    \endentry
-    \entry{klemmeScalableMachineLearning2022a}{article}{}
-      \name{author}{2}{}{%
-        {{hash=cd77e11d33875bab7257b2e7149d8b26}{%
-           family={Klemme},
-           familyi={K\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
-           family={Amrouch},
-           familyi={A\bibinitperiod},
-           given={Hussam},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{fullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{bibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorbibnamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authornamehash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \strng{authorfullhash}{d2845dc5ecbe6b95eb1d10ad76b08fdd}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1549-8328, 1558-0806}
-      \field{journaltitle}{{IEEE} Trans. Circuits Syst. {I}}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{number}{5}
-      \field{title}{Scalable {{Machine Learning}} to {{Estimate}} the {{Impact}} of {{Aging}} on {{Circuits Under Workload Dependency}}}
-      \field{urlday}{13}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{volume}{69}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{2142\bibrangedash 2155}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCSI.2022.3147587
       \endverb
     \endentry
     \entry{thirunavukkarasuDeviceCircuitFramework2019}{article}{}
@@ -1649,8 +1860,8 @@
       \strng{authorbibnamehash}{d4c772de9e3daaaa4d63bb9d419c1220}
       \strng{authornamehash}{d4c772de9e3daaaa4d63bb9d419c1220}
       \strng{authorfullhash}{f7ce0f185bfdfd98b87c318f495956b8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9383, 1557-9646}
@@ -1670,56 +1881,6 @@
       \verb{doi}
       \verb 10.1109/TED.2018.2882229
       \endverb
-    \endentry
-    \entry{AtomisticPseudoRodopoulos2014}{article}{}
-      \name{author}{5}{}{%
-        {{hash=8d63be062298970a4a9bf85e862b2730}{%
-           family={Rodopoulos},
-           familyi={R\bibinitperiod},
-           given={Dimitrios},
-           giveni={D\bibinitperiod}}}%
-        {{hash=236a852b8954155c91eb051c1abe0e25}{%
-           family={Weckx},
-           familyi={W\bibinitperiod},
-           given={Pieter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6850e341862b11b1a2a6b917a7ece6a2}{%
-           family={Noltsis},
-           familyi={N\bibinitperiod},
-           given={Michail},
-           giveni={M\bibinitperiod}}}%
-        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
-           family={Catthoor},
-           familyi={C\bibinitperiod},
-           given={Francky},
-           giveni={F\bibinitperiod}}}%
-        {{hash=394cbb14cf6883da43854f8011b6f44d}{%
-           family={Soudris},
-           familyi={S\bibinitperiod},
-           given={Dimitrios},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{19566d0756e1b1bfa7f18909972208a1}
-      \strng{fullhash}{b664423bef269494f0c1ebc1642f2d2b}
-      \strng{bibnamehash}{b664423bef269494f0c1ebc1642f2d2b}
-      \strng{authorbibnamehash}{b664423bef269494f0c1ebc1642f2d2b}
-      \strng{authornamehash}{19566d0756e1b1bfa7f18909972208a1}
-      \strng{authorfullhash}{b664423bef269494f0c1ebc1642f2d2b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{{IEEE} Trans. Device Mater. Rel.}
-      \field{number}{2}
-      \field{title}{{Atomistic Pseudo-Transient {BTI} Simulation With Inherent Workload Memory}}
-      \field{volume}{14}
-      \field{year}{2014}
-      \field{pages}{704\bibrangedash 714}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1109/TDMR.2014.2314356
-      \endverb
-      \keyw{Mathematical model;Computational modeling;Accuracy;Equations;Integrated circuit modeling;Logic gates;SPICE;Analytical models;circuit simulation;digital circuit simulation;semiconductor device reliability}
     \endentry
     \entry{fornaciariHarnessingPerformanceVariability2019}{inbook}{}
       \name{author}{5}{}{%
@@ -1835,8 +1996,8 @@
       \strng{authorbibnamehash}{64b4c4f804058e5adb51f0dce0eaa3ea}
       \strng{authornamehash}{64b4c4f804058e5adb51f0dce0eaa3ea}
       \strng{authorfullhash}{1423ae741d957d43a3a129aa978accd5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00381101}
@@ -1911,8 +2072,8 @@
       \strng{authornamehash}{196d24a92181f5f8ab78f546f72d2228}
       \strng{authorfullhash}{dd203e125be419cde7cc28bc2654bfad}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. {IEEE} International Reliability Physics Symposium (IRPS'20)}
@@ -1959,8 +2120,8 @@
       \strng{authorbibnamehash}{0ab9384cb3d510af7db3502eaa1b1cfc}
       \strng{authornamehash}{2a557eef315325c2b5cbc783871d3bf3}
       \strng{authorfullhash}{0ab9384cb3d510af7db3502eaa1b1cfc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-8328, 1558-0806}
@@ -1978,75 +2139,12 @@
       \verb 10.1109/TCSI.2023.3289325
       \endverb
     \endentry
-    \entry{martin-lloretCASEReliabilitySimulation2017}{inproceedings}{}
-      \name{author}{8}{}{%
-        {{hash=02c87b143121e53a7baec3ddb09665ef}{%
-           family={{Martin-Lloret}},
-           familyi={M\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=2b0b9668acab1abd151deda6de81d8a5}{%
-           family={{Toro-Frias}},
-           familyi={T\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={{Castro-Lopez}},
-           familyi={C\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=55aea32e9fa4eeb1b880dec8fa0d2043}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={Francisco\bibnamedelima V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
-           family={{Martin-Martinez}},
-           familyi={M\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=234562cdaaf8356a43e42d5f3036bb8f}{%
-           family={Rodriguez},
-           familyi={R\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
-           family={Nafria},
-           familyi={N\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a8a103d2713df5c799d1c1fe251573a0}
-      \strng{fullhash}{5772c08a06219d95f658ba7dafd7f306}
-      \strng{bibnamehash}{a8a103d2713df5c799d1c1fe251573a0}
-      \strng{authorbibnamehash}{a8a103d2713df5c799d1c1fe251573a0}
-      \strng{authornamehash}{a8a103d2713df5c799d1c1fe251573a0}
-      \strng{authorfullhash}{5772c08a06219d95f658ba7dafd7f306}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. {IEEE} 14th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD'17)}
-      \field{isbn}{9781509050529}
-      \field{title}{{{{CASE}}: {{A}} Reliability Simulation Tool for Analog {{ICs}}}}
-      \field{year}{2017}
-      \field{pages}{42\bibrangedash 45}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/SMACD.2017.7981588
-      \endverb
-    \endentry
     \entry{CadenceReliability}{online}{}
       \list{organization}{1}{%
         {Cadence}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{month}{10}
@@ -2067,8 +2165,8 @@
       \list{organization}{1}{%
         {Synopsys}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{month}{10}
@@ -2119,8 +2217,8 @@
       \strng{authorbibnamehash}{d133f147913751768e4df0da336e6b39}
       \strng{authornamehash}{2599df6d1d0719af7dcf37f082f7bbf6}
       \strng{authorfullhash}{d133f147913751768e4df0da336e6b39}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. IEEE 15th International Symposium on Design and Diagnostics of Electronic Circuits \& Systems (DDECS'12)}
@@ -2137,47 +2235,6 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1109/DDECS.2012.6219086
-      \endverb
-    \endentry
-    \entry{vansantenNewWorstcaseTiming2019}{article}{}
-      \name{author}{3}{}{%
-        {{hash=dd4d1dcd323048b73683d41226f1fc02}{%
-           family={Van\bibnamedelima Santen},
-           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Victor\bibnamedelima M.},
-           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=0eab1172ffce5dbc71ceb3b84521aa32}{%
-           family={Amrouch},
-           familyi={A\bibinitperiod},
-           given={Hussam},
-           giveni={H\bibinitperiod}}}%
-        {{hash=477ace1045b1c86e655b18fc4c342fbd}{%
-           family={Henkel},
-           familyi={H\bibinitperiod},
-           given={Jorg},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{7472cc4a169919926b98a62a2bb3578d}
-      \strng{fullhash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
-      \strng{bibnamehash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
-      \strng{authorbibnamehash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
-      \strng{authornamehash}{7472cc4a169919926b98a62a2bb3578d}
-      \strng{authorfullhash}{16b272f78b50f3ccbac0d2edbc9d7ba8}
-      \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{15582574}
-      \field{journaltitle}{{IEEE} Trans. Device Mater. Rel.}
-      \field{number}{1}
-      \field{title}{{New Worst-Case Timing for Standard Cells under Aging Effects}}
-      \field{volume}{19}
-      \field{year}{2019}
-      \field{pages}{149\bibrangedash 158}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/TDMR.2019.2893017
       \endverb
     \endentry
     \entry{mohamedGraphAttentionNetworks2024}{article}{}
@@ -2214,8 +2271,8 @@
       \strng{authorbibnamehash}{c31f64ee22970120a2d24bb255c79558}
       \strng{authornamehash}{bcc6129a8fd9565eff801b32916c7561}
       \strng{authorfullhash}{c31f64ee22970120a2d24bb255c79558}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-8328, 1558-0806}
@@ -2282,8 +2339,8 @@
       \strng{authorbibnamehash}{cf308225dd2ea986cfef202312d663e0}
       \strng{authornamehash}{cf308225dd2ea986cfef202312d663e0}
       \strng{authorfullhash}{57370542c2b743e47a353cd185ccf731}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9383, 1557-9646}
@@ -2334,8 +2391,8 @@
       \strng{authornamehash}{7472cc4a169919926b98a62a2bb3578d}
       \strng{authorfullhash}{c21af83987965ed26645533ed000ef89}
       \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-7747, 1558-3791}
@@ -2400,8 +2457,8 @@
       \strng{authorbibnamehash}{08355ee1188c32ec134599625fa662e8}
       \strng{authornamehash}{08355ee1188c32ec134599625fa662e8}
       \strng{authorfullhash}{f55f147182bcc6a3974bb1ba188d73c1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01679317}
@@ -2470,8 +2527,8 @@
       \strng{authorbibnamehash}{2f12057fba7b385c460dabcfee6f901c}
       \strng{authornamehash}{2f12057fba7b385c460dabcfee6f901c}
       \strng{authorfullhash}{d5a9f129d34f8a6439f69b244938e5ab}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. 2021 {{IEEE International Reliability Physics Symposium}} ({{IRPS'21}})}
@@ -2527,8 +2584,8 @@
       \strng{authorbibnamehash}{605fe7bc7f42b7d990004cd6ad14b969}
       \strng{authornamehash}{c46da7ea7c8f41f094482fca94aae285}
       \strng{authorfullhash}{605fe7bc7f42b7d990004cd6ad14b969}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. 2020 {{IEEE International Reliability Physics Symposium}} ({{IRPS'20}})}
@@ -2621,1174 +2678,6 @@
       \verb{doi}
       \verb 10.1109/IRPS.2017.7936331
       \endverb
-    \endentry
-    \entry{Singh2013}{book}{}
-      \name{author}{3}{}{%
-        {{hash=b37478de90d1e91def4117897ffae462}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={Jawar},
-           giveni={J\bibinitperiod}}}%
-        {{hash=89b1e64be4711f7e7816f953e2c5d1b1}{%
-           family={Mohanty},
-           familyi={M\bibinitperiod},
-           given={Saraju},
-           giveni={S\bibinitperiod}}}%
-        {{hash=10ceaff1e26c15b2203f9eb07a4dd426}{%
-           family={Pradhan},
-           familyi={P\bibinitperiod},
-           given={Dhiraj},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{91d96b398ba893bac8b8d9757df63257}
-      \strng{fullhash}{cac90f29e74c5ca1e2c3c7c60521d658}
-      \strng{bibnamehash}{cac90f29e74c5ca1e2c3c7c60521d658}
-      \strng{authorbibnamehash}{cac90f29e74c5ca1e2c3c7c60521d658}
-      \strng{authornamehash}{91d96b398ba893bac8b8d9757df63257}
-      \strng{authorfullhash}{cac90f29e74c5ca1e2c3c7c60521d658}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-1-4614-0817-8}
-      \field{month}{01}
-      \field{title}{Robust SRAM Designs and Analysis}
-      \field{year}{2013}
-      \verb{doi}
-      \verb 10.1007/978-1-4614-0818-5
-      \endverb
-    \endentry
-    \entry{Baturone2015}{article}{}
-      \name{author}{3}{}{%
-        {{hash=4be316d8bdb6bb266c4597dff5d665f9}{%
-           family={Baturone},
-           familyi={B\bibinitperiod},
-           given={Iluminada},
-           giveni={I\bibinitperiod}}}%
-        {{hash=962a04a9d4e070859211ef8ddfea6c94}{%
-           family={Prada-Delgado},
-           familyi={P\bibinithyphendelim D\bibinitperiod},
-           given={Miguel\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=eb20a3cf6658b88ca79abf9fd2f398f5}{%
-           family={Eiroa},
-           familyi={E\bibinitperiod},
-           given={Susana},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{d57bc58355f65a77150879bb7695da19}
-      \strng{fullhash}{dbc39d4c680f035700f07c11d06452ae}
-      \strng{bibnamehash}{dbc39d4c680f035700f07c11d06452ae}
-      \strng{authorbibnamehash}{dbc39d4c680f035700f07c11d06452ae}
-      \strng{authornamehash}{d57bc58355f65a77150879bb7695da19}
-      \strng{authorfullhash}{dbc39d4c680f035700f07c11d06452ae}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{15566013}
-      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
-      \field{number}{12}
-      \field{title}{{Improved Generation of Identifiers, Secret Keys, and Random Numbers From SRAMs}}
-      \field{volume}{10}
-      \field{year}{2015}
-      \field{pages}{2653\bibrangedash 2668}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1109/TIFS.2015.2471279
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Baturone, Prada-Delgado, Eiroa - 2015 - Improved Generation of Identifiers, Secret Keys, and Random Numbers From SRAMs.pdf:pdf
-      \endverb
-      \keyw{PUFs,SRAMs,hardware security,random numbers}
-    \endentry
-    \entry{Hofer2010}{article}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{isbn}{3642150306}
-      \field{issn}{03029743}
-      \field{journaltitle}{Lecture Notes in Computer Science}
-      \field{title}{{An alternative to error correction for SRAM-like PUFs}}
-      \field{volume}{6225 LNCS}
-      \field{year}{2010}
-      \field{pages}{335\bibrangedash 350}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1007/978-3-642-15031-9_23
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hofer, Boehm - 2010 - An alternative to error correction for SRAM-like PUFs.pdf:pdf
-      \endverb
-      \keyw{Physical Unclonable Functions,Pre-Selection,SRAM}
-    \endentry
-    \entry{Wang2018}{article}{}
-      \name{author}{4}{}{%
-        {{hash=44e07e71c62b95cf0b090e1478ca6f2d}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Wendong},
-           giveni={W\bibinitperiod}}}%
-        {{hash=821cc295a6f3b99206e362b7ebe94f6a}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={Adit},
-           giveni={A\bibinitperiod}}}%
-        {{hash=becb1e678d62c7630e80cd4945175051}{%
-           family={Guin},
-           familyi={G\bibinitperiod},
-           given={Ujjwal},
-           giveni={U\bibinitperiod}}}%
-        {{hash=838b2624682488b0cabe8e1de9313699}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Abhijit},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{abf8e3865295feada5025f4036d78e76}
-      \strng{fullhash}{0a3a5a0a1f5499637003d772f2abb99e}
-      \strng{bibnamehash}{0a3a5a0a1f5499637003d772f2abb99e}
-      \strng{authorbibnamehash}{0a3a5a0a1f5499637003d772f2abb99e}
-      \strng{authornamehash}{abf8e3865295feada5025f4036d78e76}
-      \strng{authorfullhash}{0a3a5a0a1f5499637003d772f2abb99e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781538614723}
-      \field{journaltitle}{2018 IEEE 19th Latin-American Test Symposium, LATS 2018}
-      \field{title}{{Exploiting power supply ramp rate for calibrating cell strength in SRAM PUFs}}
-      \field{volume}{2018-January}
-      \field{year}{2018}
-      \field{pages}{1\bibrangedash 6}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/LATW.2018.8349685
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Documents/LATS-2018.pdf:pdf
-      \endverb
-      \keyw{Ramp rate,SRAM PUF,Stability}
-    \endentry
-    \entry{Liu2017}{article}{}
-      \name{author}{5}{}{%
-        {{hash=c1c0ca81d253c08dd2daac7e2c9ed586}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Muqing},
-           giveni={M\bibinitperiod}}}%
-        {{hash=aaf38c8850d39acae20968b773171982}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Chen},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d9ef9b43d1de5a20a87cc1d4178bd15a}{%
-           family={Tang},
-           familyi={T\bibinitperiod},
-           given={Qianying},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=ba11345c6ff55f9edde7bf138c3e479d}{%
-           family={Parhi},
-           familyi={P\bibinitperiod},
-           given={Keshab\bibnamedelima K.},
-           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Chris\bibnamedelima H.},
-           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{6513def249b98110d92400650b89c42d}
-      \strng{fullhash}{95ef2347d09b1d1831d7ac4a3764732c}
-      \strng{bibnamehash}{95ef2347d09b1d1831d7ac4a3764732c}
-      \strng{authorbibnamehash}{95ef2347d09b1d1831d7ac4a3764732c}
-      \strng{authornamehash}{6513def249b98110d92400650b89c42d}
-      \strng{authorfullhash}{95ef2347d09b1d1831d7ac4a3764732c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781509060238}
-      \field{issn}{15334678}
-      \field{journaltitle}{Proceedings of the International Symposium on Low Power Electronics and Design}
-      \field{title}{{A data remanence based approach to generate 100{\%} stable keys from an SRAM physical unclonable function}}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.1109/ISLPED.2017.8009192
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08009192.pdf:pdf
-      \endverb
-      \keyw{Physical unclonable function,SRAM,data remanence,stable key generation}
-    \endentry
-    \entry{Okumura2011}{article}{}
-      \name{author}{4}{}{%
-        {{hash=edadf728b1805a059d004ce412613505}{%
-           family={Okumura},
-           familyi={O\bibinitperiod},
-           given={Shunsuke},
-           giveni={S\bibinitperiod}}}%
-        {{hash=5d988e78de0aaa1fc4780f3b8c294622}{%
-           family={Yoshimoto},
-           familyi={Y\bibinitperiod},
-           given={Shusuke},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4aabb7edbaaa12b6b862cfe867bb2a51}{%
-           family={Kawaguchi},
-           familyi={K\bibinitperiod},
-           given={Hiroshi},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ab30205a8ca52ad8a21745ebf0ac8ee8}{%
-           family={Yoshimoto},
-           familyi={Y\bibinitperiod},
-           given={Masahiko},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{ea8efa8d13d3f0faff684da0316db0b3}
-      \strng{fullhash}{5a7fe964aa12b4c7ba35de3ff3beb241}
-      \strng{bibnamehash}{5a7fe964aa12b4c7ba35de3ff3beb241}
-      \strng{authorbibnamehash}{5a7fe964aa12b4c7ba35de3ff3beb241}
-      \strng{authornamehash}{ea8efa8d13d3f0faff684da0316db0b3}
-      \strng{authorfullhash}{5a7fe964aa12b4c7ba35de3ff3beb241}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781457707018}
-      \field{issn}{19308833}
-      \field{journaltitle}{European Solid-State Circuits Conference}
-      \field{title}{{A 128-bit chip identification generating scheme exploiting SRAM bitcells with failure rate of 4.45 × 10-19}}
-      \field{year}{2011}
-      \field{pages}{527\bibrangedash 530}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/ESSCIRC.2011.6044938
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Documents/06044938.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Schrijen2012}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
-           family={Schrijen},
-           familyi={S\bibinitperiod},
-           given={Geert\bibnamedelima Jan},
-           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
-           family={{Van Der Leest}},
-           familyi={V\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{8a391bc627a56f7a44e9176402e3ba55}
-      \strng{fullhash}{8a391bc627a56f7a44e9176402e3ba55}
-      \strng{bibnamehash}{8a391bc627a56f7a44e9176402e3ba55}
-      \strng{authorbibnamehash}{8a391bc627a56f7a44e9176402e3ba55}
-      \strng{authornamehash}{8a391bc627a56f7a44e9176402e3ba55}
-      \strng{authorfullhash}{8a391bc627a56f7a44e9176402e3ba55}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Multiple SRAM's performances compared. IntraHD and HW. Measured uniqueness by doing a gaussian fit to the InterHD values.}
-      \field{isbn}{9783981080186}
-      \field{issn}{15301591}
-      \field{journaltitle}{Proceedings -Design, Automation and Test in Europe, DATE}
-      \field{title}{{Comparative analysis of SRAM memories used as PUF primitives}}
-      \field{year}{2012}
-      \field{pages}{1319\bibrangedash 1324}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/date.2012.6176696
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Schrijen, Van Der Leest - 2012 - Comparative analysis of SRAM memories used as PUF primitives.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Claes2012}{article}{}
-      \name{author}{3}{}{%
-        {{hash=91816c788a42456a4178d594a91af1a8}{%
-           family={Claes},
-           familyi={C\bibinitperiod},
-           given={Mathias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
-           family={{Van Der Leest}},
-           familyi={V\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-        {{hash=de4527db656b9700965f97c2c0aebe3a}{%
-           family={Braeken},
-           familyi={B\bibinitperiod},
-           given={An},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3306c9bb44e189621618c380533b6317}
-      \strng{fullhash}{6ae873d09e1c9103c805ae81ef707ce8}
-      \strng{bibnamehash}{6ae873d09e1c9103c805ae81ef707ce8}
-      \strng{authorbibnamehash}{6ae873d09e1c9103c805ae81ef707ce8}
-      \strng{authornamehash}{3306c9bb44e189621618c380533b6317}
-      \strng{authorfullhash}{6ae873d09e1c9103c805ae81ef707ce8}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Standard Vdd and T variations in different chips with standard metrics}
-      \field{isbn}{9783642296147}
-      \field{issn}{03029743}
-      \field{journaltitle}{Lecture Notes in Computer Science}
-      \field{title}{{Comparison of SRAM and FF PUF in 65nm technology}}
-      \field{volume}{7161 LNCS}
-      \field{year}{2012}
-      \field{pages}{47\bibrangedash 64}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1007/978-3-642-29615-4_5
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Claes, Van Der Leest, Braeken - 2012 - Comparison of SRAM and FF PUF in 65nm technology.pdf:pdf
-      \endverb
-      \keyw{D flip-flop,Hardware Security,Physical Unclonable Function,SRAM}
-    \endentry
-    \entry{Cortez2013}{article}{}
-      \name{author}{5}{}{%
-        {{hash=350fafc1bd235313cc92d351a3f347e1}{%
-           family={Cortez},
-           familyi={C\bibinitperiod},
-           given={Mafalda},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e75dc3de803113eaa685795beefafb0f}{%
-           family={Hamdioui},
-           familyi={H\bibinitperiod},
-           given={Said},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
-           family={{Van Der Leest}},
-           familyi={V\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-        {{hash=e5155d0251d24b8107b8bf3664368038}{%
-           family={Maes},
-           familyi={M\bibinitperiod},
-           given={Roel},
-           giveni={R\bibinitperiod}}}%
-        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
-           family={Schrijen},
-           familyi={S\bibinitperiod},
-           given={Geert\bibnamedelima Jan},
-           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{28508b5a1bc8779a16b711785e0e3aaa}
-      \strng{fullhash}{bf1bac8823ad3fddf209cadabff72c19}
-      \strng{bibnamehash}{bf1bac8823ad3fddf209cadabff72c19}
-      \strng{authorbibnamehash}{bf1bac8823ad3fddf209cadabff72c19}
-      \strng{authornamehash}{28508b5a1bc8779a16b711785e0e3aaa}
-      \strng{authorfullhash}{bf1bac8823ad3fddf209cadabff72c19}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781479906000}
-      \field{journaltitle}{Proceedings of the 2013 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2013}
-      \field{title}{{Adapting voltage ramp-up time for temperature noise reduction on memory-based PUFs}}
-      \field{year}{2013}
-      \field{pages}{35\bibrangedash 40}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/HST.2013.6581562
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Documents/1345{\_}adapting{\_}voltage{\_}rampup{\_}time{\_}for{\_}temperature{\_}noise{\_}reducti.pdf:pdf
-      \endverb
-    \endentry
-    \entry{operating_temperature}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labeltitlesource}{title}
-      \field{title}{{Operating temperature - Wikipedia}}
-      \field{urlday}{24}
-      \field{urlmonth}{11}
-      \field{urlyear}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Operating_temperature
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Operating_temperature
-      \endverb
-    \endentry
-    \entry{VanDerLeest2012}{article}{}
-      \name{author}{5}{}{%
-        {{hash=7a499ba3c3dde9c3d037e42031615f37}{%
-           family={{Van Der Leest}},
-           familyi={V\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-        {{hash=f1ec068526854061a8ade0817c342c2d}{%
-           family={{Van Der Sluis}},
-           familyi={V\bibinitperiod},
-           given={Erik},
-           giveni={E\bibinitperiod}}}%
-        {{hash=f82b73113eb7583b7bdd2df4bc3d1f1f}{%
-           family={Schrijen},
-           familyi={S\bibinitperiod},
-           given={Geert\bibnamedelima Jan},
-           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
-           family={Tuyls},
-           familyi={T\bibinitperiod},
-           given={Pim},
-           giveni={P\bibinitperiod}}}%
-        {{hash=7da25e384d92b0fa0f537b06c34754fb}{%
-           family={Handschuh},
-           familyi={H\bibinitperiod},
-           given={Helena},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
-      \strng{fullhash}{f05c24537daf14719072f5505ba9428c}
-      \strng{bibnamehash}{f05c24537daf14719072f5505ba9428c}
-      \strng{authorbibnamehash}{f05c24537daf14719072f5505ba9428c}
-      \strng{authornamehash}{fb73a7c3cdd8f1003c4f360186c6fa99}
-      \strng{authorfullhash}{f05c24537daf14719072f5505ba9428c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9783642283673}
-      \field{issn}{03029743}
-      \field{journaltitle}{Lecture Notes in Computer Science}
-      \field{title}{{Efficient implementation of true random number generator based on SRAM PUFs}}
-      \field{volume}{6805 LNCS}
-      \field{year}{2012}
-      \field{pages}{300\bibrangedash 318}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1007/978-3-642-28368-0_20
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/True-Random-Number.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Kraak2018}{article}{}
-      \name{author}{9}{}{%
-        {{hash=f009d8e43bdac28f135f925596cc3e68}{%
-           family={Kraak},
-           familyi={K\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0a1eac8711e36f63b2072d27464ab066}{%
-           family={Taouil},
-           familyi={T\bibinitperiod},
-           given={Mottaqiallah},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e75dc3de803113eaa685795beefafb0f}{%
-           family={Hamdioui},
-           familyi={H\bibinitperiod},
-           given={Said},
-           giveni={S\bibinitperiod}}}%
-        {{hash=236a852b8954155c91eb051c1abe0e25}{%
-           family={Weckx},
-           familyi={W\bibinitperiod},
-           given={Pieter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
-           family={Catthoor},
-           familyi={C\bibinitperiod},
-           given={Francky},
-           giveni={F\bibinitperiod}}}%
-        {{hash=838b2624682488b0cabe8e1de9313699}{%
-           family={Chatterjee},
-           familyi={C\bibinitperiod},
-           given={Abhijit},
-           giveni={A\bibinitperiod}}}%
-        {{hash=821cc295a6f3b99206e362b7ebe94f6a}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={Adit},
-           giveni={A\bibinitperiod}}}%
-        {{hash=0610ce6a46c9da692ee65304961f4437}{%
-           family={Wunderlich},
-           familyi={W\bibinitperiod},
-           given={Hans\bibnamedelima Joachim},
-           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=3909302a82757990f035116197febfc2}{%
-           family={Karimi},
-           familyi={K\bibinitperiod},
-           given={Naghmeh},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{78a4813cc86a8db1ad8186a58671604d}
-      \strng{fullhash}{29060542dc1e615cc9efc33a41f5c3b6}
-      \strng{bibnamehash}{78a4813cc86a8db1ad8186a58671604d}
-      \strng{authorbibnamehash}{78a4813cc86a8db1ad8186a58671604d}
-      \strng{authornamehash}{78a4813cc86a8db1ad8186a58671604d}
-      \strng{authorfullhash}{29060542dc1e615cc9efc33a41f5c3b6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781538637289}
-      \field{issn}{15581780}
-      \field{journaltitle}{Proceedings of the European Test Workshop}
-      \field{title}{{Device aging: A reliability and security concern}}
-      \field{volume}{2018-May}
-      \field{year}{2018}
-      \field{pages}{1\bibrangedash 10}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/ETS.2018.8400702
-      \endverb
-    \endentry
-    \entry{Schlunder2012}{article}{}
-      \name{author}{7}{}{%
-        {{hash=2e7236ad69a63abc4817897c7d4fc4db}{%
-           family={Schlünder},
-           familyi={S\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=84dbf7b58bce7c919beccae406ba44ba}{%
-           family={Aresu},
-           familyi={A\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b98263317da9d17aacefebc48045362c}{%
-           family={Georgakos},
-           familyi={G\bibinitperiod},
-           given={Georg},
-           giveni={G\bibinitperiod}}}%
-        {{hash=a34643488e4a30a76f73221eee1e4596}{%
-           family={Kanert},
-           familyi={K\bibinitperiod},
-           given={Werner},
-           giveni={W\bibinitperiod}}}%
-        {{hash=1c112e6042c58496e52375dfca12a94c}{%
-           family={Reisinger},
-           familyi={R\bibinitperiod},
-           given={Hans},
-           giveni={H\bibinitperiod}}}%
-        {{hash=2e95eedb7bb79d38ea14919ea9ffa063}{%
-           family={Hofmann},
-           familyi={H\bibinitperiod},
-           given={Karl},
-           giveni={K\bibinitperiod}}}%
-        {{hash=597e6b9af7ea1c6adc4e704738d52ae1}{%
-           family={Gustin},
-           familyi={G\bibinitperiod},
-           given={Wolfgang},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
-      \strng{fullhash}{bb76c329da3d5420e97b95419f5fb18d}
-      \strng{bibnamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
-      \strng{authorbibnamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
-      \strng{authornamehash}{91fe6d2df0e2b4dc34bed3b8b49d4104}
-      \strng{authorfullhash}{bb76c329da3d5420e97b95419f5fb18d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781457716799}
-      \field{issn}{15417026}
-      \field{journaltitle}{IEEE International Reliability Physics Symposium Proceedings}
-      \field{title}{{HCI vs. BTI? - Neither one's out}}
-      \field{year}{2012}
-      \field{pages}{2\bibrangedash 7}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/IRPS.2012.6241797
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Schl{\"{u}}nder et al. - 2012 - HCI vs. BTI - Neither one's out.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Stathis2018}{article}{}
-      \name{author}{3}{}{%
-        {{hash=d7c8970ce3f9cd691aa7d777dfda6653}{%
-           family={Stathis},
-           familyi={S\bibinitperiod},
-           given={James\bibnamedelima H.},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=e621fedcb3772c885564183c3ec3dbbc}{%
-           family={Mahapatra},
-           familyi={M\bibinitperiod},
-           given={Souvik},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0853f6a1e046077355103ffb9123653f}{%
-           family={Grasser},
-           familyi={G\bibinitperiod},
-           given={Tibor},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{639a97eda1e6ade1c2ad908ee28726f7}
-      \strng{fullhash}{f4616aa117fafcbae53c9c9bde26b9d3}
-      \strng{bibnamehash}{f4616aa117fafcbae53c9c9bde26b9d3}
-      \strng{authorbibnamehash}{f4616aa117fafcbae53c9c9bde26b9d3}
-      \strng{authornamehash}{639a97eda1e6ade1c2ad908ee28726f7}
-      \strng{authorfullhash}{f4616aa117fafcbae53c9c9bde26b9d3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00262714}
-      \field{journaltitle}{Microelectronics Reliability}
-      \field{number}{November 2017}
-      \field{title}{{Controversial issues in negative bias temperature instability}}
-      \field{volume}{81}
-      \field{year}{2018}
-      \field{pages}{244\bibrangedash 251}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1016/j.microrel.2017.12.035
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Downloads/JB2018{\_}Grasser{\_}1.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Schroder2003}{article}{}
-      \name{author}{2}{}{%
-        {{hash=145427f88e52d43d151fdef04df46114}{%
-           family={Schroder},
-           familyi={S\bibinitperiod},
-           given={Dieter\bibnamedelima K.},
-           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=8a9ec9761f2ea945911305d2ff601259}{%
-           family={Babcock},
-           familyi={B\bibinitperiod},
-           given={Jeff\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{180332aa167e9a79e4134739abb9d197}
-      \strng{fullhash}{180332aa167e9a79e4134739abb9d197}
-      \strng{bibnamehash}{180332aa167e9a79e4134739abb9d197}
-      \strng{authorbibnamehash}{180332aa167e9a79e4134739abb9d197}
-      \strng{authornamehash}{180332aa167e9a79e4134739abb9d197}
-      \strng{authorfullhash}{180332aa167e9a79e4134739abb9d197}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00218979}
-      \field{journaltitle}{Journal of Applied Physics}
-      \field{number}{1}
-      \field{title}{{Negative bias temperature instability: Road to cross in deep submicron silicon semiconductor manufacturing}}
-      \field{volume}{94}
-      \field{year}{2003}
-      \field{pages}{1\bibrangedash 18}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1063/1.1567461
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Downloads/99b255aaa3226becb2180a41aef83c8d477d.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Kaczer2010}{article}{}
-      \name{author}{9}{}{%
-        {{hash=0762e97f6e11586e304dc9b225713e5a}{%
-           family={Kaczer},
-           familyi={K\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=02999c0b7ab86114411e3efbd40a780f}{%
-           family={Grasser},
-           familyi={G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ca441262f217527ec6989bfd3c31e670}{%
-           family={Roussel},
-           familyi={R\bibinitperiod},
-           given={Ph\bibnamedelima J.},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=68716fc3e443924d4a292487684aa1bf}{%
-           family={Franco},
-           familyi={F\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=034fd2b642adc2bfc096fb5c2490be55}{%
-           family={Degraeve},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=17373e3b38153732c8e8ea05f609ba61}{%
-           family={Ragnarsson},
-           familyi={R\bibinitperiod},
-           given={L.\bibnamedelimi A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=66db269d10ada487fe505ba1da634d67}{%
-           family={Simoen},
-           familyi={S\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=52fcc6d5395e334098e42bf5b86720da}{%
-           family={Groeseneken},
-           familyi={G\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=8cc3487058af5a755135f224274a5717}{%
-           family={Reisinger},
-           familyi={R\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{3036ab3836a693186dcaaa24d619cf9b}
-      \strng{fullhash}{93a8e7c991a29a0c6507eb03d277b618}
-      \strng{bibnamehash}{3036ab3836a693186dcaaa24d619cf9b}
-      \strng{authorbibnamehash}{3036ab3836a693186dcaaa24d619cf9b}
-      \strng{authornamehash}{3036ab3836a693186dcaaa24d619cf9b}
-      \strng{authorfullhash}{93a8e7c991a29a0c6507eb03d277b618}
-      \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781424454310}
-      \field{issn}{15417026}
-      \field{journaltitle}{IEEE International Reliability Physics Symposium Proceedings}
-      \field{number}{June}
-      \field{title}{{Origin of NBTI variability in deeply scaled pFETs}}
-      \field{year}{2010}
-      \field{pages}{26\bibrangedash 32}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1109/IRPS.2010.5488856
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Downloads/CP2010{\_}Kaczer{\_}1 (1).pdf:pdf
-      \endverb
-      \keyw{Negative Bias Temperature Instability,PFET,Random Telegraph Noise,Random dopant fluctuations,Variability}
-    \endentry
-    \entry{Roelke2018}{article}{}
-      \name{author}{2}{}{%
-        {{hash=3417c49355e9175ec1f86bb12195c797}{%
-           family={Roelke},
-           familyi={R\bibinitperiod},
-           given={Alec},
-           giveni={A\bibinitperiod}}}%
-        {{hash=c5fdf69b861460eaa3901b95c08ce9e3}{%
-           family={Stan},
-           familyi={S\bibinitperiod},
-           given={Mircea\bibnamedelima R.},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers Inc.}%
-      }
-      \strng{namehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \strng{fullhash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \strng{bibnamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \strng{authorbibnamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \strng{authornamehash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \strng{authorfullhash}{1867cbdd1bd4d0b8ce1facf296e90cb4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{10638210}
-      \field{journaltitle}{IEEE Transactions on Very Large Scale Integration (VLSI) Systems}
-      \field{number}{10}
-      \field{title}{{Controlling the reliability of SRAM PUFs with directed NBTI aging and recovery}}
-      \field{volume}{26}
-      \field{year}{2018}
-      \field{pages}{2016\bibrangedash 2026}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1109/TVLSI.2018.2836154
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Roelke, Stan - 2018 - Controlling the reliability of SRAM PUFs with directed NBTI aging and recovery.pdf:pdf
-      \endverb
-      \keyw{Aging,SRAM cells,authentication,negative-bias temperature instability (NBTI),physical unclonable function (PUF)}
-    \endentry
-    \entry{Garg2014}{inproceedings}{}
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers Inc.}%
-      }
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings - IEEE International Symposium on Circuits and Systems}
-      \field{isbn}{9781479934324}
-      \field{issn}{02714310}
-      \field{title}{{Design of SRAM PUF with improved uniformity and reliability utilizing device aging effect}}
-      \field{year}{2014}
-      \field{pages}{1941\bibrangedash 1944}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/ISCAS.2014.6865541
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Desktop/TFM/06865541.pdf:pdf
-      \endverb
-      \keyw{Physical Unclonable Function (PUF),Static Random Access Memory (SRAM),device aging}
-    \endentry
-    \entry{Sengupta2017}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a14793c9f841a9af1347c52d16e75571}{%
-           family={Sengupta},
-           familyi={S\bibinitperiod},
-           given={Deepashree},
-           giveni={D\bibinitperiod}}}%
-        {{hash=1c641925000f0d902b05be08bfd54e15}{%
-           family={Sapatnekar},
-           familyi={S\bibinitperiod},
-           given={Sachin\bibnamedelima S.},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \strng{namehash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \strng{fullhash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \strng{bibnamehash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \strng{authorbibnamehash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \strng{authornamehash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \strng{authorfullhash}{59d7c5a109b16145d95c093b15d2e2f4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{02780070}
-      \field{journaltitle}{{IEEE} Trans. Comput.-Aided Design Integr. Circuits Syst.}
-      \field{number}{10}
-      \field{title}{{Estimating Circuit Aging Due to BTI and HCI Using Ring-Oscillator-Based Sensors}}
-      \field{volume}{36}
-      \field{year}{2017}
-      \field{pages}{1688\bibrangedash 1701}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TCAD.2017.2648840
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Desktop/tcad17.pdf:pdf
-      \endverb
-      \keyw{Aging,bias temperature instability (BTI),hot carrier injection (HCI),ring oscillators (ROSCs),static timing analysis (STA)}
-    \endentry
-    \entry{Bhargava2013}{article}{}
-      \name{author}{2}{}{%
-        {{hash=10d82e27acfc00990115d3927aad5b34}{%
-           family={Bhargava},
-           familyi={B\bibinitperiod},
-           given={Mudit},
-           giveni={M\bibinitperiod}}}%
-        {{hash=77cde460c9e135e43ae415a7832a24c3}{%
-           family={Mai},
-           familyi={M\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{cc6a7eede40df5300f385643c06ead7e}
-      \strng{fullhash}{cc6a7eede40df5300f385643c06ead7e}
-      \strng{bibnamehash}{cc6a7eede40df5300f385643c06ead7e}
-      \strng{authorbibnamehash}{cc6a7eede40df5300f385643c06ead7e}
-      \strng{authornamehash}{cc6a7eede40df5300f385643c06ead7e}
-      \strng{authorfullhash}{cc6a7eede40df5300f385643c06ead7e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{good introduction}
-      \field{isbn}{9783642403484}
-      \field{issn}{03029743}
-      \field{journaltitle}{Lecture Notes in Computer Science}
-      \field{title}{{A high reliability PUF using hot carrier injection based response reinforcement}}
-      \field{volume}{8086 LNCS}
-      \field{year}{2013}
-      \field{pages}{90\bibrangedash 106}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1007/978-3-642-40349-1-6
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/asasantana/Desktop/2015-427.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Bhargava2012}{article}{}
-      \name{author}{3}{}{%
-        {{hash=10d82e27acfc00990115d3927aad5b34}{%
-           family={Bhargava},
-           familyi={B\bibinitperiod},
-           given={Mudit},
-           giveni={M\bibinitperiod}}}%
-        {{hash=63248d793c644f8869255f24148c4989}{%
-           family={Cakir},
-           familyi={C\bibinitperiod},
-           given={Cagla},
-           giveni={C\bibinitperiod}}}%
-        {{hash=77cde460c9e135e43ae415a7832a24c3}{%
-           family={Mai},
-           familyi={M\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{b6f0848f37b0fac4e77dd7d299b9d659}
-      \strng{fullhash}{70d5149c6af004b93dee085c596ec11d}
-      \strng{bibnamehash}{70d5149c6af004b93dee085c596ec11d}
-      \strng{authorbibnamehash}{70d5149c6af004b93dee085c596ec11d}
-      \strng{authornamehash}{b6f0848f37b0fac4e77dd7d299b9d659}
-      \strng{authorfullhash}{70d5149c6af004b93dee085c596ec11d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781467323390}
-      \field{journaltitle}{Proceedings of the 2012 IEEE International Symposium on Hardware-Oriented Security and Trust, HOST 2012}
-      \field{title}{{Reliability enhancement of bi-stable PUFs in 65nm bulk CMOS}}
-      \field{year}{2012}
-      \field{pages}{25\bibrangedash 30}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/HST.2012.6224314
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/06224314.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Anagnostopoulos2018}{article}{}
-      \name{author}{6}{}{%
-        {{hash=4fe4d60d2186140384350307d8fa9ea0}{%
-           family={Anagnostopoulos},
-           familyi={A\bibinitperiod},
-           given={Nikolaos\bibnamedelima Athanasios},
-           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=1897756819dd62b118a7a37357613791}{%
-           family={Arul},
-           familyi={A\bibinitperiod},
-           given={Tolga},
-           giveni={T\bibinitperiod}}}%
-        {{hash=30c592fb03114082e23fc16775e7e3c9}{%
-           family={Rosenstihl},
-           familyi={R\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ccb5a5f57de02a6cb2105a307577da1e}{%
-           family={Schaller},
-           familyi={S\bibinitperiod},
-           given={Andre},
-           giveni={A\bibinitperiod}}}%
-        {{hash=51a27d6929eb2e6ea392d4aa8719bcca}{%
-           family={Gabmeyer},
-           familyi={G\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b9e502f041dbf3b5d3c907a9d726cf59}{%
-           family={Katzenbeisser},
-           familyi={K\bibinitperiod},
-           given={Stefan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{f30eef853b8c226d64159d5a580861b7}
-      \strng{fullhash}{008555b66f2525fbfce5c49e2b4b0666}
-      \strng{bibnamehash}{008555b66f2525fbfce5c49e2b4b0666}
-      \strng{authorbibnamehash}{008555b66f2525fbfce5c49e2b4b0666}
-      \strng{authornamehash}{f30eef853b8c226d64159d5a580861b7}
-      \strng{authorfullhash}{008555b66f2525fbfce5c49e2b4b0666}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781538673768}
-      \field{journaltitle}{Proceedings - 21st Euromicro Conference on Digital System Design, DSD 2018}
-      \field{title}{{Low-temperature data remanence attacks against intrinsic SRAM PUFs}}
-      \field{year}{2018}
-      \field{pages}{581\bibrangedash 585}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1109/DSD.2018.00102
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/08491873.pdf:pdf
-      \endverb
-      \keyw{Attack,Data remanence,Data retention,Low temperature,PUF,Physical Unclonable Function,SRAM,Static Random Access Memory}
-    \endentry
-    \entry{Saraza-Canflanca2018}{inproceedings}{}
-      \name{author}{12}{}{%
-        {{hash=6e7ac95b3a6afb3f715cd12fbe47b677}{%
-           family={Saraza-Canflanca},
-           familyi={S\bibinithyphendelim C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=33b64394d88d15b9ef82fde359d44815}{%
-           family={Malagon},
-           familyi={M\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5e1fbf95a1892158412d5a64592021b4}{%
-           family={Passos},
-           familyi={P\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=467faf266d1206e4566fe6d0465b33f0}{%
-           family={Toro},
-           familyi={T\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3c5d146e0d0d4f819b0fa766a13fc817}{%
-           family={Nunez},
-           familyi={N\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c470527a9637be6552327c1adea56319}{%
-           family={Diaz-Fortuny},
-           familyi={D\bibinithyphendelim F\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=66fd2edccd1f08ca7d1a8f872135704c}{%
-           family={Castro-Lopez},
-           familyi={C\bibinithyphendelim L\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=65cafae8f86dc1fb0dc71e1d21d72475}{%
-           family={Roca},
-           familyi={R\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=20c1bcd49817350d69d4aa957c86da04}{%
-           family={Martin-Martinez},
-           familyi={M\bibinithyphendelim M\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a93d6d3033ab8945404a32d1a6db653e}{%
-           family={Rodrizucz},
-           familyi={R\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=69aadd74b90c6f24258a8acbc9ef2797}{%
-           family={Nafria},
-           familyi={N\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c734a60b39de091a4eb699b264c572af}{%
-           family={Fernandez},
-           familyi={F\bibinitperiod},
-           given={F.\bibnamedelimi V.},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers Inc.}%
-      }
-      \strng{namehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{fullhash}{0bd22640ee5609bd0fd2af1e7ae54022}
-      \strng{bibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authorbibnamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authornamehash}{96e2a148a72dc3ec6eb5f6aa1844c17c}
-      \strng{authorfullhash}{0bd22640ee5609bd0fd2af1e7ae54022}
-      \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{SMACD 2018 - 15th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design}
-      \field{isbn}{9781538651520}
-      \field{title}{{Design Considerations of an SRAM Array for the Statistical Validation of Time-Dependent Variability Models}}
-      \field{year}{2018}
-      \field{pages}{73\bibrangedash 76}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/SMACD.2018.8434900
-      \endverb
-    \endentry
-    \entry{Rangan2003}{article}{}
-      \name{author}{3}{}{%
-        {{hash=1f3bfa506f078e4e90b54a06dab1bb5f}{%
-           family={Rangan},
-           familyi={R\bibinitperiod},
-           given={Sanjay},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b1dc7524c56e46a25b1bb646eba4e7c5}{%
-           family={Mielke},
-           familyi={M\bibinitperiod},
-           given={Neal},
-           giveni={N\bibinitperiod}}}%
-        {{hash=67ee21103a04e99a74048aeade22465c}{%
-           family={Yeh},
-           familyi={Y\bibinitperiod},
-           given={Everett\bibnamedelima C.C.},
-           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{14381272ae1508eed26f187e8a5d699d}
-      \strng{fullhash}{95a3201ea0abc48dce9de733aad3b170}
-      \strng{bibnamehash}{95a3201ea0abc48dce9de733aad3b170}
-      \strng{authorbibnamehash}{95a3201ea0abc48dce9de733aad3b170}
-      \strng{authornamehash}{14381272ae1508eed26f187e8a5d699d}
-      \strng{authorfullhash}{95a3201ea0abc48dce9de733aad3b170}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0780378725}
-      \field{issn}{01631918}
-      \field{journaltitle}{Technical Digest - International Electron Devices Meeting}
-      \field{title}{{Universal Recovery Behavior of Negative Bias Temperature Instability}}
-      \field{year}{2003}
-      \field{pages}{341\bibrangedash 344}
-      \range{pages}{4}
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/01269294.pdf:pdf
-      \endverb
-    \endentry
-    \entry{Maes2009}{incollection}{}
-      \name{author}{3}{}{%
-        {{hash=e5155d0251d24b8107b8bf3664368038}{%
-           family={Maes},
-           familyi={M\bibinitperiod},
-           given={Roel},
-           giveni={R\bibinitperiod}}}%
-        {{hash=103e9e4cd9b8304b4c3460315a0a6d63}{%
-           family={Tuyls},
-           familyi={T\bibinitperiod},
-           given={Pim},
-           giveni={P\bibinitperiod}}}%
-        {{hash=bfe0a642d06f77a231ed11d0d3aa70c3}{%
-           family={Verbauwhede},
-           familyi={V\bibinitperiod},
-           given={Ingrid},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{3b6f2e4cd0a43ed26791917a6286fc62}
-      \strng{fullhash}{48e843176c7c643f3d9fc36f03ab8e52}
-      \strng{bibnamehash}{48e843176c7c643f3d9fc36f03ab8e52}
-      \strng{authorbibnamehash}{48e843176c7c643f3d9fc36f03ab8e52}
-      \strng{authornamehash}{3b6f2e4cd0a43ed26791917a6286fc62}
-      \strng{authorfullhash}{48e843176c7c643f3d9fc36f03ab8e52}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Lecture Notes in Computer Science}
-      \field{isbn}{364204137X}
-      \field{issn}{03029743}
-      \field{title}{{Low-overhead implementation of a soft decision helper data algorithm for SRAM PUFs}}
-      \field{volume}{5747 LNCS}
-      \field{year}{2009}
-      \field{pages}{332\bibrangedash 347}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1007/978-3-642-04138-9_24
-      \endverb
-      \verb{file}
-      \verb :C$\backslash$:/Users/usuario/Documents/Art{\'{i}}culos/Maes2009{\_}Chapter{\_}Low-OverheadImplementationOfAS.pdf:pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/978-3-642-04138-9{\_}24
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/978-3-642-04138-9%7B%5C_%7D24
-      \endverb
-      \keyw{FPGA implementation,Helper data algorithm,Physically unclonable functions,Soft-decision decoder,Toeplitz hash}
     \endentry
   \enddatalist
 \endrefsection

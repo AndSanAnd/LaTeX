@@ -1,0 +1,12 @@
+{
+    "Wrap with \\gls{}": {
+        "prefix": "g",
+        "body": "\\gls{$TM_SELECTED_TEXT}",
+        "description": "Wrap selected text with \\gls{}"
+    },
+	"Wrap with \\glspl{}": {
+        "prefix": "gp",
+        "body": "\\glspl{$TM_SELECTED_TEXT}",
+        "description": "Wrap selected text with \\glspl{}"
+    }
+}
